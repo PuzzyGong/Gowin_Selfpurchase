@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>beta</Version>
+    <Device id="GW2A-18C" package="PBGA256" speed="8" partNumber="GW2A-LV18PG256C8/I7"/>
+    <FileList>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\define.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\interfaces\cmos_8_16bit.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\interfaces\dvi_tx\DVI_TX_Top.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\interfaces\gowin_rpll\TMDS_rPLL.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\interfaces\gowin_rpll\cmos_pll.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\interfaces\gowin_rpll\mem_pll.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\interfaces\gowin_rpll\sys_pll.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\interfaces\i2c_master\i2c_config.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\interfaces\i2c_master\i2c_master_bit_ctrl.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\interfaces\i2c_master\i2c_master_byte_ctrl.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\interfaces\i2c_master\i2c_master_defines.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\interfaces\i2c_master\i2c_master_top.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\interfaces\i2c_master\timescale.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\interfaces\interfaces_top.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\interfaces\lut_ov5640_rgb565_1024_768.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\interfaces\vga_timing.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\interfaces\video_frame_buffer\Video_Frame_Buffer_Top.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\top.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\top_test.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\uart_sfr\debug.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\uart_sfr\debug_ctrl.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\uart_sfr\sfr.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\uart_sfr\uart_rx.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\uart_sfr\uart_sfr.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\uart_sfr\uart_tx.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\div_color_RSV\cmp.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\div_color_RSV\div_color_HSV.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\div_color_RSV\mul.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\div_color_RSV\sub_abs.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\div_color_RSV\gowin_mult\mul_8.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\post1__show_corrode\show_corrode.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\const_str.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\show_rect_ascii.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\show_rect_ascii_ctrl.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\show_rect_ascii_single.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\varies.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\gowin_sdpb\RAM_letter_show.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\gowin_prom\ROM_letter_show.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\pre2__div_color\div_color.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\pre3__corrode\corrode.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\pre3__return__intercept\intercept.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\pre4__div_rect\div_rect.v" type="verilog"/>
+        <File path="E:\_compete\4-20220926fpga\fpga\src\post1__show_corrode\gowin_sdpb\RAM_show_corrode.v" type="verilog"/>
+    </FileList>
+    <OptionList>
+        <Option type="disable_insert_pad" value="0"/>
+        <Option type="dsp_balance" value="0"/>
+        <Option type="looplimit" value="2000"/>
+        <Option type="output_file" value="E:\_compete\4-20220926fpga\fpga\impl\gwsynthesis\top.vg"/>
+        <Option type="print_all_synthesis_warning" value="0"/>
+        <Option type="ram_rw_check" value="1"/>
+        <Option type="top_module" value="top"/>
+        <Option type="verilog_language" value="verilog-2001"/>
+        <Option type="vhdl_language" value="vhdl-1993"/>
+    </OptionList>
+</Project>

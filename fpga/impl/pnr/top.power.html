@@ -1,0 +1,834 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//ENhttp://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Power Analysis Report</title>
+<style type="text/css">
+body { font-family: Verdana, Arial, sans-serif; font-size: 12px; }
+div#main_wrapper { width: 100%; }
+div#content { margin-left: 350px; margin-right: 30px; }
+div#catalog_wrapper {position: fixed; top: 30px; width: 350px; float: left; }
+div#catalog ul { list-style-type: none; }
+div#catalog li { text-align: left; list-style-type:circle; color: #0084ff; margin-top: 3px; margin-bottom: 3px; }
+div#catalog a { display:inline-block; text-decoration: none; color: #0084ff; font-weight: bold; padding: 3px; }
+div#catalog a:visited { color: #0084ff; }
+div#catalog a:hover { color: #fff; background: #0084ff; }
+hr { margin-top: 30px; margin-bottom: 30px; }
+h1, h3 { text-align: center; }
+h1 {margin-top: 50px; }
+table, th, td {white-space:pre;  border: 1px solid #aaa; }
+table { border-collapse:collapse; margin-top: 10px; margin-bottom: 20px; width: 100%; }
+th, td { padding: 5px 5px 5px 5px; }
+th { color: #fff; font-weight: bold; background-color: #0084ff; }
+table.summary_table td.label { width: 24%; min-width: 200px; background-color: #dee8f4; }
+table.thermal_table td.label { width: 24%; min-width: 200px; background-color: #dee8f4; }
+table.Configure_table td.label { width: 24%; min-width: 200px; background-color: #dee8f4; }
+table.detail_table th.label {  min-width: 8%; width: 8%; }
+</style>
+</head>
+<body>
+<div id="main_wrapper">
+<div id="catalog_wrapper">
+<div id="catalog">
+<ul>
+<li><a href="#Message" style=" font-size: 16px;">Power Messages</a>
+</li>
+<li><a href="#Summary" style=" font-size: 16px;">Power Summary</a>
+<ul>
+<li><a href="#Power_Info" style=" font-size: 14px;">Power Information</a></li>
+<li><a href="#Thermal_Info" style=" font-size: 14px;">Thermal Information</a></li>
+<li><a href="#Configure_Info" style=" font-size: 14px;">Configure Information</a></li>
+<li><a href="#Supply_Summary" style=" font-size: 14px;">Supply Information</a></li>
+</ul>
+</li>
+<li><a href="#Detail" style=" font-size: 16px;">Power Details</a>
+<ul>
+<li><a href="#By_Block_Type" style=" font-size: 14px;">Power By Block Type</a></li>
+<li><a href="#By_Hierarchy" style=" font-size: 14px;">Power By Hierarchy</a></li>
+<li><a href="#By_Clock_Domain" style=" font-size: 14px;">Power By Clock Domain</a></li>
+</ul>
+</li>
+</ul>
+</div><!-- catalog -->
+</div><!-- catalog_wrapper -->
+<div id="content">
+<h1><a name="Message">Power Messages</a></h1>
+<table class="summary_table">
+<tr>
+<td class="label">Report Title</td>
+<td>Power Analysis Report</td>
+</tr>
+<tr>
+<td class="label">Design File</td>
+<td>E:\_compete\4-20220926fpga\fpga\impl\gwsynthesis\top.vg</td>
+</tr>
+<tr>
+<td class="label">Physical Constraints File</td>
+<td>E:\_compete\4-20220926fpga\fpga\src\top.cst</td>
+</tr>
+<tr>
+<td class="label">Timing Constraints File</td>
+<td>E:\_compete\4-20220926fpga\fpga\src\lcd.sdc</td>
+</tr>
+<tr>
+<td class="label">Version</td>
+<td>V1.9.8.07</td>
+</tr>
+<tr>
+<td class="label">Part Number</td>
+<td>GW2A-LV18PG256C8/I7</td>
+</tr>
+<tr>
+<td class="label">Device</td>
+<td>GW2A-18C</td>
+</tr>
+<tr>
+<td class="label">Created Time</td>
+<td>Fri Oct 14 16:49:48 2022
+</td>
+</tr>
+<tr>
+<td class="label">Legal Announcement</td>
+<td>Copyright (C)2014-2022 Gowin Semiconductor Corporation. All rights reserved.</td>
+</tr>
+</table>
+<h1><a name="Summary">Power Summary</a></h1>
+<h2><a name="Power_Info">Power Information:</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label">Total Power (mW)</td>
+<td>798.019</td>
+</tr>
+<tr>
+<td class="label">Quiescent Power (mW)</td>
+<td>167.715</td>
+</tr>
+<tr>
+<td class="label">Dynamic Power (mW)</td>
+<td>630.305</td>
+</tr>
+</table>
+<h2><a name="Thermal_Info">Thermal Information:</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label">Junction Temperature</td>
+<td>50.553</td>
+</tr>
+<tr>
+<td class="label">Theta JA</td>
+<td>32.020</td>
+</tr>
+<tr>
+<td class="label">Max Allowed Ambient Temperature</td>
+<td>59.447</td>
+</tr>
+</table>
+<h2><a name="Configure_Info">Configure Information:</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label">Default IO Toggle Rate</td>
+<td>0.125</td>
+</tr>
+<td class="label">Default Remain Toggle Rate</td>
+<td>0.125</td>
+</tr>
+<tr>
+<td class="label">Use Vectorless Estimation</td>
+<td>false</td>
+</tr>
+<tr>
+<td class="label">Filter Glitches</td>
+<td>false</td>
+</tr>
+<tr>
+<td class="label">Related Vcd File</td>
+<td></td>
+</tr>
+<tr>
+<td class="label">Related Saif File</td>
+<td></td>
+</tr>
+<tr>
+<td class="label">Use Custom Theta JA</td>
+<td>false</td>
+</tr>
+<tr>
+<td class="label">Air Flow</td>
+<td>LFM_0</td>
+</tr>
+<tr>
+<td class="label">Heat Sink</td>
+<td>None</td>
+</tr>
+<tr>
+<td class="label">Use Custom Theta SA</td>
+<td>false</td>
+</tr>
+<tr>
+<td class="label">Board Thermal Model</td>
+<td>None</td>
+</tr>
+<tr>
+<td class="label">Use Custom Theta JB</td>
+<td>false</td>
+</tr>
+<tr>
+<td class="label">Ambient Temperature</td>
+<td>25.000
+</tr>
+</table>
+<h2><a name="Supply_Summary">Supply Information:</a></h2>
+<table class="summary_table">
+<tr>
+<th class="label">Voltage Source</th>
+<th class="label">Voltage</th>
+<th class="label">Dynamic Current(mA)</th>
+<th class="label">Quiescent Current(mA)</th>
+<th class="label">Power(mW)</th>
+</tr>
+<tr>
+<td>VCC</td>
+<td>1.000</td>
+<td>556.723</td>
+<td>104.087</td>
+<td>660.810</td>
+</tr>
+<tr>
+<td>VCCX</td>
+<td>2.500</td>
+<td>12.839</td>
+<td>23.366</td>
+<td>90.511</td>
+</tr>
+<tr>
+<td>VCCO15</td>
+<td>1.500</td>
+<td>11.063</td>
+<td>1.856</td>
+<td>19.379</td>
+</tr>
+<tr>
+<td>VCCO18</td>
+<td>1.800</td>
+<td>0.182</td>
+<td>0.101</td>
+<td>0.508</td>
+</tr>
+<tr>
+<td>VCCO33</td>
+<td>3.300</td>
+<td>7.443</td>
+<td>0.681</td>
+<td>26.810</td>
+</tr>
+</table>
+<h1><a name="Detail">Power Details</a></h1>
+<h2><a name="By_Block_Type">Power By Block Type:</a></h2>
+<table class="detail_table">
+<tr>
+<th class="label">Block Type</th>
+<th class="label">Total Power(mW)</th>
+<th class="label">Static Power(mW)</th>
+<th class="label">Average Toggle Rate(millions of transitions/sec)</th>
+</tr>
+<tr>
+<td>Logic</td>
+<td>12.476</td>
+<td>NA</td>
+<td>10.377</td>
+</tr>
+<tr>
+<td>IO</td>
+<td>101.596
+<td>14.498
+<td>45.685
+</tr>
+<tr>
+<td>BSRAM</td>
+<td>360.329
+<td>NA</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>PLL</td>
+<td>78.060
+<td>NA</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>DLL</td>
+<td>92.160
+<td>NA</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>DQS</td>
+<td>231.300
+<td>NA</td>
+<td>NA</td>
+</tr>
+</table>
+<h2><a name="By_Hierarchy">Power By Hierarchy:</a></h2>
+<table class="detail_table">
+<tr>
+<th class="label">Hierarchy Entity</th>
+<th class="label">Total Power(mW)</th>
+<th class="label">Block Dynamic Power(mW)</th>
+</tr>
+<tr>
+<td>top</td>
+<td>774.325</td>
+<td>774.325(774.299)</td>
+<tr>
+<td>top/u_corrode/</td>
+<td>0.953</td>
+<td>0.953(0.000)</td>
+<tr>
+<td>top/u_div_color/</td>
+<td>1.651</td>
+<td>1.651(1.617)</td>
+<tr>
+<td>top/u_div_color/u1_div_color_HSV/</td>
+<td>0.903</td>
+<td>0.903(0.641)</td>
+<tr>
+<td>top/u_div_color/u1_div_color_HSV/u1_cmp/</td>
+<td>0.285</td>
+<td>0.285(0.000)</td>
+<tr>
+<td>top/u_div_color/u1_div_color_HSV/u1_mul/</td>
+<td>0.008</td>
+<td>0.008(0.000)</td>
+<tr>
+<td>top/u_div_color/u1_div_color_HSV/u1_mul/u_mul_8/</td>
+<td>0.000</td>
+<td>0.000(0.000)</td>
+<tr>
+<td>top/u_div_color/u1_div_color_HSV/u1_sub_abs/</td>
+<td>0.102</td>
+<td>0.102(0.000)</td>
+<tr>
+<td>top/u_div_color/u1_div_color_HSV/u2_mul/</td>
+<td>0.008</td>
+<td>0.008(0.000)</td>
+<tr>
+<td>top/u_div_color/u1_div_color_HSV/u2_mul/u_mul_8/</td>
+<td>0.000</td>
+<td>0.000(0.000)</td>
+<tr>
+<td>top/u_div_color/u1_div_color_HSV/u2_sub_abs/</td>
+<td>0.110</td>
+<td>0.110(0.000)</td>
+<tr>
+<td>top/u_div_color/u1_div_color_HSV/u3_mul/</td>
+<td>0.008</td>
+<td>0.008(0.000)</td>
+<tr>
+<td>top/u_div_color/u1_div_color_HSV/u3_mul/u_mul_8/</td>
+<td>0.000</td>
+<td>0.000(0.000)</td>
+<tr>
+<td>top/u_div_color/u1_div_color_HSV/u3_sub_abs/</td>
+<td>0.102</td>
+<td>0.102(0.000)</td>
+<tr>
+<td>top/u_div_color/u1_div_color_HSV/u4_mul/</td>
+<td>0.016</td>
+<td>0.016(0.000)</td>
+<tr>
+<td>top/u_div_color/u1_div_color_HSV/u4_mul/u_mul_8/</td>
+<td>0.000</td>
+<td>0.000(0.000)</td>
+<tr>
+<td>top/u_div_color/u2_div_color_HSV/</td>
+<td>0.714</td>
+<td>0.714(0.643)</td>
+<tr>
+<td>top/u_div_color/u2_div_color_HSV/u1_cmp/</td>
+<td>0.286</td>
+<td>0.286(0.000)</td>
+<tr>
+<td>top/u_div_color/u2_div_color_HSV/u1_mul/</td>
+<td>0.008</td>
+<td>0.008(0.000)</td>
+<tr>
+<td>top/u_div_color/u2_div_color_HSV/u1_mul/u_mul_8/</td>
+<td>0.000</td>
+<td>0.000(0.000)</td>
+<tr>
+<td>top/u_div_color/u2_div_color_HSV/u1_sub_abs/</td>
+<td>0.101</td>
+<td>0.101(0.000)</td>
+<tr>
+<td>top/u_div_color/u2_div_color_HSV/u2_mul/</td>
+<td>0.008</td>
+<td>0.008(0.000)</td>
+<tr>
+<td>top/u_div_color/u2_div_color_HSV/u2_mul/u_mul_8/</td>
+<td>0.000</td>
+<td>0.000(0.000)</td>
+<tr>
+<td>top/u_div_color/u2_div_color_HSV/u2_sub_abs/</td>
+<td>0.110</td>
+<td>0.110(0.000)</td>
+<tr>
+<td>top/u_div_color/u2_div_color_HSV/u3_mul/</td>
+<td>0.008</td>
+<td>0.008(0.000)</td>
+<tr>
+<td>top/u_div_color/u2_div_color_HSV/u3_mul/u_mul_8/</td>
+<td>0.000</td>
+<td>0.000(0.000)</td>
+<tr>
+<td>top/u_div_color/u2_div_color_HSV/u3_sub_abs/</td>
+<td>0.102</td>
+<td>0.102(0.000)</td>
+<tr>
+<td>top/u_div_color/u2_div_color_HSV/u4_mul/</td>
+<td>0.019</td>
+<td>0.019(0.000)</td>
+<tr>
+<td>top/u_div_color/u2_div_color_HSV/u4_mul/u_mul_8/</td>
+<td>0.000</td>
+<td>0.000(0.000)</td>
+<tr>
+<td>top/u_div_rect/</td>
+<td>3.440</td>
+<td>3.440(0.000)</td>
+<tr>
+<td>top/u_intercept/</td>
+<td>0.053</td>
+<td>0.053(0.000)</td>
+<tr>
+<td>top/u_interfaces_top/</td>
+<td>653.109</td>
+<td>653.109(653.082)</td>
+<tr>
+<td>top/u_interfaces_top/DDR3_Memory_Interface_Top_inst/</td>
+<td>457.443</td>
+<td>457.443(457.443)</td>
+<tr>
+<td>top/u_interfaces_top/DDR3_Memory_Interface_Top_inst/gw3_top/</td>
+<td>457.443</td>
+<td>457.443(457.443)</td>
+<tr>
+<td>top/u_interfaces_top/DDR3_Memory_Interface_Top_inst/gw3_top/i4/</td>
+<td>455.862</td>
+<td>455.862(363.333)</td>
+<tr>
+<td>top/u_interfaces_top/DDR3_Memory_Interface_Top_inst/gw3_top/i4/ddr3_sync/</td>
+<td>0.058</td>
+<td>0.058(0.000)</td>
+<tr>
+<td>top/u_interfaces_top/DDR3_Memory_Interface_Top_inst/gw3_top/i4/u_ddr_phy_init/</td>
+<td>0.583</td>
+<td>0.583(0.000)</td>
+<tr>
+<td>top/u_interfaces_top/DDR3_Memory_Interface_Top_inst/gw3_top/i4/u_ddr_phy_wd/</td>
+<td>362.692</td>
+<td>362.692(362.685)</td>
+<tr>
+<td>top/u_interfaces_top/DDR3_Memory_Interface_Top_inst/gw3_top/i4/u_ddr_phy_wd/data_lane_gen[0].u_ddr3_phy_data_lane/</td>
+<td>246.704</td>
+<td>246.704(246.696)</td>
+<tr>
+<td>top/u_interfaces_top/DDR3_Memory_Interface_Top_inst/gw3_top/i4/u_ddr_phy_wd/data_lane_gen[0].u_ddr3_phy_data_lane/u_ddr3_phy_data_io/</td>
+<td>115.655</td>
+<td>115.655(0.000)</td>
+<tr>
+<td>top/u_interfaces_top/DDR3_Memory_Interface_Top_inst/gw3_top/i4/u_ddr_phy_wd/data_lane_gen[0].u_ddr3_phy_data_lane/u_in_fifo/</td>
+<td>65.520</td>
+<td>65.520(0.000)</td>
+<tr>
+<td>top/u_interfaces_top/DDR3_Memory_Interface_Top_inst/gw3_top/i4/u_ddr_phy_wd/data_lane_gen[0].u_ddr3_phy_data_lane/u_out_fifo/</td>
+<td>65.521</td>
+<td>65.521(0.000)</td>
+<tr>
+<td>top/u_interfaces_top/DDR3_Memory_Interface_Top_inst/gw3_top/i4/u_ddr_phy_wd/data_lane_gen[1].u_ddr3_phy_data_lane/</td>
+<td>115.659</td>
+<td>115.659(115.651)</td>
+<tr>
+<td>top/u_interfaces_top/DDR3_Memory_Interface_Top_inst/gw3_top/i4/u_ddr_phy_wd/data_lane_gen[1].u_ddr3_phy_data_lane/u_ddr3_phy_data_io/</td>
+<td>115.651</td>
+<td>115.651(0.000)</td>
+<tr>
+<td>top/u_interfaces_top/DDR3_Memory_Interface_Top_inst/gw3_top/i4/u_ddr_phy_wd/u_ddr3_phy_cmd_lane/</td>
+<td>0.219</td>
+<td>0.219(0.154)</td>
+<tr>
+<td>top/u_interfaces_top/DDR3_Memory_Interface_Top_inst/gw3_top/i4/u_ddr_phy_wd/u_ddr3_phy_cmd_lane/u_cmd_fifo/</td>
+<td>0.154</td>
+<td>0.154(0.000)</td>
+<tr>
+<td>top/u_interfaces_top/DDR3_Memory_Interface_Top_inst/gw3_top/i4/u_ddr_phy_wd/u_fifo_ctrl/</td>
+<td>0.103</td>
+<td>0.103(0.000)</td>
+<tr>
+<td>top/u_interfaces_top/DDR3_Memory_Interface_Top_inst/gw3_top/u_gwmc_top/</td>
+<td>1.580</td>
+<td>1.580(1.320)</td>
+<tr>
+<td>top/u_interfaces_top/DDR3_Memory_Interface_Top_inst/gw3_top/u_gwmc_top/gw_cmd0/</td>
+<td>0.320</td>
+<td>0.320(0.000)</td>
+<tr>
+<td>top/u_interfaces_top/DDR3_Memory_Interface_Top_inst/gw3_top/u_gwmc_top/gw_rd_data0/</td>
+<td>0.195</td>
+<td>0.195(0.000)</td>
+<tr>
+<td>top/u_interfaces_top/DDR3_Memory_Interface_Top_inst/gw3_top/u_gwmc_top/gw_wr_data0/</td>
+<td>0.307</td>
+<td>0.307(0.305)</td>
+<tr>
+<td>top/u_interfaces_top/DDR3_Memory_Interface_Top_inst/gw3_top/u_gwmc_top/gw_wr_data0/wr_fifo/</td>
+<td>0.305</td>
+<td>0.305(0.000)</td>
+<tr>
+<td>top/u_interfaces_top/DDR3_Memory_Interface_Top_inst/gw3_top/u_gwmc_top/gwmc_bank_ctrl/</td>
+<td>0.376</td>
+<td>0.376(0.000)</td>
+<tr>
+<td>top/u_interfaces_top/DDR3_Memory_Interface_Top_inst/gw3_top/u_gwmc_top/gwmc_rank_ctrl/</td>
+<td>0.088</td>
+<td>0.088(0.000)</td>
+<tr>
+<td>top/u_interfaces_top/DDR3_Memory_Interface_Top_inst/gw3_top/u_gwmc_top/gwmc_timing_ctrl/</td>
+<td>0.034</td>
+<td>0.034(0.000)</td>
+<tr>
+<td>top/u_interfaces_top/DVI_TX_Top_inst/</td>
+<td>0.473</td>
+<td>0.473(0.473)</td>
+<tr>
+<td>top/u_interfaces_top/DVI_TX_Top_inst/rgb2dvi_inst/</td>
+<td>0.473</td>
+<td>0.473(0.473)</td>
+<tr>
+<td>top/u_interfaces_top/DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/</td>
+<td>0.157</td>
+<td>0.157(0.000)</td>
+<tr>
+<td>top/u_interfaces_top/DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/</td>
+<td>0.159</td>
+<td>0.159(0.000)</td>
+<tr>
+<td>top/u_interfaces_top/DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/</td>
+<td>0.157</td>
+<td>0.157(0.000)</td>
+<tr>
+<td>top/u_interfaces_top/Video_Frame_Buffer_Top_inst/</td>
+<td>116.746</td>
+<td>116.746(116.746)</td>
+<tr>
+<td>top/u_interfaces_top/Video_Frame_Buffer_Top_inst/vfb_ddr3_wrapper_inst/</td>
+<td>116.746</td>
+<td>116.746(116.746)</td>
+<tr>
+<td>top/u_interfaces_top/Video_Frame_Buffer_Top_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/</td>
+<td>116.453</td>
+<td>116.453(116.453)</td>
+<tr>
+<td>top/u_interfaces_top/Video_Frame_Buffer_Top_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_frame_ctrl/</td>
+<td>0.019</td>
+<td>0.019(0.000)</td>
+<tr>
+<td>top/u_interfaces_top/Video_Frame_Buffer_Top_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/</td>
+<td>54.318</td>
+<td>54.318(54.199)</td>
+<tr>
+<td>top/u_interfaces_top/Video_Frame_Buffer_Top_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/</td>
+<td>54.153</td>
+<td>54.153(0.000)</td>
+<tr>
+<td>top/u_interfaces_top/Video_Frame_Buffer_Top_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/u_dma_32b_16b/</td>
+<td>0.046</td>
+<td>0.046(0.000)</td>
+<tr>
+<td>top/u_interfaces_top/Video_Frame_Buffer_Top_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/</td>
+<td>62.116</td>
+<td>62.116(62.023)</td>
+<tr>
+<td>top/u_interfaces_top/Video_Frame_Buffer_Top_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/</td>
+<td>61.961</td>
+<td>61.961(0.000)</td>
+<tr>
+<td>top/u_interfaces_top/Video_Frame_Buffer_Top_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/u_dma_16b_32b/</td>
+<td>0.062</td>
+<td>0.062(0.000)</td>
+<tr>
+<td>top/u_interfaces_top/Video_Frame_Buffer_Top_inst/vfb_ddr3_wrapper_inst/u_dma_bus_arbiter/</td>
+<td>0.293</td>
+<td>0.293(0.000)</td>
+<tr>
+<td>top/u_interfaces_top/cmos_8_16bit_m0/</td>
+<td>0.021</td>
+<td>0.021(0.000)</td>
+<tr>
+<td>top/u_interfaces_top/cmos_pll_m0/</td>
+<td>2.510</td>
+<td>2.510(0.000)</td>
+<tr>
+<td>top/u_interfaces_top/i2c_config_m0/</td>
+<td>0.299</td>
+<td>0.299(0.291)</td>
+<tr>
+<td>top/u_interfaces_top/i2c_config_m0/i2c_master_top_m0/</td>
+<td>0.291</td>
+<td>0.291(0.083)</td>
+<tr>
+<td>top/u_interfaces_top/i2c_config_m0/i2c_master_top_m0/byte_controller/</td>
+<td>0.083</td>
+<td>0.083(0.067)</td>
+<tr>
+<td>top/u_interfaces_top/i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/</td>
+<td>0.067</td>
+<td>0.067(0.000)</td>
+<tr>
+<td>top/u_interfaces_top/mem_pll_m0/</td>
+<td>41.658</td>
+<td>41.658(0.000)</td>
+<tr>
+<td>top/u_interfaces_top/u_tmds_rpll/</td>
+<td>33.891</td>
+<td>33.891(0.000)</td>
+<tr>
+<td>top/u_interfaces_top/vga_timing_m0/</td>
+<td>0.042</td>
+<td>0.042(0.000)</td>
+<tr>
+<td>top/u_show_corrode/</td>
+<td>11.022</td>
+<td>11.022(10.827)</td>
+<tr>
+<td>top/u_show_corrode/u_RAM_show_corrode/</td>
+<td>10.827</td>
+<td>10.827(0.000)</td>
+<tr>
+<td>top/u_show_rect_ascii/</td>
+<td>103.781</td>
+<td>103.781(103.781)</td>
+<tr>
+<td>top/u_show_rect_ascii/u_show_rect_ascii_ctrl/</td>
+<td>0.443</td>
+<td>0.443(0.000)</td>
+<tr>
+<td>top/u_show_rect_ascii/u_show_rect_ascii_single/</td>
+<td>103.337</td>
+<td>103.337(102.856)</td>
+<tr>
+<td>top/u_show_rect_ascii/u_show_rect_ascii_single/u_RAM_letter_show/</td>
+<td>102.191</td>
+<td>102.191(0.000)</td>
+<tr>
+<td>top/u_show_rect_ascii/u_show_rect_ascii_single/u_ROM_letter_show/</td>
+<td>0.665</td>
+<td>0.665(0.000)</td>
+<tr>
+<td>top/u_top_test/</td>
+<td>0.082</td>
+<td>0.082(0.000)</td>
+<tr>
+<td>top/u_uart_sfr/</td>
+<td>0.208</td>
+<td>0.208(0.208)</td>
+<tr>
+<td>top/u_uart_sfr/u_debug/</td>
+<td>0.102</td>
+<td>0.102(0.102)</td>
+<tr>
+<td>top/u_uart_sfr/u_debug/debug_ctrl_inst/</td>
+<td>0.065</td>
+<td>0.065(0.000)</td>
+<tr>
+<td>top/u_uart_sfr/u_debug/uart_rx_inst/</td>
+<td>0.020</td>
+<td>0.020(0.000)</td>
+<tr>
+<td>top/u_uart_sfr/u_debug/uart_tx_inst/</td>
+<td>0.016</td>
+<td>0.016(0.000)</td>
+<tr>
+<td>top/u_uart_sfr/u_sfr00/</td>
+<td>0.003</td>
+<td>0.003(0.000)</td>
+<tr>
+<td>top/u_uart_sfr/u_sfr01/</td>
+<td>0.002</td>
+<td>0.002(0.000)</td>
+<tr>
+<td>top/u_uart_sfr/u_sfr02/</td>
+<td>0.002</td>
+<td>0.002(0.000)</td>
+<tr>
+<td>top/u_uart_sfr/u_sfr03/</td>
+<td>0.002</td>
+<td>0.002(0.000)</td>
+<tr>
+<td>top/u_uart_sfr/u_sfr04/</td>
+<td>0.002</td>
+<td>0.002(0.000)</td>
+<tr>
+<td>top/u_uart_sfr/u_sfr05/</td>
+<td>0.002</td>
+<td>0.002(0.000)</td>
+<tr>
+<td>top/u_uart_sfr/u_sfr06/</td>
+<td>0.002</td>
+<td>0.002(0.000)</td>
+<tr>
+<td>top/u_uart_sfr/u_sfr07/</td>
+<td>0.001</td>
+<td>0.001(0.000)</td>
+<tr>
+<td>top/u_uart_sfr/u_sfr08/</td>
+<td>0.002</td>
+<td>0.002(0.000)</td>
+<tr>
+<td>top/u_uart_sfr/u_sfr09/</td>
+<td>0.001</td>
+<td>0.001(0.000)</td>
+<tr>
+<td>top/u_uart_sfr/u_sfr0A/</td>
+<td>0.001</td>
+<td>0.001(0.000)</td>
+<tr>
+<td>top/u_uart_sfr/u_sfr0B/</td>
+<td>0.001</td>
+<td>0.001(0.000)</td>
+<tr>
+<td>top/u_uart_sfr/u_sfr0C/</td>
+<td>0.001</td>
+<td>0.001(0.000)</td>
+<tr>
+<td>top/u_uart_sfr/u_sfr0D/</td>
+<td>0.001</td>
+<td>0.001(0.000)</td>
+<tr>
+<td>top/u_uart_sfr/u_sfr0E/</td>
+<td>0.001</td>
+<td>0.001(0.000)</td>
+<tr>
+<td>top/u_uart_sfr/u_sfr0F/</td>
+<td>0.001</td>
+<td>0.001(0.000)</td>
+<tr>
+<td>top/u_uart_sfr/u_sfr10/</td>
+<td>0.002</td>
+<td>0.002(0.000)</td>
+<tr>
+<td>top/u_uart_sfr/u_sfr11/</td>
+<td>0.001</td>
+<td>0.001(0.000)</td>
+<tr>
+<td>top/u_uart_sfr/u_sfr12/</td>
+<td>0.001</td>
+<td>0.001(0.000)</td>
+<tr>
+<td>top/u_uart_sfr/u_sfr13/</td>
+<td>0.001</td>
+<td>0.001(0.000)</td>
+<tr>
+<td>top/u_uart_sfr/u_sfr14/</td>
+<td>0.001</td>
+<td>0.001(0.000)</td>
+<tr>
+<td>top/u_uart_sfr/u_sfr15/</td>
+<td>0.001</td>
+<td>0.001(0.000)</td>
+<tr>
+<td>top/u_uart_sfr/u_sfr16/</td>
+<td>0.001</td>
+<td>0.001(0.000)</td>
+<tr>
+<td>top/u_uart_sfr/u_sfr17/</td>
+<td>0.001</td>
+<td>0.001(0.000)</td>
+<tr>
+<td>top/u_uart_sfr/u_sfr18/</td>
+<td>0.001</td>
+<td>0.001(0.000)</td>
+<tr>
+<td>top/u_uart_sfr/u_sfr19/</td>
+<td>0.001</td>
+<td>0.001(0.000)</td>
+<tr>
+<td>top/u_uart_sfr/u_sfr1A/</td>
+<td>0.001</td>
+<td>0.001(0.000)</td>
+<tr>
+<td>top/u_uart_sfr/u_sfr1B/</td>
+<td>0.001</td>
+<td>0.001(0.000)</td>
+<tr>
+<td>top/u_uart_sfr/u_sfr1C/</td>
+<td>0.001</td>
+<td>0.001(0.000)</td>
+<tr>
+<td>top/u_uart_sfr/u_sfr1D/</td>
+<td>0.001</td>
+<td>0.001(0.000)</td>
+<tr>
+<td>top/u_uart_sfr/u_sfr1E/</td>
+<td>0.001</td>
+<td>0.001(0.000)</td>
+<tr>
+<td>top/u_uart_sfr/u_sfr1F/</td>
+<td>0.059</td>
+<td>0.059(0.000)</td>
+</table>
+<h2><a name="By_Clock_Domain">Power By Clock Domain:</a></h2>
+<table class="detail_table">
+<tr>
+<th class="label">Clock Domain</th>
+<th class="label">Clock Frequency(Mhz)</th>
+<th class="label">Total Dynamic Power(mW)</th>
+</tr>
+<tr>
+<td>u_interfaces_top/u_clkdiv/CLKOUT.default_gen_clk</td>
+<td>64.800</td>
+<td>130.371</td>
+</tr>
+<tr>
+<td>u_interfaces_top/DDR3_Memory_Interface_Top_inst/gw3_top/i4/fclkdiv/CLKOUT.default_gen_clk</td>
+<td>100.000</td>
+<td>200.024</td>
+</tr>
+<tr>
+<td>sys_clk</td>
+<td>27.000</td>
+<td>78.597</td>
+</tr>
+<tr>
+<td>NO CLOCK DOMAIN</td>
+<td>0.000</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td>pre_clk</td>
+<td>100.000</td>
+<td>41.837</td>
+</tr>
+<tr>
+<td>cmos_pclk</td>
+<td>100.000</td>
+<td>0.117</td>
+</tr>
+<tr>
+<td>cmos_vsync</td>
+<td>1.000</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td>u_interfaces_top/u_tmds_rpll/rpll_inst/CLKOUT.default_gen_clk</td>
+<td>324.000</td>
+<td>0.044</td>
+</tr>
+<tr>
+<td>memory_clk</td>
+<td>400.000</td>
+<td>323.514</td>
+</tr>
+</table>
+</div><!-- content -->
+</div><!-- main_wrapper -->
+</body>
+</html>

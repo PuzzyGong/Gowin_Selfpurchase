@@ -1,0 +1,188 @@
+{
+ "Files" : [
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/define.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/interfaces/cmos_8_16bit.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/interfaces/ddr3_memory_interface/DDR3MI.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/interfaces/dvi_tx/DVI_TX_Top.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/interfaces/gowin_rpll/TMDS_rPLL.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/interfaces/gowin_rpll/cmos_pll.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/interfaces/gowin_rpll/mem_pll.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/interfaces/gowin_rpll/sys_pll.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/interfaces/i2c_master/i2c_config.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/interfaces/i2c_master/i2c_master_bit_ctrl.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/interfaces/i2c_master/i2c_master_byte_ctrl.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/interfaces/i2c_master/i2c_master_defines.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/interfaces/i2c_master/i2c_master_top.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/interfaces/i2c_master/timescale.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/interfaces/interfaces_top.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/interfaces/lut_ov5640_rgb565_1024_768.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/interfaces/vga_timing.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/interfaces/video_frame_buffer/Video_Frame_Buffer_Top.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/top.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/top_test.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/uart_sfr/debug.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/uart_sfr/debug_ctrl.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/uart_sfr/sfr.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/uart_sfr/uart_rx.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/uart_sfr/uart_sfr.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/uart_sfr/uart_tx.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/div_color_RSV/cmp.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/div_color_RSV/div_color_HSV.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/div_color_RSV/mul.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/div_color_RSV/sub_abs.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/div_color_RSV/gowin_mult/mul_8.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/post1__show_corrode/show_corrode.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/post4__show_rect_ascii/const_str.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/post4__show_rect_ascii/show_rect_ascii.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/post4__show_rect_ascii/show_rect_ascii_ctrl.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/post4__show_rect_ascii/show_rect_ascii_single.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/post4__show_rect_ascii/varies.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/post4__show_rect_ascii/gowin_sdpb/RAM_letter_show.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/post4__show_rect_ascii/gowin_prom/ROM_letter_show.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/pre2__div_color/div_color.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/pre3__corrode/corrode.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/pre3__return__intercept/intercept.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/pre4__div_rect/div_rect.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/post1__show_corrode/gowin_sdpb/RAM_show_corrode.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "E:/_compete/4-20220926fpga/fpga/impl/temp/rtl_parser.result",
+ "Top" : "top",
+ "VerilogStd" : "verilog_2001",
+ "VhdlStd" : "vhdl_93"
+}

@@ -1,0 +1,17 @@
+[General]
+ipc_version=4
+file=RAM_letter_show
+module=RAM_letter_show
+target_device=gw2a18c-011
+type=ram_sdpb
+version=1.0
+
+[Config]
+BYTE_SIZE=0
+DEPTH_A=65536
+DEPTH_B=65536
+LANG=0
+READ=0
+RESET_MODE=true
+WIDTH_A=3
+WIDTH_B=3
