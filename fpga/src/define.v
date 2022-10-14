@@ -41,14 +41,18 @@
 //-----SWITCH_draw
 `define RST_VALUE_0010          (8'h01)
 
-`define RST_VALUE_0011          (8'h00)
-`define RST_VALUE_0012          (8'h00)
-`define RST_VALUE_0013          (8'h00)
-`define RST_VALUE_0014          (8'h00)
-`define RST_VALUE_0015          (8'h00)
-`define RST_VALUE_0016          (8'h00)
-`define RST_VALUE_0017          (8'h00)
+//-----PARAM_corv
+`define RST_VALUE_0011          (8'h40)
+`define RST_VALUE_0012          (8'h08)
+`define RST_VALUE_0013          (8'h60)
+`define RST_VALUE_0014          (8'h20)
+`define RST_VALUE_0015          (8'h60)
+`define RST_VALUE_0016          (8'hA0)
+`define RST_VALUE_0017          (8'h28)
+
+//-----SWITCH_corv
 `define RST_VALUE_0018          (8'h00)
+
 `define RST_VALUE_0019          (8'h00)
 `define RST_VALUE_001A          (8'h00)
 `define RST_VALUE_001B          (8'h00)

@@ -30,7 +30,7 @@
         <File path="src/interfaces/video_frame_buffer/Video_Frame_Buffer_Top.v" type="file.verilog" enable="1"/>
         <File path="src/post1__show_corrode/gowin_sdpb/RAM_show_corrode.v" type="file.verilog" enable="1"/>
         <File path="src/post1__show_corrode/show_corrode.v" type="file.verilog" enable="1"/>
-        <File path="src/post2__conv_show/conv_show.v" type="file.verilog" enable="0"/>
+        <File path="src/post2__conv_show/conv_show.v" type="file.verilog" enable="1"/>
         <File path="src/post4__show_rect_ascii/const_str.v" type="file.verilog" enable="1"/>
         <File path="src/post4__show_rect_ascii/gowin_prom/ROM_letter_show.v" type="file.verilog" enable="1"/>
         <File path="src/post4__show_rect_ascii/gowin_sdpb/RAM_letter_show.v" type="file.verilog" enable="1"/>

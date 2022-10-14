@@ -260,8 +260,13 @@ wire                   [  15:0]         data_1                     ;
 wire                   [  15:0]         data_1_process             ;
 wire                   [  15:0]         data_1_raw                 ;
 
+wire                                    en_2                       ;
+wire                   [  15:0]         data_2                     ;
 wire                   [  15:0]         data_2_process             ;
 wire                   [  15:0]         data_2_raw                 ;
+
+wire                   [  15:0]         data_3_process             ;
+wire                   [  15:0]         data_3_raw                 ;
 
 //-----Delay = 2
 show_corrode u_show_corrode(
@@ -279,7 +284,28 @@ show_corrode u_show_corrode(
 );
 assign data_1 = (contains[{'h0E,3'b0} +: 1] == 'b0) ? data_1_raw : data_1_process;
 
-//-----Delay = 1
+//-----Delay = 4 + 1
+conv u_conv(
+    .sys_clk                           (post_clk                  ),
+    .sys_rst_n                         (sys_rst_n  &  i_post_vs   ),
+    .i_RGB_err                         (contains[{'h11,3'b0} +: 8]),
+    .i_RGB_Vmin                        (contains[{'h12,3'b0} +: 8]),
+    .i_RGB_Vmax                        (contains[{'h13,3'b0} +: 8]),
+    .i_YELLOW_err                      (contains[{'h14,3'b0} +: 8]),
+    .i_YELLOW_Vmin                     (contains[{'h15,3'b0} +: 8]),
+    .i_YELLOW_Vmax                     (contains[{'h16,3'b0} +: 8]),
+    .i_WB_threshold                    (contains[{'h17,3'b0} +: 8]),
+    .item                              (item                      ),
+    .i_post_camvs                      (1'b0                      ),
+    .i_valid                           (en_1                      ),
+    .i_data                            (data_1                    ),
+    .o_valid                           (en_2                      ),
+    .o_data                            (data_2_process            ),
+    .o_data_raw                        (data_2_raw                ) 
+);
+assign data_2 = (contains[{'h18,3'b0} +: 1] == 'b0) ? data_2_raw : data_2_process;
+
+//-----Delay = 3 + 1
 show_rect_ascii u_show_rect_ascii(
     .sys_clk                           (post_clk                  ),
     .sys_rst_n                         (sys_rst_n                 ),
@@ -290,20 +316,20 @@ show_rect_ascii u_show_rect_ascii(
     .i_posi_wire                       (128'd0                    ),
     .i_varies                          ({80'd0,    8'd213,8'd123,8'd222,       8'd000,fps2,fps1}),
     .i_vs                              (i_post_vs                 ),
-    .i_valid                           (en_1                      ),
-    .i_data                            (data_1                    ),
+    .i_valid                           (en_2                      ),
+    .i_data                            (data_2                    ),
     .o_valid                           (                          ),
-    .o_data                            (data_2_process            ),
-    .o_data_raw                        (data_2_raw                )
+    .o_data                            (data_3_process            ),
+    .o_data_raw                        (data_3_raw                )
 );
 
 always@(posedge post_clk or negedge sys_rst_n)
     if(sys_rst_n == 1'b0)
         o_post_data <= 'b0;
     else if(contains[{'h10,3'b0} +: 1] == 1'b0)
-        o_post_data <=  data_2_raw;
+        o_post_data <=  data_3_raw;
     else
-        o_post_data <=  data_2_process;
+        o_post_data <=  data_3_process;
 
 
 endmodule

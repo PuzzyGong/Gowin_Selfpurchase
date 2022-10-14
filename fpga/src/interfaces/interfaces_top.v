@@ -173,7 +173,7 @@ vga_timing vga_timing_m0
 
 //-----delay clocks -- from SYN_GEN to POST&HDMI
 localparam                              IN_DELAY = 5               ;
-localparam                              OUT_DELAY = 4              ;
+localparam                              OUT_DELAY = 11             ;
 localparam                              TOTAL_DELAY = IN_DELAY + OUT_DELAY;
                           
 reg                    [TOTAL_DELAY-1:0]post_hs_dn                 ;
