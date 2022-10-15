@@ -15,7 +15,7 @@ module show_rect_ascii
     input  wire                         i_start                    ,
     input  wire        [`RECT_NUMMAX * 32 - 1 : 0]   i_head_wire   ,//P_W+P_W+P_W+P_W <= 64
     input  wire        [`RECT_NUMMAX * 32 - 1 : 0]   i_hair_wire   ,//P_W+P_W+P_W+P_W <= 64
-    input  wire        [`RECT_NUMMAX * 8 - 1 : 0]    i_posi_wire   ,//R_W+R_W+R_W+R_W <= 8
+    input  wire        [`RECT_NUMMAX * (8 * 8) - 1 : 0]    i_posi_wire   ,//R_W+R_W+R_W+R_W <= 8
 
     input  wire        [128 - 1 : 0]    i_varies                   ,
 

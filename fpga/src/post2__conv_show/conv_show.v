@@ -23,6 +23,7 @@ module conv
 
     input  wire        [`RECT_NUMMAX * 32 - 1 : 0] item            ,
     output reg         [`RECT_NUMMAX * 32 - 1 : 0] o_item          ,
+    output reg         [`RECT_NUMMAX * 64 - 1 : 0] o_label         ,
 
     input  wire                         i_post_camvs               ,
     input  wire                         i_valid                    ,
@@ -313,23 +314,25 @@ for(k = 0; k < `RECT_NUMMAX; k = k + 1) begin
         if(item_rst_n == 1'b0) begin
             o_item   [{k, 5'b0} +: 32]  <= 'd0;
             item_tmp [{k, 7'b0} +: 128] <= 'd0;
+            o_label[{k, 6'b0}             +:64] <= "        ";
         end
         else if(inpic_5 == 1'b1 && cnt_x_5 == `PIC_X1 && cnt_y_5 == `PIC_Y1) begin
             item_tmp [{k, 7'b0} +: 128] <= 'd0;
         end
         else if(inpic_5 == 1'b1 && cnt_x_5 == `PIC_X2 && cnt_y_5 == `PIC_Y2) begin
-            if(item_tmp[{k, 7'b0} + 16 + 16 + 16 + 16 + 16 +: 16] > 16'd20) begin
-                o_item[{k, 5'b0} + 8 + 8 + 8 +: 8] <= item[{k, 5'b0} + 8 + 8 + 8 +: 8] + 'd16;
-                o_item[{k, 5'b0}     + 8 + 8 +: 8] <= item[{k, 5'b0}     + 8 + 8 +: 8] + 'd16;
-                o_item[{k, 5'b0}         + 8 +: 8] <= item[{k, 5'b0}         + 8 +: 8] + 'd16;
-                o_item[{k, 5'b0}             +: 8] <= item[{k, 5'b0}             +: 8] + 'd16;
+            o_item   [{k, 5'b0} +: 32]  <=  item   [{k, 5'b0} +: 32] ;
+            if(item_tmp[{k, 7'b0} + 16 + 16 + 16 + 16 + 16 +: 16] > 16'd2048) begin
+                if(item[{k, 5'b0}         + 8 +: 8] - item[{k, 5'b0} + 8 + 8 + 8 +: 8] >
+                   item[{k, 5'b0}             +: 8] - item[{k, 5'b0}     + 8 + 8 +: 8] )
+                o_label[{k, 6'b0}             +:64] <= "Nood+3.0";
+                else
+                    o_label[{k, 6'b0}             +:64] <= "Coca+2.0";
             end
-            else begin
-                o_item[{k, 5'b0} + 8 + 8 + 8 +: 8] <= item[{k, 5'b0} + 8 + 8 + 8 +: 8];
-                o_item[{k, 5'b0}     + 8 + 8 +: 8] <= item[{k, 5'b0}     + 8 + 8 +: 8];
-                o_item[{k, 5'b0}         + 8 +: 8] <= item[{k, 5'b0}         + 8 +: 8];
-                o_item[{k, 5'b0}             +: 8] <= item[{k, 5'b0}             +: 8];
-            end  
+            else if(item_tmp[{k, 7'b0}   + 16 + 16 + 16 +: 16] > 16'd2048) 
+                o_label[{k, 6'b0}             +:64] <= "Pesi+2.0";
+            else
+                o_label[{k, 6'b0}             +:64] <= "        ";
+            
         end
         else if( inpic_5 == 1'b1 &&
             cnt_x_5 >= {item[{k, 5'b0} + 8 + 8 + 8 +: 8], 2'b0} &&

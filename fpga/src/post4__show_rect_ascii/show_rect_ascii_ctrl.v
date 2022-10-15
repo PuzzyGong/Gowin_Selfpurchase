@@ -11,7 +11,7 @@
 //需要写  256 *      256 个周期 (clear_ram )               [19] = 1; [18] = 0; [17] = 0; [16] = 0;
 //需要写  16 *      2048 个周期 (rect_draw ) (i_head_reg ) [19] = 1; [18] = 0; [17] = 0; [16] = 1; [15:12]选择
 //需要写  16 *      2048 个周期 (rect_draw ) (i_hair_reg ) [19] = 1; [18] = 0; [17] = 1; [16] = 0; [15:12]选择
-//需要写 (16 * 04) * 256 个周期 (ascii_draw) (i_posi_reg ) [19] = 1; [18] = 0; [17] = 1; [16] = 1; [15:12]选择; [9:8] 选择
+//需要写 (16 * 08) * 256 个周期 (ascii_draw) (i_posi_reg ) [19] = 1; [18] = 0; [17] = 1; [16] = 1; [15:12]选择; [10:8] 选择
 
 
 module show_rect_ascii_ctrl
@@ -29,7 +29,7 @@ module show_rect_ascii_ctrl
 //只能写在上半部分 
     input  wire        [`RECT_NUMMAX * 32 - 1 : 0]   i_head_wire   ,//L_W+L_W+L_W+L_W <= 32
     input  wire        [`RECT_NUMMAX * 32 - 1 : 0]   i_hair_wire   ,//L_W+L_W+L_W+L_W <= 32
-    input  wire        [`RECT_NUMMAX *  8 - 1 : 0]   i_posi_wire   ,//R_W+R_W+R_W+R_W <= 8
+    input  wire        [`RECT_NUMMAX * (8 * 8) - 1 : 0]   i_posi_wire   ,//R_W+R_W+R_W+R_W <= 8
 
 //只能写在下半部分 
     input  wire        [16 * ( 8 * 8) - 1 : 0]       i_varies      ,
@@ -53,7 +53,7 @@ module show_rect_ascii_ctrl
 //-----
 reg                    [`RECT_NUMMAX * 32 - 1 : 0]   i_head_reg    ;//P_W+P_W+P_W+P_W <= 64
 reg                    [`RECT_NUMMAX * 32 - 1 : 0]   i_hair_reg    ;//P_W+P_W+P_W+P_W <= 64
-reg                    [`RECT_NUMMAX * 8 - 1 : 0]    i_posi_reg    ;//R_W+R_W+R_W+R_W <= 8
+reg                    [`RECT_NUMMAX * (8 * 8) - 1 : 0]    i_posi_reg    ;//R_W+R_W+R_W+R_W <= 8
 
 always@(posedge sys_clk or negedge sys_rst_n)
     if(sys_rst_n == 1'b0)begin
@@ -64,7 +64,7 @@ always@(posedge sys_clk or negedge sys_rst_n)
     else if (i_start == 1'b1) begin
         i_head_reg <= i_head_wire;
         i_hair_reg <= i_hair_wire;
-        i_posi_reg <= i_posi_wire;
+        i_posi_reg <= i_posi_wire; 
     end
 
 
@@ -135,7 +135,7 @@ always@(posedge sys_clk or negedge sys_rst_n)
         o_ys    <= 'd0;
         o_ye    <= 'd127;
     end
-    else if(cnt[19:16] == 4'b1001 && cnt[7:0] == 'b0) begin
+    else if(cnt[19:16] == 4'b1010 && cnt[7:0] == 'b0) begin
         o_x1    <= i_head_reg [{~cnt[15:12] , 5'b0} + L_W + L_W + L_W +: L_W];
         o_y1    <= i_head_reg [{~cnt[15:12] , 5'b0} +       L_W + L_W +: L_W];
         o_x2    <= i_head_reg [{~cnt[15:12] , 5'b0} +             L_W +: L_W];
@@ -143,7 +143,7 @@ always@(posedge sys_clk or negedge sys_rst_n)
         o_ascii <= 'd1;
         o_color <= 3'b100;
     end
-    else if(cnt[19:16] == 4'b1010 && cnt[7:0] == 'b0) begin
+    else if(cnt[19:16] == 4'b1011 && cnt[7:0] == 'b0) begin
         o_x1    <= i_hair_reg [{~cnt[15:12] , 5'b0} + L_W + L_W + L_W +: L_W];
         o_y1    <= i_hair_reg [{~cnt[15:12] , 5'b0} +       L_W + L_W +: L_W];
         o_x2    <= i_hair_reg [{~cnt[15:12] , 5'b0} +             L_W +: L_W];
@@ -151,7 +151,27 @@ always@(posedge sys_clk or negedge sys_rst_n)
         o_ascii <= 'd1;
         o_color <= 3'b010;
     end
-
+    else if(cnt[19:16] == 4'b1001 && cnt[7:0] == 'b0) begin
+        if(cnt[10] == 1'b0) begin
+            o_ascii <= i_posi_reg [{~cnt[15:12] , 6'b0} + {~cnt[10:8], 3'b0} +: 8  ];
+            o_color <= 3'b010;
+            o_x     <= i_head_reg [{~cnt[15:12] , 5'b0} + L_W + L_W + L_W +: L_W] + {cnt[10:8], 3'b0};
+            o_y     <= i_head_reg [{~cnt[15:12] , 5'b0}                   +: L_W] - 'd2;
+        end
+        if(cnt[10] == 1'b1) begin
+            o_ascii <= i_posi_reg [{~cnt[15:12] , 6'b0} + {~cnt[10:8], 3'b0} +: 8  ];
+            o_color <= 3'b010;
+            o_y     <= i_head_reg [{~cnt[15:12] , 5'b0}                   +: L_W] - 'd15;
+            if(cnt[9:8] == 2'b00)
+                o_x     <= i_head_reg [{~cnt[15:12] , 5'b0} + L_W + L_W + L_W +: L_W] + 'd0;
+            else if(cnt[9:8] == 2'b01)
+                o_x     <= i_head_reg [{~cnt[15:12] , 5'b0} + L_W + L_W + L_W +: L_W] + 'd6;
+            else if(cnt[9:8] == 2'b10)
+                o_x     <= i_head_reg [{~cnt[15:12] , 5'b0} + L_W + L_W + L_W +: L_W] + 'd14;
+            else if(cnt[9:8] == 2'b11)
+                o_x     <= i_head_reg [{~cnt[15:12] , 5'b0} + L_W + L_W + L_W +: L_W] + 'd18;
+        end
+    end
 
 
 endmodule

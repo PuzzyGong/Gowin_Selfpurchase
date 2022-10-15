@@ -243,6 +243,7 @@ corrode u_corrode(
 //-----
 wire        [`RECT_NUMMAX * 32 - 1 : 0] item                       ;
 wire        [`RECT_NUMMAX * 32 - 1 : 0] item_                      ;
+wire        [`RECT_NUMMAX * 64 - 1 : 0] label                      ;
 div_rect u_div_rect(
     .sys_clk                           (pre_clk                   ),
     .sys_rst_n                         (sys_rst_n  &  ~i_pre_vs   ),
@@ -302,7 +303,8 @@ conv u_conv(
     .i_WB_threshold                    (contains[{'h17,3'b0} +: 8]),
     .item                              (item                      ),
     .o_item                            (item_                     ),
-    .i_post_camvs                      (1'b1                      ),
+    .o_label                           (label                     ),
+    .i_post_camvs                      (i_post_camvs              ),
     .i_valid                           (en_1                      ),
     .i_data                            (data_1                    ),
     .o_valid                           (en_2                      ),
@@ -316,10 +318,11 @@ show_rect_ascii u_show_rect_ascii(
     .sys_clk                           (post_clk                  ),
     .sys_rst_n                         (sys_rst_n                 ),
     .i_start                           (o_finish                  ),
-    .i_head_wire                       (item                      ),
-    .i_hair_wire                       (item_                     ),
+    .i_head_wire                       (item_                     ),
+    .i_hair_wire                       (512'd0                      ),
     //.i_hair_wire                       ({448'd0,   fps1,8'd025,8'd150,8'd050,  8'd150,8'd050,8'd200,8'd100}),
-    .i_posi_wire                       (128'd0                    ),
+    //.i_posi_wire                       ({16{8'd49, 8'd50, 8'd51, 8'd52, 8'd43, 8'd53, 8'd46, 8'd54}}                    ),
+    .i_posi_wire                       (label                    ),
     .i_varies                          ({80'd0,    8'd213,8'd123,8'd222,       8'd000,fps2,fps1}),
     .i_vs                              (i_post_vs                 ),
     .i_valid                           (en_2                      ),
