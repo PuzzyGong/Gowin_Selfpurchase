@@ -7,8 +7,11 @@ module conv
     parameter                           P_W = `POSITION_WIDTH
 )
 (
-    input  wire                         sys_clk                    ,
-    input  wire                         sys_rst_n                  ,
+    input  wire                         sys_clk_1                  ,
+    input  wire                         sys_rst_n_1                ,
+    input  wire                         sys_clk_2                  ,
+    input  wire                         sys_rst_n_2                ,
+    input  wire                         item_rst_n                 ,
 
     input  wire        [C_W+2-1:0]      i_RGB_err                  ,
     input  wire        [C_W+2-1:0]      i_RGB_Vmin                 ,
@@ -19,6 +22,7 @@ module conv
     input  wire        [C_W+2-1:0]      i_WB_threshold             ,
 
     input  wire        [`RECT_NUMMAX * 32 - 1 : 0] item            ,
+    output reg         [`RECT_NUMMAX * 32 - 1 : 0] o_item          ,
 
     input  wire                         i_post_camvs               ,
     input  wire                         i_valid                    ,
@@ -28,29 +32,70 @@ module conv
     output reg         [16-1:0]         o_data_raw 
 );
 
-//-----
-reg                    [P_W-1:0]        cnt_x                      ;
-reg                    [P_W-1:0]        cnt_y                      ;
-always@(posedge sys_clk or negedge sys_rst_n)
-    if(sys_rst_n == 1'b0)begin
-        cnt_x <= 'b0;
-        cnt_y <= 'b0;
+//*************** 同步信号 ***************
+//----- 第 1~4 层
+reg                                     valid_1                    ;
+reg                                     valid_2                    ;
+reg                                     valid_3                    ;
+reg                                     valid_4                    ;
+always@(posedge sys_clk_2 or negedge sys_rst_n_2)
+    if(sys_rst_n_2 == 1'b0)begin
+        valid_1 <= 'd0;
+        valid_2 <= 'd0;
+        valid_3 <= 'd0;
+        valid_4 <= 'd0;
     end
-    else if(i_valid == 1'b1)
-        if(cnt_x == `OV5640_X - 1) begin
-            cnt_x <= 'b0;
-            if(cnt_y == `OV5640_Y - 1) 
-                cnt_y <= 'b0;
+    else begin
+        valid_1 <= i_valid;
+        valid_2 <= valid_1;
+        valid_3 <= valid_2;
+        valid_4 <= valid_3;
+    end
+
+//----- 第 4 层
+reg                    [P_W-1:0]        cnt_x_4                    ;
+reg                    [P_W-1:0]        cnt_y_4                    ;
+always@(posedge sys_clk_2 or negedge sys_rst_n_2)
+    if(sys_rst_n_2 == 1'b0)begin
+        cnt_x_4 <= 'b0;
+        cnt_y_4 <= 'b0;
+    end
+    else if(valid_3 == 1'b1)
+        if(cnt_x_4 == `OV5640_X - 1) begin
+            cnt_x_4 <= 'b0;
+            if(cnt_y_4 == `OV5640_Y - 1)
+                cnt_y_4 <= 'b0;
             else
-                cnt_y <= cnt_y + 1'b1;
+                cnt_y_4 <= cnt_y_4 + 1'b1;
         end
         else
-            cnt_x <= cnt_x + 1'b1;
+            cnt_x_4 <= cnt_x_4 + 1'b1;
 
-//-----
+//----- 第 5 层
+reg                    [P_W-1:0]        cnt_x_5                    ;
+reg                    [P_W-1:0]        cnt_y_5                    ;
+always@(posedge sys_clk_2 or negedge sys_rst_n_2)
+    if(sys_rst_n_2 == 1'b0)begin
+        cnt_x_5 <= 'b0;
+        cnt_y_5 <= 'b0;
+    end
+    else begin
+        cnt_x_5 <= cnt_x_4;
+        cnt_y_5 <= cnt_y_4;
+    end
+
+reg                                     inpic_5                    ;
+always@(posedge sys_clk_2 or negedge sys_rst_n_2)
+    if(sys_rst_n_2 == 1'b0) begin
+        inpic_5 <= 'b0;
+    end
+    else if(i_post_camvs == 1'b1 && valid_4 == 1'b1 && cnt_x_4 >= `PIC_X1 && cnt_x_4 <= `PIC_X2 && cnt_y_4 >= `PIC_Y1 && cnt_y_4 <= `PIC_Y2)
+        inpic_5 <= 1'b1;
+    else
+        inpic_5 <= 1'b0;
 
 
-
+//*************** 颜色信号 ***************
 //RED -> GREEN; GREEN -> BLUE; BLUE -> RED; YELLOW -> GRAY; BLACK -> WHITE; WHITE -> BLACK; 
 wire                                    RED____valid               ;
 wire                   [C_W-1:0]        RED____R                   ;
@@ -122,8 +167,8 @@ div_color_HSV
     .BLACK_COLOR                       (16'b00000_100000_00000    )
 )
 u1_div_color_HSV(
-    .sys_clk                           (sys_clk                   ),
-    .sys_rst_n                         (sys_rst_n                 ),
+    .sys_clk                           (sys_clk_2                 ),
+    .sys_rst_n                         (sys_rst_n_2               ),
     .i_R0                              (6'b111111                 ),
     .i_G0                              (6'b000000                 ),
     .i_B0                              (6'b000000                 ),
@@ -151,8 +196,8 @@ div_color_HSV
     .BLACK_COLOR                       (16'b00000_000000_10000    )
 )
 u2_div_color_HSV(
-    .sys_clk                           (sys_clk                   ),
-    .sys_rst_n                         (sys_rst_n                 ),
+    .sys_clk                           (sys_clk_2                 ),
+    .sys_rst_n                         (sys_rst_n_2               ),
     .i_R0                              (6'b000000                 ),
     .i_G0                              (6'b111111                 ),
     .i_B0                              (6'b000000                 ),
@@ -180,8 +225,8 @@ div_color_HSV
     .BLACK_COLOR                       (16'b10000_000000_00000    )
 )
 u3_div_color_HSV(
-    .sys_clk                           (sys_clk                   ),
-    .sys_rst_n                         (sys_rst_n                 ),
+    .sys_clk                           (sys_clk_2                 ),
+    .sys_rst_n                         (sys_rst_n_2               ),
     .i_R0                              (6'b000000                 ),
     .i_G0                              (6'b000000                 ),
     .i_B0                              (6'b111111                 ),
@@ -209,8 +254,8 @@ div_color_HSV
     .BLACK_COLOR                       (16'b10000_100000_10000    )
 )
 u4_div_color_HSV(
-    .sys_clk                           (sys_clk                   ),
-    .sys_rst_n                         (sys_rst_n                 ),
+    .sys_clk                           (sys_clk_2                 ),
+    .sys_rst_n                         (sys_rst_n_2               ),
     .i_R0                              (6'b100000                 ),
     .i_G0                              (6'b100000                 ),
     .i_B0                              (6'b000000                 ),
@@ -233,8 +278,8 @@ u4_div_color_HSV(
 assign YELLOW_RGB = {YELLOW_R[5:1], YELLOW_G[5:0], YELLOW_B[5:1]};
 
 //-----
-always@(posedge sys_clk or negedge sys_rst_n)
-    if(sys_rst_n == 1'b0) begin
+always@(posedge sys_clk_2 or negedge sys_rst_n_2)
+    if(sys_rst_n_2 == 1'b0) begin
         o_valid    <= 'd0;
         o_data     <= 'd0;
         o_data_raw <= 'd0;
@@ -255,6 +300,59 @@ always@(posedge sys_clk or negedge sys_rst_n)
             o_data <= 16'hFFFF;
         o_data_raw <= {RED____R_raw[5:1], RED____G_raw[5:0], RED____B_raw[5:1]};
     end
+
+
+//*************** 计数 ***************
+
+reg         [`RECT_NUMMAX * 128 - 1 : 0] item_tmp               ;
+
+genvar k;
+generate
+for(k = 0; k < `RECT_NUMMAX; k = k + 1) begin
+    always@(posedge sys_clk_2 or negedge item_rst_n) begin
+        if(item_rst_n == 1'b0) begin
+            o_item   [{k, 5'b0} +: 32]  <= 'd0;
+            item_tmp [{k, 7'b0} +: 128] <= 'd0;
+        end
+        else if(inpic_5 == 1'b1 && cnt_x_5 == `PIC_X1 && cnt_y_5 == `PIC_Y1) begin
+            item_tmp [{k, 7'b0} +: 128] <= 'd0;
+        end
+        else if(inpic_5 == 1'b1 && cnt_x_5 == `PIC_X2 && cnt_y_5 == `PIC_Y2) begin
+            if(item_tmp[{k, 7'b0} + 16 + 16 + 16 + 16 + 16 +: 16] > 16'd20) begin
+                o_item[{k, 5'b0} + 8 + 8 + 8 +: 8] <= item[{k, 5'b0} + 8 + 8 + 8 +: 8] + 'd16;
+                o_item[{k, 5'b0}     + 8 + 8 +: 8] <= item[{k, 5'b0}     + 8 + 8 +: 8] + 'd16;
+                o_item[{k, 5'b0}         + 8 +: 8] <= item[{k, 5'b0}         + 8 +: 8] + 'd16;
+                o_item[{k, 5'b0}             +: 8] <= item[{k, 5'b0}             +: 8] + 'd16;
+            end
+            else begin
+                o_item[{k, 5'b0} + 8 + 8 + 8 +: 8] <= item[{k, 5'b0} + 8 + 8 + 8 +: 8];
+                o_item[{k, 5'b0}     + 8 + 8 +: 8] <= item[{k, 5'b0}     + 8 + 8 +: 8];
+                o_item[{k, 5'b0}         + 8 +: 8] <= item[{k, 5'b0}         + 8 +: 8];
+                o_item[{k, 5'b0}             +: 8] <= item[{k, 5'b0}             +: 8];
+            end  
+        end
+        else if( inpic_5 == 1'b1 &&
+            cnt_x_5 >= {item[{k, 5'b0} + 8 + 8 + 8 +: 8], 2'b0} &&
+            cnt_y_5 >= {item[{k, 5'b0}     + 8 + 8 +: 8], 2'b0} &&
+            cnt_x_5 <= {item[{k, 5'b0}         + 8 +: 8], 2'b0} &&
+            cnt_y_5 <= {item[{k, 5'b0}             +: 8], 2'b0} ) begin
+            if(o_data == RED____RGB)
+                item_tmp[{k, 7'b0} + 16 + 16 + 16 + 16 + 16 +: 16] <= item_tmp[{k, 7'b0} + 16 + 16 + 16 + 16 + 16 +: 16] + 1'b1;
+            else if(o_data == GREEN__RGB)
+                item_tmp[{k, 7'b0}      + 16 + 16 + 16 + 16 +: 16] <= item_tmp[{k, 7'b0}      + 16 + 16 + 16 + 16 +: 16] + 1'b1;
+            else if(o_data == BLUE___RGB)
+                item_tmp[{k, 7'b0}           + 16 + 16 + 16 +: 16] <= item_tmp[{k, 7'b0}           + 16 + 16 + 16 +: 16] + 1'b1;
+            else if(o_data == YELLOW_RGB)
+                item_tmp[{k, 7'b0}                + 16 + 16 +: 16] <= item_tmp[{k, 7'b0}                + 16 + 16 +: 16] + 1'b1;
+            else if(o_data == 16'd0)
+                item_tmp[{k, 7'b0}                     + 16 +: 16] <= item_tmp[{k, 7'b0}                     + 16 +: 16] + 1'b1;
+            else
+                item_tmp[{k, 7'b0}                          +: 16] <= item_tmp[{k, 7'b0}                          +: 16] + 1'b1;
+        end
+    end
+end
+endgenerate
+
 
 
 endmodule

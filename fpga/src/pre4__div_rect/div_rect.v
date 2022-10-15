@@ -13,6 +13,7 @@ module div_rect
 (
     input  wire                         sys_clk                    ,
     input  wire                         sys_rst_n                  ,
+    input  wire                         item_rst_n                 ,
 
     input  wire        [   7:0]         i_smax                     ,
 
@@ -238,8 +239,8 @@ always@(posedge sys_clk or negedge sys_rst_n)
 // out = in * (4) + 32;
 // out = in * (4) + 04;
 
-always@(posedge sys_clk or negedge sys_rst_n)
-    if(sys_rst_n == 1'b0) begin
+always@(posedge sys_clk or negedge item_rst_n)
+    if(item_rst_n == 1'b0) begin
         o_item <= 'b0;
     end 
     else if(cnt_finish != 0 && cnt_finish != `RECT_NUMMAX) begin

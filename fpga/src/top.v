@@ -242,9 +242,11 @@ corrode u_corrode(
 
 //-----
 wire        [`RECT_NUMMAX * 32 - 1 : 0] item                       ;
+wire        [`RECT_NUMMAX * 32 - 1 : 0] item_                      ;
 div_rect u_div_rect(
     .sys_clk                           (pre_clk                   ),
     .sys_rst_n                         (sys_rst_n  &  ~i_pre_vs   ),
+    .item_rst_n                        (sys_rst_n                 ),
     .i_smax                            (contains[{'h0F,3'b0} +: 8]),
     .i_valid                           (de_3                      ),
     .i_wb                              (wb_3                      ),
@@ -286,8 +288,11 @@ assign data_1 = (contains[{'h0E,3'b0} +: 1] == 'b0) ? data_1_raw : data_1_proces
 
 //-----Delay = 4 + 1
 conv u_conv(
-    .sys_clk                           (post_clk                  ),
-    .sys_rst_n                         (sys_rst_n  &  i_post_vs   ),
+    .sys_clk_1                         (pre_clk                   ),
+    .sys_clk_2                         (post_clk                  ),
+    .sys_rst_n_1                       (sys_rst_n  &  ~i_pre_vs   ),
+    .sys_rst_n_2                       (sys_rst_n  &  i_post_vs   ),
+    .item_rst_n                        (sys_rst_n                 ),
     .i_RGB_err                         (contains[{'h11,3'b0} +: 8]),
     .i_RGB_Vmin                        (contains[{'h12,3'b0} +: 8]),
     .i_RGB_Vmax                        (contains[{'h13,3'b0} +: 8]),
@@ -296,7 +301,8 @@ conv u_conv(
     .i_YELLOW_Vmax                     (contains[{'h16,3'b0} +: 8]),
     .i_WB_threshold                    (contains[{'h17,3'b0} +: 8]),
     .item                              (item                      ),
-    .i_post_camvs                      (1'b0                      ),
+    .o_item                            (item_                     ),
+    .i_post_camvs                      (1'b1                      ),
     .i_valid                           (en_1                      ),
     .i_data                            (data_1                    ),
     .o_valid                           (en_2                      ),
@@ -311,7 +317,7 @@ show_rect_ascii u_show_rect_ascii(
     .sys_rst_n                         (sys_rst_n                 ),
     .i_start                           (o_finish                  ),
     .i_head_wire                       (item                      ),
-    .i_hair_wire                       (512'd0                    ),
+    .i_hair_wire                       (item_                     ),
     //.i_hair_wire                       ({448'd0,   fps1,8'd025,8'd150,8'd050,  8'd150,8'd050,8'd200,8'd100}),
     .i_posi_wire                       (128'd0                    ),
     .i_varies                          ({80'd0,    8'd213,8'd123,8'd222,       8'd000,fps2,fps1}),
@@ -326,10 +332,20 @@ show_rect_ascii u_show_rect_ascii(
 always@(posedge post_clk or negedge sys_rst_n)
     if(sys_rst_n == 1'b0)
         o_post_data <= 'b0;
-    else if(contains[{'h10,3'b0} +: 1] == 1'b0)
+    else if(contains[{'h10,3'b0} +: 3] == 3'b000)
+        o_post_data <=  data_1_raw;
+    else if(contains[{'h10,3'b0} +: 3] == 3'b001)
+        o_post_data <=  data_1_process;
+    else if(contains[{'h10,3'b0} +: 3] == 3'b010)
+        o_post_data <=  data_2_raw;
+    else if(contains[{'h10,3'b0} +: 3] == 3'b011)
+        o_post_data <=  data_2_process;
+    else if(contains[{'h10,3'b0} +: 3] == 3'b100)
         o_post_data <=  data_3_raw;
-    else
+    else if(contains[{'h10,3'b0} +: 3] == 3'b101)
         o_post_data <=  data_3_process;
+    else
+        o_post_data <=  i_post_data;
 
 
 endmodule
