@@ -23,7 +23,7 @@
 `define RST_VALUE_0007          (8'h15)
 `define RST_VALUE_0008          (8'h15)
 `define RST_VALUE_0009          (8'h10)
-`define RST_VALUE_000A          (8'h28)
+`define RST_VALUE_000A          (8'h18)
 `define RST_VALUE_000B          (8'hFF)
 
 //-----SWITCH_div_color
@@ -44,9 +44,9 @@
 //-----PARAM_corv
 `define RST_VALUE_0011          (8'h40)
 `define RST_VALUE_0012          (8'h08)
-`define RST_VALUE_0013          (8'h60)
+`define RST_VALUE_0013          (8'h48)
 `define RST_VALUE_0014          (8'h20)
-`define RST_VALUE_0015          (8'h60)
+`define RST_VALUE_0015          (8'h48)
 `define RST_VALUE_0016          (8'hA0)
 `define RST_VALUE_0017          (8'h28)
 
