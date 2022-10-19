@@ -5,12 +5,12 @@
     <Version>5</Version>
     <Device name="GW2A-18C" pn="GW2A-LV18PG256C8/I7">gw2a18c-011</Device>
     <FileList>
+        <File path="src/base__div_color/cmp.v" type="file.verilog" enable="1"/>
+        <File path="src/base__div_color/div_color_HSV.v" type="file.verilog" enable="1"/>
+        <File path="src/base__div_color/gowin_mult/mul_8.v" type="file.verilog" enable="1"/>
+        <File path="src/base__div_color/mul.v" type="file.verilog" enable="1"/>
+        <File path="src/base__div_color/sub_abs.v" type="file.verilog" enable="1"/>
         <File path="src/define.v" type="file.verilog" enable="1"/>
-        <File path="src/div_color_RSV/cmp.v" type="file.verilog" enable="1"/>
-        <File path="src/div_color_RSV/div_color_HSV.v" type="file.verilog" enable="1"/>
-        <File path="src/div_color_RSV/gowin_mult/mul_8.v" type="file.verilog" enable="1"/>
-        <File path="src/div_color_RSV/mul.v" type="file.verilog" enable="1"/>
-        <File path="src/div_color_RSV/sub_abs.v" type="file.verilog" enable="1"/>
         <File path="src/interfaces/cmos_8_16bit.v" type="file.verilog" enable="1"/>
         <File path="src/interfaces/ddr3_memory_interface/DDR3MI.v" type="file.verilog" enable="1"/>
         <File path="src/interfaces/dvi_tx/DVI_TX_Top.v" type="file.verilog" enable="1"/>
@@ -28,12 +28,14 @@
         <File path="src/interfaces/lut_ov5640_rgb565_1024_768.v" type="file.verilog" enable="1"/>
         <File path="src/interfaces/vga_timing.v" type="file.verilog" enable="1"/>
         <File path="src/interfaces/video_frame_buffer/Video_Frame_Buffer_Top.v" type="file.verilog" enable="1"/>
-        <File path="src/post1__show_corrode/gowin_sdpb/RAM_show_corrode.v" type="file.verilog" enable="1"/>
-        <File path="src/post1__show_corrode/show_corrode.v" type="file.verilog" enable="1"/>
-        <File path="src/post2__conv_show/conv_show.v" type="file.verilog" enable="1"/>
+        <File path="src/post1__conv_show/conv.v" type="file.verilog" enable="1"/>
+        <File path="src/post1__conv_show/conv_show.v" type="file.verilog" enable="1"/>
+        <File path="src/post3__show_corrode/gowin_sdpb/RAM_show_corrode.v" type="file.verilog" enable="1"/>
+        <File path="src/post3__show_corrode/show_corrode.v" type="file.verilog" enable="1"/>
         <File path="src/post4__show_rect_ascii/const_str.v" type="file.verilog" enable="1"/>
         <File path="src/post4__show_rect_ascii/gowin_prom/ROM_letter_show.v" type="file.verilog" enable="1"/>
         <File path="src/post4__show_rect_ascii/gowin_sdpb/RAM_letter_show.v" type="file.verilog" enable="1"/>
+        <File path="src/post4__show_rect_ascii/label_str.v" type="file.verilog" enable="1"/>
         <File path="src/post4__show_rect_ascii/show_rect_ascii.v" type="file.verilog" enable="1"/>
         <File path="src/post4__show_rect_ascii/show_rect_ascii_ctrl.v" type="file.verilog" enable="1"/>
         <File path="src/post4__show_rect_ascii/show_rect_ascii_single.v" type="file.verilog" enable="1"/>

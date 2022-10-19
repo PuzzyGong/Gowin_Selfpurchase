@@ -1,0 +1,24 @@
+-series GW2A
+-device GW2A-18C
+-package PBGA256
+-part_number GW2A-LV18PG256C8/I7
+
+
+-mod_name mul_8
+-file_name mul_8
+-path E:/_compete/4-20220926fpga/Gowin_Facedetection_AndMore/fpga/src/pre5__div_rect/gowin_mult/
+-type MULT
+-file_type vlg
+-source_a parallel
+-source_b parallel
+-width_a 8
+-width_b 8
+-data_type_a unsigned
+-data_type_b unsigned
+-en_shiftout_a false
+-en_shiftout_b false
+-reset_mode sync
+-ina_reg bypass
+-inb_reg bypass
+-pipe_reg bypass
+-out_reg bypass

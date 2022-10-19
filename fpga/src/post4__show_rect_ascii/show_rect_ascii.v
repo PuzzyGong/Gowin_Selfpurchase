@@ -15,7 +15,7 @@ module show_rect_ascii
     input  wire                         i_start                    ,
     input  wire        [`RECT_NUMMAX * 32 - 1 : 0]   i_head_wire   ,//P_W+P_W+P_W+P_W <= 64
     input  wire        [`RECT_NUMMAX * 32 - 1 : 0]   i_hair_wire   ,//P_W+P_W+P_W+P_W <= 64
-    input  wire        [`RECT_NUMMAX * (8 * 8) - 1 : 0]    i_posi_wire   ,//R_W+R_W+R_W+R_W <= 8
+    input  wire        [`RECT_NUMMAX * 4 - 1 : 0]    i_posi_wire   ,//R_W+R_W+R_W+R_W <= 8
 
     input  wire        [128 - 1 : 0]    i_varies                   ,
 
@@ -29,6 +29,7 @@ module show_rect_ascii
 
 wire                   [16 * ( 8 * 8) - 1 : 0]wire_varies          ;
 wire                   [16 * (32 * 8) - 1 : 0]wire_const_str       ;
+wire                   [16 * ( 8 * 8) - 1 : 0]wire_label_str       ;
 wire                   [A_W-1:0]        wire_ascii                 ;
 wire                   [   2:0]         wire_color                 ;
 wire                   [L_W-1:0]        wire_ys                    ;
@@ -39,6 +40,11 @@ wire                   [L_W-1:0]        wire_x1                    ;
 wire                   [L_W-1:0]        wire_y1                    ;
 wire                   [L_W-1:0]        wire_x2                    ;
 wire                   [L_W-1:0]        wire_y2                    ;
+
+label_str u_label_str
+(
+    .o_str                             (wire_label_str            ) 
+);
 
 const_str u_const_str
 (
@@ -60,6 +66,7 @@ show_rect_ascii_ctrl u_show_rect_ascii_ctrl
     .i_head_wire                       (i_head_wire               ),
     .i_hair_wire                       (i_hair_wire               ),
     .i_posi_wire                       (i_posi_wire               ),
+    .i_label_str                       (wire_label_str            ),
     .i_const_str                       (wire_const_str            ),
     .i_varies                          (wire_varies               ),
     .o_ascii                           (wire_ascii                ),

@@ -130,13 +130,13 @@ top_test u_top_test(
 
 //**************************** uart_sfr ****************************
 
-wire                   [ 255:0]         contains               ;
+wire                   [ 511:0]         contains                   ;
 uart_sfr u_uart_sfr(
     .sys_clk                           (sys_clk                   ),
     .sys_rst_n                         (sys_rst_n                 ),
     .rx                                (rx                        ),
     .tx                                (tx                        ),
-    .o_contains                        (contains              ) 
+    .o_contains                        (contains                  ) 
 );
 
 
@@ -243,7 +243,7 @@ corrode u_corrode(
 //-----
 wire        [`RECT_NUMMAX * 32 - 1 : 0] item                       ;
 wire        [`RECT_NUMMAX * 32 - 1 : 0] item_                      ;
-wire        [`RECT_NUMMAX * 64 - 1 : 0] label                      ;
+wire        [`RECT_NUMMAX * 4 - 1 : 0] label                      ;
 div_rect u_div_rect(
     .sys_clk                           (pre_clk                   ),
     .sys_rst_n                         (sys_rst_n  &  ~i_pre_vs   ),
@@ -288,7 +288,7 @@ show_corrode u_show_corrode(
 assign data_1 = (contains[{'h0E,3'b0} +: 1] == 'b0) ? data_1_raw : data_1_process;
 
 //-----Delay = 4 + 1
-conv u_conv(
+conv_show u_conv_show(
     .sys_clk_1                         (pre_clk                   ),
     .sys_clk_2                         (post_clk                  ),
     .sys_rst_n_1                       (sys_rst_n  &  ~i_pre_vs   ),
@@ -322,7 +322,7 @@ show_rect_ascii u_show_rect_ascii(
     .i_hair_wire                       (512'd0                    ),
     //.i_hair_wire                       ({448'd0,   fps1,8'd025,8'd150,8'd050,  8'd150,8'd050,8'd200,8'd100}),
     //.i_posi_wire                       ({16{8'd49, 8'd50, 8'd51, 8'd52, 8'd43, 8'd53, 8'd46, 8'd54}}                    ),
-    .i_posi_wire                       (label                     ),
+    .i_posi_wire                       (label                    ),
     .i_varies                          ({80'd0,    8'd213,8'd123,8'd222,       8'd000,fps2,fps1}),
     .i_vs                              (i_post_vs                 ),
     .i_valid                           (en_2                      ),
@@ -335,20 +335,10 @@ show_rect_ascii u_show_rect_ascii(
 always@(posedge post_clk or negedge sys_rst_n)
     if(sys_rst_n == 1'b0)
         o_post_data <= 'b0;
-    else if(contains[{'h10,3'b0} +: 3] == 3'b000)
-        o_post_data <=  data_1_raw;
-    else if(contains[{'h10,3'b0} +: 3] == 3'b001)
-        o_post_data <=  data_1_process;
-    else if(contains[{'h10,3'b0} +: 3] == 3'b010)
-        o_post_data <=  data_2_raw;
-    else if(contains[{'h10,3'b0} +: 3] == 3'b011)
-        o_post_data <=  data_2_process;
-    else if(contains[{'h10,3'b0} +: 3] == 3'b100)
+    else if(contains[{'h10,3'b0} +: 1] == 'b0)
         o_post_data <=  data_3_raw;
-    else if(contains[{'h10,3'b0} +: 3] == 3'b101)
-        o_post_data <=  data_3_process;
     else
-        o_post_data <=  i_post_data;
+        o_post_data <=  data_3_process;
 
 
 endmodule

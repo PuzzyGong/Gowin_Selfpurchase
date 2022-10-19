@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="top" Register="16" Lut="112">
+<Module name="top" Register="16" Lut="48">
     <SubModule name="u_interfaces_top" Register="1834" Alu="208" Lut="2401" Bsram="16" Ssram="117">
         <SubModule name="cmos_pll_m0"/>
         <SubModule name="mem_pll_m0"/>
         <SubModule name="u_tmds_rpll"/>
-        <SubModule name="i2c_config_m0" Register="13" Lut="25">
-            <SubModule name="i2c_master_top_m0" Register="17" Lut="710">
-                <SubModule name="byte_controller" Register="23" Lut="50">
-                    <SubModule name="bit_controller" Register="71" Alu="15" Lut="94"/>
+        <SubModule name="i2c_config_m0" Register="13" Lut="23">
+            <SubModule name="i2c_master_top_m0" Register="17" Lut="1033">
+                <SubModule name="byte_controller" Register="23" Lut="48">
+                    <SubModule name="bit_controller" Register="71" Alu="15" Lut="109"/>
                 </SubModule>
             </SubModule>
         </SubModule>
         <SubModule name="cmos_8_16bit_m0" Register="29" Lut="3"/>
-        <SubModule name="vga_timing_m0" Register="28" Lut="49"/>
+        <SubModule name="vga_timing_m0" Register="28" Lut="51"/>
     </SubModule>
-    <SubModule name="u_top_test" Register="66" Lut="93"/>
+    <SubModule name="u_top_test" Register="66" Lut="94"/>
     <SubModule name="u_uart_sfr">
         <SubModule name="u_debug">
-            <SubModule name="debug_ctrl_inst" Register="89" Alu="8" Lut="160"/>
-            <SubModule name="uart_tx_inst" Register="30" Lut="46"/>
-            <SubModule name="uart_rx_inst" Register="41" Lut="52"/>
+            <SubModule name="debug_ctrl_inst" Register="89" Alu="8" Lut="172"/>
+            <SubModule name="uart_tx_inst" Register="30" Lut="45"/>
+            <SubModule name="uart_rx_inst" Register="41" Lut="53"/>
         </SubModule>
-        <SubModule name="u_sfr00" Register="8" Lut="6"/>
+        <SubModule name="u_sfr00" Register="8" Lut="7"/>
         <SubModule name="u_sfr01" Register="8" Lut="2"/>
         <SubModule name="u_sfr02" Register="8" Lut="2"/>
-        <SubModule name="u_sfr03" Register="8" Lut="1"/>
+        <SubModule name="u_sfr03" Register="8" Lut="2"/>
         <SubModule name="u_sfr04" Register="8" Lut="2"/>
         <SubModule name="u_sfr05" Register="8" Lut="2"/>
         <SubModule name="u_sfr06" Register="8" Lut="2"/>
@@ -45,7 +45,7 @@
         <SubModule name="u_sfr15" Register="8" Lut="1"/>
         <SubModule name="u_sfr16" Register="8" Lut="1"/>
         <SubModule name="u_sfr17" Register="8" Lut="1"/>
-        <SubModule name="u_sfr18" Register="8" Lut="2"/>
+        <SubModule name="u_sfr18" Register="8" Lut="1"/>
         <SubModule name="u_sfr19" Register="8" Lut="1"/>
         <SubModule name="u_sfr1A" Register="8" Lut="1"/>
         <SubModule name="u_sfr1B" Register="8" Lut="1"/>
@@ -68,10 +68,10 @@
             <SubModule name="u4_mul" Ssram="4">
                 <SubModule name="u_mul_8" Dsp="1"/>
             </SubModule>
-            <SubModule name="u1_sub_abs" Register="16" Alu="9" Lut="31"/>
-            <SubModule name="u2_sub_abs" Register="16" Alu="10" Lut="32"/>
-            <SubModule name="u3_sub_abs" Register="16" Alu="9" Lut="31"/>
-            <SubModule name="u1_cmp" Register="1" Alu="33" Lut="30"/>
+            <SubModule name="u1_sub_abs" Register="16" Alu="9" Lut="33"/>
+            <SubModule name="u2_sub_abs" Register="16" Alu="10" Lut="34"/>
+            <SubModule name="u3_sub_abs" Register="16" Alu="9" Lut="33"/>
+            <SubModule name="u1_cmp" Register="1" Alu="32" Lut="37"/>
         </SubModule>
         <SubModule name="u2_div_color_HSV" Register="33" Alu="14" Lut="19">
             <SubModule name="u1_mul" Register="16">
@@ -86,19 +86,19 @@
             <SubModule name="u4_mul" Register="3" Lut="1" Ssram="4">
                 <SubModule name="u_mul_8" Dsp="1"/>
             </SubModule>
-            <SubModule name="u1_sub_abs" Register="16" Alu="9" Lut="31"/>
-            <SubModule name="u2_sub_abs" Register="16" Alu="10" Lut="32"/>
-            <SubModule name="u3_sub_abs" Register="16" Alu="9" Lut="31"/>
-            <SubModule name="u1_cmp" Register="1" Alu="33" Lut="29"/>
+            <SubModule name="u1_sub_abs" Register="16" Alu="9" Lut="33"/>
+            <SubModule name="u2_sub_abs" Register="16" Alu="10" Lut="34"/>
+            <SubModule name="u3_sub_abs" Register="16" Alu="9" Lut="33"/>
+            <SubModule name="u1_cmp" Register="1" Alu="33" Lut="38"/>
         </SubModule>
     </SubModule>
-    <SubModule name="u_intercept" Register="36" Lut="34"/>
-    <SubModule name="u_corrode" Register="742" Alu="8" Lut="546"/>
-    <SubModule name="u_div_rect" Register="1095" Alu="234" Lut="2031"/>
-    <SubModule name="u_show_corrode" Register="122" Alu="10" Lut="116">
+    <SubModule name="u_intercept" Register="36" Lut="24"/>
+    <SubModule name="u_corrode" Register="735" Alu="8" Lut="544"/>
+    <SubModule name="u_div_rect" Register="1119" Alu="234" Lut="1898"/>
+    <SubModule name="u_show_corrode" Register="122" Alu="10" Lut="118">
         <SubModule name="u_RAM_show_corrode" Bsram="1"/>
     </SubModule>
-    <SubModule name="u_conv" Register="1801" Alu="1522" Lut="1177">
+    <SubModule name="u_conv_show" Register="1268" Alu="633" Lut="2106">
         <SubModule name="u1_div_color_HSV" Register="67" Alu="28" Lut="21">
             <SubModule name="u1_mul" Register="16">
                 <SubModule name="u_mul_8" Dsp="1"/>
@@ -112,10 +112,10 @@
             <SubModule name="u4_mul" Ssram="4">
                 <SubModule name="u_mul_8" Dsp="1"/>
             </SubModule>
-            <SubModule name="u1_sub_abs" Register="16" Alu="9" Lut="31"/>
-            <SubModule name="u2_sub_abs" Register="16" Alu="10" Lut="32"/>
-            <SubModule name="u3_sub_abs" Register="16" Alu="9" Lut="31"/>
-            <SubModule name="u1_cmp" Register="1" Alu="33" Lut="29"/>
+            <SubModule name="u1_sub_abs" Register="16" Alu="9" Lut="33"/>
+            <SubModule name="u2_sub_abs" Register="16" Alu="10" Lut="34"/>
+            <SubModule name="u3_sub_abs" Register="16" Alu="9" Lut="33"/>
+            <SubModule name="u1_cmp" Register="1" Alu="33" Lut="34"/>
         </SubModule>
         <SubModule name="u2_div_color_HSV" Register="17" Lut="17">
             <SubModule name="u1_mul" Register="16">
@@ -130,10 +130,10 @@
             <SubModule name="u4_mul" Ssram="4">
                 <SubModule name="u_mul_8" Dsp="1"/>
             </SubModule>
-            <SubModule name="u1_sub_abs" Register="16" Alu="9" Lut="31"/>
-            <SubModule name="u2_sub_abs" Register="16" Alu="10" Lut="32"/>
-            <SubModule name="u3_sub_abs" Register="16" Alu="9" Lut="31"/>
-            <SubModule name="u1_cmp" Register="1" Alu="33" Lut="31"/>
+            <SubModule name="u1_sub_abs" Register="16" Alu="9" Lut="33"/>
+            <SubModule name="u2_sub_abs" Register="16" Alu="10" Lut="34"/>
+            <SubModule name="u3_sub_abs" Register="16" Alu="9" Lut="32"/>
+            <SubModule name="u1_cmp" Register="1" Alu="33" Lut="33"/>
         </SubModule>
         <SubModule name="u3_div_color_HSV" Register="17" Alu="6" Lut="17">
             <SubModule name="u1_mul" Register="16">
@@ -148,10 +148,10 @@
             <SubModule name="u4_mul" Ssram="4">
                 <SubModule name="u_mul_8" Dsp="1"/>
             </SubModule>
-            <SubModule name="u1_sub_abs" Register="16" Alu="9" Lut="31"/>
-            <SubModule name="u2_sub_abs" Register="16" Alu="10" Lut="32"/>
-            <SubModule name="u3_sub_abs" Register="16" Alu="9" Lut="31"/>
-            <SubModule name="u1_cmp" Register="1" Alu="32" Lut="27"/>
+            <SubModule name="u1_sub_abs" Register="16" Alu="9" Lut="33"/>
+            <SubModule name="u2_sub_abs" Register="16" Alu="10" Lut="34"/>
+            <SubModule name="u3_sub_abs" Register="16" Alu="9" Lut="32"/>
+            <SubModule name="u1_cmp" Register="1" Alu="33" Lut="36"/>
         </SubModule>
         <SubModule name="u4_div_color_HSV" Register="33" Alu="14" Lut="19">
             <SubModule name="u1_mul" Register="16">
@@ -166,15 +166,15 @@
             <SubModule name="u4_mul" Register="2" Ssram="4">
                 <SubModule name="u_mul_8" Dsp="1"/>
             </SubModule>
-            <SubModule name="u1_sub_abs" Register="16" Alu="9" Lut="31"/>
-            <SubModule name="u2_sub_abs" Register="16" Alu="10" Lut="32"/>
-            <SubModule name="u3_sub_abs" Register="16" Alu="9" Lut="31"/>
-            <SubModule name="u1_cmp" Register="1" Alu="33" Lut="29"/>
+            <SubModule name="u1_sub_abs" Register="16" Alu="9" Lut="33"/>
+            <SubModule name="u2_sub_abs" Register="16" Alu="10" Lut="33"/>
+            <SubModule name="u3_sub_abs" Register="16" Alu="9" Lut="33"/>
+            <SubModule name="u1_cmp" Register="1" Alu="32" Lut="36"/>
         </SubModule>
     </SubModule>
     <SubModule name="u_show_rect_ascii">
-        <SubModule name="u_show_rect_ascii_ctrl" Register="725" Alu="5" Lut="797"/>
-        <SubModule name="u_show_rect_ascii_single" Register="130" Alu="79" Lut="214" Ssram="4">
+        <SubModule name="u_show_rect_ascii_ctrl" Register="525" Alu="4" Lut="587"/>
+        <SubModule name="u_show_rect_ascii_single" Register="130" Alu="77" Lut="218" Ssram="4">
             <SubModule name="u_ROM_letter_show" Bsram="1"/>
             <SubModule name="u_RAM_letter_show" Register="2" Lut="9" Bsram="12"/>
         </SubModule>

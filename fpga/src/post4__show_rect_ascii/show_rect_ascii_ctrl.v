@@ -29,11 +29,12 @@ module show_rect_ascii_ctrl
 //只能写在上半部分 
     input  wire        [`RECT_NUMMAX * 32 - 1 : 0]   i_head_wire   ,//L_W+L_W+L_W+L_W <= 32
     input  wire        [`RECT_NUMMAX * 32 - 1 : 0]   i_hair_wire   ,//L_W+L_W+L_W+L_W <= 32
-    input  wire        [`RECT_NUMMAX * (8 * 8) - 1 : 0]   i_posi_wire   ,//R_W+R_W+R_W+R_W <= 8
+    input  wire        [`RECT_NUMMAX * 4  - 1 : 0]   i_posi_wire   ,//R_W+R_W+R_W+R_W <= 8
 
 //只能写在下半部分 
     input  wire        [16 * ( 8 * 8) - 1 : 0]       i_varies      ,
     input  wire        [16 * (32 * 8) - 1 : 0]       i_const_str   ,
+    input  wire        [16 * ( 8 * 8) - 1 : 0]       i_label_str   ,
 
     output reg         [A_W-1:0]        o_ascii                    ,
     output reg         [   2:0]         o_color                    ,
@@ -53,19 +54,21 @@ module show_rect_ascii_ctrl
 //-----
 reg                    [`RECT_NUMMAX * 32 - 1 : 0]   i_head_reg    ;//P_W+P_W+P_W+P_W <= 64
 reg                    [`RECT_NUMMAX * 32 - 1 : 0]   i_hair_reg    ;//P_W+P_W+P_W+P_W <= 64
-reg                    [`RECT_NUMMAX * (8 * 8) - 1 : 0]    i_posi_reg    ;//R_W+R_W+R_W+R_W <= 8
+reg                    [`RECT_NUMMAX * 4 - 1 : 0]    i_posi_reg_    ;//R_W+R_W+R_W+R_W <= 8
 
 always@(posedge sys_clk or negedge sys_rst_n)
     if(sys_rst_n == 1'b0)begin
         i_head_reg <= 'b0;
         i_hair_reg <= 'b0;
-        i_posi_reg <= 'b0;
+        i_posi_reg_ <= 'b0;
     end
     else if (i_start == 1'b1) begin
         i_head_reg <= i_head_wire;
         i_hair_reg <= i_hair_wire;
-        i_posi_reg <= i_posi_wire; 
+        i_posi_reg_ <= i_posi_wire;
     end
+
+reg  [64-1:0] i_posi_reg; 
 
 
 //-----
@@ -111,6 +114,7 @@ always@(posedge sys_clk or negedge sys_rst_n)
         o_y1<= 'b0;
         o_x2<= 'b0;
         o_y2<= 'b0;
+        i_posi_reg <= 'b0;
     end
     else if(cnt[19:16] == 4'b0000) begin
         o_ascii <= 'b0;
@@ -152,14 +156,34 @@ always@(posedge sys_clk or negedge sys_rst_n)
         o_color <= 3'b010;
     end
     else if(cnt[19:16] == 4'b1001 && cnt[7:0] == 'b0) begin
+        case(~i_posi_reg_[{~cnt[15:12], 2'b0} +: 4])
+            4'h0:  i_posi_reg <= i_label_str[{4'h0,6'b0} +: 64];
+            4'h1:  i_posi_reg <= i_label_str[{4'h1,6'b0} +: 64];
+            4'h2:  i_posi_reg <= i_label_str[{4'h2,6'b0} +: 64];
+            4'h3:  i_posi_reg <= i_label_str[{4'h3,6'b0} +: 64];
+            4'h4:  i_posi_reg <= i_label_str[{4'h4,6'b0} +: 64];
+            4'h5:  i_posi_reg <= i_label_str[{4'h5,6'b0} +: 64];
+            4'h6:  i_posi_reg <= i_label_str[{4'h6,6'b0} +: 64];
+            4'h7:  i_posi_reg <= i_label_str[{4'h7,6'b0} +: 64];
+            4'h8:  i_posi_reg <= i_label_str[{4'h8,6'b0} +: 64];
+            4'h9:  i_posi_reg <= i_label_str[{4'h9,6'b0} +: 64];
+            4'hA:  i_posi_reg <= i_label_str[{4'hA,6'b0} +: 64];
+            4'hB:  i_posi_reg <= i_label_str[{4'hB,6'b0} +: 64];
+            4'hC:  i_posi_reg <= i_label_str[{4'hC,6'b0} +: 64];
+            4'hD:  i_posi_reg <= i_label_str[{4'hD,6'b0} +: 64];
+            4'hE:  i_posi_reg <= i_label_str[{4'hE,6'b0} +: 64];
+            4'hF:  i_posi_reg <= i_label_str[{4'hF,6'b0} +: 64];
+        endcase
+    end
+    else if(cnt[19:16] == 4'b1001 && cnt[7:0] == 'b1) begin
         if(cnt[10] == 1'b0) begin
-            o_ascii <= i_posi_reg [{~cnt[15:12] , 6'b0} + {~cnt[10:8], 3'b0} +: 8  ];
+            o_ascii <= i_posi_reg [{~cnt[10:8], 3'b0} +: 8  ];
             o_color <= 3'b010;
             o_x     <= i_head_reg [{~cnt[15:12] , 5'b0} + L_W + L_W + L_W +: L_W] + {cnt[10:8], 3'b0};
             o_y     <= i_head_reg [{~cnt[15:12] , 5'b0}                   +: L_W] - 'd2;
         end
         if(cnt[10] == 1'b1) begin
-            o_ascii <= i_posi_reg [{~cnt[15:12] , 6'b0} + {~cnt[10:8], 3'b0} +: 8  ];
+            o_ascii <= i_posi_reg [{~cnt[10:8], 3'b0} +: 8  ];
             o_color <= 3'b010;
             o_y     <= i_head_reg [{~cnt[15:12] , 5'b0}                   +: L_W] - 'd15;
             if(cnt[9:8] == 2'b00)
