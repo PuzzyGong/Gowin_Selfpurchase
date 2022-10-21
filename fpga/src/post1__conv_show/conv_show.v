@@ -7,10 +7,8 @@ module conv_show
     parameter                           P_W = `POSITION_WIDTH
 )
 (
-    input  wire                         sys_clk_1                  ,
-    input  wire                         sys_rst_n_1                ,
-    input  wire                         sys_clk_2                  ,
-    input  wire                         sys_rst_n_2                ,
+    input  wire                         sys_clk                    ,
+    input  wire                         sys_rst_n                  ,
     input  wire                         item_rst_n                 ,
 
     input  wire        [C_W+2-1:0]      i_RGB_err                  ,
@@ -21,9 +19,15 @@ module conv_show
     input  wire        [C_W+2-1:0]      i_YELLOW_Vmax              ,
     input  wire        [C_W+2-1:0]      i_WB_threshold             ,
 
-    input  wire        [`RECT_NUMMAX * 32 - 1 : 0] item            ,
+    input  wire        [`RECT_NUMMAX * 32 - 1 : 0] i_item          ,
     output reg         [`RECT_NUMMAX * 32 - 1 : 0] o_item          ,
-    output reg         [`RECT_NUMMAX * 4 - 1 : 0] o_label         ,
+    output reg         [`RECT_NUMMAX * 4 - 1 : 0] o_label          ,
+
+    output reg         [   7:0]         o_num                      ,
+    output reg         [   7:0]         o_money                    ,
+    input  wire        [   7:0]         i_user                     ,
+    output wire        [   7:0]         o_user                     ,
+    output reg         [   7:0]         o_payment                  ,
 
     input  wire                         i_post_camvs               ,
     input  wire                         i_valid                    ,
@@ -39,8 +43,8 @@ reg                                     valid_1                    ;
 reg                                     valid_2                    ;
 reg                                     valid_3                    ;
 reg                                     valid_4                    ;
-always@(posedge sys_clk_2 or negedge sys_rst_n_2)
-    if(sys_rst_n_2 == 1'b0)begin
+always@(posedge sys_clk or negedge sys_rst_n)
+    if(sys_rst_n == 1'b0)begin
         valid_1 <= 'd0;
         valid_2 <= 'd0;
         valid_3 <= 'd0;
@@ -56,8 +60,8 @@ always@(posedge sys_clk_2 or negedge sys_rst_n_2)
 //----- 第 4 层
 reg                    [P_W-1:0]        cnt_x_4                    ;
 reg                    [P_W-1:0]        cnt_y_4                    ;
-always@(posedge sys_clk_2 or negedge sys_rst_n_2)
-    if(sys_rst_n_2 == 1'b0)begin
+always@(posedge sys_clk or negedge sys_rst_n)
+    if(sys_rst_n == 1'b0)begin
         cnt_x_4 <= 'b0;
         cnt_y_4 <= 'b0;
     end
@@ -75,8 +79,8 @@ always@(posedge sys_clk_2 or negedge sys_rst_n_2)
 //----- 第 5 层
 reg                    [P_W-1:0]        cnt_x_5                    ;
 reg                    [P_W-1:0]        cnt_y_5                    ;
-always@(posedge sys_clk_2 or negedge sys_rst_n_2)
-    if(sys_rst_n_2 == 1'b0)begin
+always@(posedge sys_clk or negedge sys_rst_n)
+    if(sys_rst_n == 1'b0)begin
         cnt_x_5 <= 'b0;
         cnt_y_5 <= 'b0;
     end
@@ -86,11 +90,11 @@ always@(posedge sys_clk_2 or negedge sys_rst_n_2)
     end
 
 reg                                     inpic_5                    ;
-always@(posedge sys_clk_2 or negedge sys_rst_n_2)
-    if(sys_rst_n_2 == 1'b0) begin
+always@(posedge sys_clk or negedge sys_rst_n)
+    if(sys_rst_n == 1'b0) begin
         inpic_5 <= 'b0;
     end
-    else if(i_post_camvs == 1'b1 && valid_4 == 1'b1 && cnt_x_4 >= `PIC_X1 && cnt_x_4 <= `PIC_X2 && cnt_y_4 >= `PIC_Y1 && cnt_y_4 <= `PIC_Y2)
+    else if(valid_4 == 1'b1 && cnt_x_4 >= `PIC_X1 && cnt_x_4 <= `PIC_X2 && cnt_y_4 >= `PIC_Y1 && cnt_y_4 <= `PIC_Y2)
         inpic_5 <= 1'b1;
     else
         inpic_5 <= 1'b0;
@@ -150,8 +154,8 @@ div_color_HSV
     .BLACK_COLOR                       (16'b00000_100000_00000    )
 )
 u1_div_color_HSV(
-    .sys_clk                           (sys_clk_2                 ),
-    .sys_rst_n                         (sys_rst_n_2               ),
+    .sys_clk                           (sys_clk                 ),
+    .sys_rst_n                         (sys_rst_n               ),
     .i_R0                              (6'b111111                 ),
     .i_G0                              (6'b000000                 ),
     .i_B0                              (6'b000000                 ),
@@ -179,8 +183,8 @@ div_color_HSV
     .BLACK_COLOR                       (16'b00000_000000_10000    )
 )
 u2_div_color_HSV(
-    .sys_clk                           (sys_clk_2                 ),
-    .sys_rst_n                         (sys_rst_n_2               ),
+    .sys_clk                           (sys_clk                   ),
+    .sys_rst_n                         (sys_rst_n                 ),
     .i_R0                              (6'b000000                 ),
     .i_G0                              (6'b111111                 ),
     .i_B0                              (6'b000000                 ),
@@ -208,8 +212,8 @@ div_color_HSV
     .BLACK_COLOR                       (16'b10000_000000_00000    )
 )
 u3_div_color_HSV(
-    .sys_clk                           (sys_clk_2                 ),
-    .sys_rst_n                         (sys_rst_n_2               ),
+    .sys_clk                           (sys_clk                   ),
+    .sys_rst_n                         (sys_rst_n                 ),
     .i_R0                              (6'b000000                 ),
     .i_G0                              (6'b000000                 ),
     .i_B0                              (6'b111111                 ),
@@ -237,8 +241,8 @@ div_color_HSV
     .BLACK_COLOR                       (16'b10000_100000_10000    )
 )
 u4_div_color_HSV(
-    .sys_clk                           (sys_clk_2                 ),
-    .sys_rst_n                         (sys_rst_n_2               ),
+    .sys_clk                           (sys_clk                 ),
+    .sys_rst_n                         (sys_rst_n               ),
     .i_R0                              (6'b100000                 ),
     .i_G0                              (6'b100000                 ),
     .i_B0                              (6'b000000                 ),
@@ -263,8 +267,8 @@ assign YELLOW_RGB = {YELLOW_R[5:1], YELLOW_G[5:0], YELLOW_B[5:1]};
 wire BLACK__wb;
 assign BLACK__wb = ({{2'b0, RED____R_raw} + {2'b0, RED____G_raw} + {2'b0, RED____B_raw}} > i_WB_threshold) ? 1'b0 : 1'b1;
 //-----
-always@(posedge sys_clk_2 or negedge sys_rst_n_2)
-    if(sys_rst_n_2 == 1'b0) begin
+always@(posedge sys_clk or negedge sys_rst_n)
+    if(sys_rst_n == 1'b0) begin
         o_valid    <= 'd0;
         o_data     <= 'd0;
         o_data_raw <= 'd0;
@@ -288,37 +292,30 @@ always@(posedge sys_clk_2 or negedge sys_rst_n_2)
 
 
 //*************** 计数 ***************
-reg         [`RECT_NUMMAX - 1 : 0] RED____flag               ;
-reg         [`RECT_NUMMAX - 1 : 0] GREEN__flag               ;
-reg         [`RECT_NUMMAX - 1 : 0] BLUE___flag               ;
-reg         [`RECT_NUMMAX - 1 : 0] YELLOW_flag               ;
-reg         [`RECT_NUMMAX - 1 : 0] BLACK__flag               ;
-reg         [`RECT_NUMMAX - 1 : 0] WHITE__flag               ;
-reg         [`RECT_NUMMAX - 1 : 0] FAT____flag               ;
-reg         [`RECT_NUMMAX - 1 : 0] SKIN___flag               ;
-reg         [`RECT_NUMMAX - 1 : 0] NORMAL_flag               ;
+reg                    [`RECT_NUMMAX - 1 : 0]       RED____flag    ;
+reg                    [`RECT_NUMMAX - 1 : 0]       GREEN__flag    ;
+reg                    [`RECT_NUMMAX - 1 : 0]       BLUE___flag    ;
+reg                    [`RECT_NUMMAX - 1 : 0]       YELLOW_flag    ;
+reg                    [`RECT_NUMMAX - 1 : 0]       BLACK__flag    ;
+reg                    [`RECT_NUMMAX - 1 : 0]       WHITE__flag    ;
+reg                    [`RECT_NUMMAX - 1 : 0]       FAT____flag    ;
+reg                    [`RECT_NUMMAX - 1 : 0]       SKIN___flag    ;
+reg                    [`RECT_NUMMAX - 1 : 0]       NORMAL_flag    ;
 
-reg         [`RECT_NUMMAX * 64 - 1 : 0] item_tmp               ;
-//reg         [`RECT_NUMMAX * 8   - 1 : 0] flag_tmp               ;
+reg                    [`RECT_NUMMAX * 32 - 1 : 0]  item           ;
+reg                    [`RECT_NUMMAX * 64 - 1 : 0]  item_tmp       ;
+
+
 
 genvar k;
 generate
 
-// for(k = 2; k < `RECT_NUMMAX; k = k + 1) begin
-//     always@(posedge sys_clk_2 or negedge item_rst_n) begin
-//         if(item_rst_n == 1'b0) begin
-//             o_item   [{k, 5'b0} +: 32]  <= 'd0;
-//             item_tmp [{k, 6'b0} +: 64] <= 'd0;
-//             o_label  [{k, 6'b0}             +:64] <= "        ";
-//         end
-//     end
-// end
-// for(k = 1; k < 2; k = k + 1) begin
-for(k = 0; k < `RECT_NUMMAX; k = k + 1) begin
+for(k = 1; k < `RECT_NUMMAX; k = k + 1) begin
 
-    always@(posedge sys_clk_2 or negedge item_rst_n) begin
+    always@(posedge sys_clk or negedge item_rst_n) begin
         if(item_rst_n == 1'b0) begin
             o_item   [{k, 5'b0} +: 32]  <= 'd0;
+            item     [{k, 5'b0} +: 32]  <= 'd0;
             item_tmp [{k, 6'b0} +: 64] <= 'd0;
             o_label[{k, 2'b0} +:4] <= 'd0;
 
@@ -333,6 +330,7 @@ for(k = 0; k < `RECT_NUMMAX; k = k + 1) begin
             NORMAL_flag[k +: 1] <= 'd0;
         end
         else if(inpic_5 == 1'b1 && cnt_x_5 == `PIC_X1 && cnt_y_5 == `PIC_Y1) begin
+            item     [{k, 5'b0} +: 32] <= i_item[{k, 5'b0} +: 32];
             item_tmp [{k, 6'b0} +: 64] <= 'd0;
 
             RED____flag[k +: 1] <= 'd0;
@@ -389,13 +387,13 @@ for(k = 0; k < `RECT_NUMMAX; k = k + 1) begin
             else if(RED____flag[k +: 1] == 1'b1 && BLACK__flag[k +: 1] == 1'b1)  
                 o_label[{k, 2'b0} +:4] <= 'd6;
             
-            else if(FAT____flag[k +: 1] == 1'b1) 
+            else if(RED____flag[k +: 1] == 1'b1 && FAT____flag[k +: 1] == 1'b1) 
                 o_label[{k, 2'b0} +:4] <= 'd7;
 
-            else if(SKIN___flag[k +: 1] == 1'b1) 
+            else if(RED____flag[k +: 1] == 1'b1 && SKIN___flag[k +: 1] == 1'b1) 
                 o_label[{k, 2'b0} +:4] <= 'd8;
 
-            else if(NORMAL_flag[k +: 1] == 1'b1) 
+            else if(RED____flag[k +: 1] == 1'b1 && NORMAL_flag[k +: 1] == 1'b1) 
                 o_label[{k, 2'b0} +:4] <= 'd9;
 
             else
@@ -441,6 +439,47 @@ for(k = 0; k < `RECT_NUMMAX; k = k + 1) begin
     end
 end
 endgenerate
+
+reg                    [   7:0]         num                        ;
+reg                    [   7:0]         money                      ;
+reg                    [   3:0]         finish_cnt                 ;
+
+always@(posedge sys_clk or negedge item_rst_n) 
+    if(item_rst_n == 1'b0) 
+        finish_cnt <= 'd0; 
+    else if(inpic_5 == 1'b1 && cnt_x_5 == `PIC_X2 && cnt_y_5 == `PIC_Y2)
+        finish_cnt <= 'd1;
+    else if(finish_cnt != 'd0)
+        finish_cnt <= finish_cnt + 1'b1;
+
+always@(posedge sys_clk or negedge item_rst_n) 
+    if(item_rst_n == 1'b0) begin
+        num   <= 'd0;
+        money <= 'd0;
+        o_num   <= 'd0;
+        o_money <= 'd0;
+    end 
+    else if(finish_cnt == 'd15) begin
+        num   <= 'd0;
+        money <= 'd0;
+        o_num   <= num  ;
+        o_money <= money;
+    end
+    else if(finish_cnt != 0) begin
+        if(o_label[{finish_cnt, 2'b0} +:4] != 'd0) begin
+            num   <= num   + 1'b1;  
+            money <= money + o_label[{finish_cnt, 2'b0} +:4];
+        end
+    end
+
+always@(posedge sys_clk or negedge item_rst_n) 
+    if(item_rst_n == 1'b0) 
+        o_payment <= 'd0;
+    else if(i_user != 'd0 && finish_cnt == 'd15 && money > o_money)
+        o_payment <= o_payment + money - o_money;
+    else if(i_user == 'd0)
+        o_payment <= 'd0;
+        
 
 endmodule
 

@@ -36,9 +36,7 @@ module div_color_HSV
     output reg                          o_wb                       
 );
 
-
-//三段流水
-//***********************************************************************
+//******************** 数据处理 第 1~3 层 ********************
 
 wire                   [N_W-1:0]        tmp_1_1                    ;
 reg                    [N_W-1:0]        tmp_1_2                    ;
@@ -150,7 +148,7 @@ cmp u1_cmp(
     .o_data                            (tmp_3_1                   ) 
 );
 
-//-----信号同步
+//******************** 信号同步 第 1~4 层 ********************
 reg                                     valid_1                    ;
 reg                                     valid_2                    ;
 reg                                     valid_3                    ;
@@ -207,7 +205,7 @@ always@(posedge sys_clk or negedge sys_rst_n)
     end 
 
 
-//----- 第 4 层
+//******************** 数据处理 第 4 层 ********************
 always@(posedge sys_clk or negedge sys_rst_n)
     if(sys_rst_n == 1'b0) begin
         o_wb <= 'b0;

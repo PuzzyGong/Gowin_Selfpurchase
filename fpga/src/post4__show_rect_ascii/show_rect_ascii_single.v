@@ -2,22 +2,22 @@
 
 //所有 i参数 需要在同一个时钟周期置入，包括：
 /*
-i_ascii 
-i_color 
-i_x     
-i_y     
-i_x1    
-i_y1    
-i_x2    
-i_y2    
+i_ascii
+i_color
+i_x
+i_y
+i_x1
+i_y1
+i_x2
+i_y2
 */
 //如果不绘制任何图形，需要
 /*
 i_ascii = 'b1;
-i_x1    = 'b0; 
-i_y1    = 'b0; 
-i_x2    = 'b0; 
-i_y2    = 'b0; 
+i_x1    = 'b0;
+i_y1    = 'b0;
+i_x2    = 'b0;
+i_y2    = 'b0;
 */
 
 module show_rect_ascii_single
@@ -32,8 +32,8 @@ module show_rect_ascii_single
 
 //-----i_ascii == 0    时，选择 clear_ram ;
 //-----i_ascii == 1    时，选择 rect_draw ;
-//-----i_ascii == else 时，选择 ascii_draw;
 //-----i_ascii == ' '  时，不进行任何绘制;
+//-----i_ascii == else 时，选择 ascii_draw;
     input  wire        [A_W-1:0]        i_ascii                    ,
     input  wire        [   2:0]         i_color                    ,
 
@@ -54,104 +54,106 @@ module show_rect_ascii_single
     input  wire        [L_W-1:0]        i_y2                       ,
 //-----
 
-    input  wire                         i_vs                       ,
     input  wire                         i_valid                    ,
     input  wire        [16-1:0]         i_data                     ,
     output reg                          o_valid                    ,
-    output reg         [16-1:0]         o_data                     ,                      
-    output reg         [16-1:0]         o_data_raw                      
+    output reg         [16-1:0]         o_data                     ,
+    output reg         [16-1:0]         o_data_raw                  
 );
 
+//*************** RAM_PRE ***************
+
+//----- 第 1 层
 /*ascii_draw*/
-reg                    [3-1:0]          cnt_x8                     ;
-reg                    [4-1:0]          cnt_y16                    ;
+reg                    [3-1:0]          cnt_x8_0                   ;
+reg                    [4-1:0]          cnt_y16_0                  ;
 always@(posedge sys_clk or negedge sys_rst_n)
     if(sys_rst_n == 1'b0)begin
-        cnt_x8 <= 'b0;
-        cnt_y16 <= 'b0;
+        cnt_x8_0 <= 'b0;
+        cnt_y16_0 <= 'b0;
     end
     else
-        if(cnt_y16 == 16 - 1)
-            if(cnt_x8 == 8 - 1) begin
-                cnt_x8 <= 'b0;
-                cnt_y16 <= 'b0;
+        if(cnt_y16_0 == 16 - 1)
+            if(cnt_x8_0 == 8 - 1) begin
+                cnt_x8_0 <= 'b0;
+                cnt_y16_0 <= 'b0;
             end
             else begin
-                cnt_x8 <= cnt_x8 + 1'b1;
-                cnt_y16 <= 'b0;
+                cnt_x8_0 <= cnt_x8_0 + 1'b1;
+                cnt_y16_0 <= 'b0;
             end
         else
-            cnt_y16 <= cnt_y16 + 1'b1;
+            cnt_y16_0 <= cnt_y16_0 + 1'b1;
 
-wire                                    rom_data                   ;
+wire                                    rom_dout_1                 ;
 ROM_letter_show u_ROM_letter_show
 (
-    .dout                              (rom_data                  ),//output [0:0] dout
+    .dout                              (rom_dout_1                ),//output [0:0] dout
     .clk                               (sys_clk                   ),//input clk
     .oce                               (1'b1                      ),//input oce
     .ce                                (1'b1                      ),//input ce
     .reset                             (1'b0                      ),//input reset
-    .ad                                ({i_ascii, cnt_x8, cnt_y16}) //input [13:0] ad
+    .ad                                ({i_ascii, cnt_x8_0, cnt_y16_0}) //input [13:0] ad
 );
 
-reg                    [L_W-1:0]        ascii_x                    ;
-reg                    [L_W-1:0]        ascii_y                    ;
+reg                    [L_W-1:0]        ascii_x_1                  ;
+reg                    [L_W-1:0]        ascii_y_1                  ;
 always@(posedge sys_clk or negedge sys_rst_n)
     if(sys_rst_n == 1'b0) begin
-        ascii_x <= 'b0;
-        ascii_y <= 'b0;
+        ascii_x_1 <= 'b0;
+        ascii_y_1 <= 'b0;
     end
     else begin
-        ascii_x <= i_x + cnt_x8;
-        ascii_y <= i_y + cnt_y16;
+        ascii_x_1 <= i_x + cnt_x8_0;
+        ascii_y_1 <= i_y + cnt_y16_0;
     end
 
 /*rect_draw*/
-reg                    [L_W-1:0]        rect_x                     ;
-reg                    [L_W-1:0]        rect_y                     ;
+reg                    [L_W-1:0]        rect_x_1                   ;
+reg                    [L_W-1:0]        rect_y_1                   ;
 
 always@(posedge sys_clk or negedge sys_rst_n)
     if(sys_rst_n == 1'b0) begin
-        rect_x <= 'b0;
-        rect_y <= 'b0;
+        rect_x_1 <= 'b0;
+        rect_y_1 <= 'b0;
     end
-    else if(rect_y == i_y1 && rect_x >= i_x1 && rect_x < i_x2)
-        rect_x <= rect_x + 1'b1;
-    else if(rect_x == i_x2 && rect_y >= i_y1 && rect_y < i_y2)
-        rect_y <= rect_y + 1'b1;
-    else if(rect_y == i_y2 && rect_x > i_x1 && rect_x <= i_x2)
-        rect_x <= rect_x - 1'b1;
-    else if(rect_x == i_x1 && rect_y > i_y1 && rect_y <= i_y2)
-        rect_y <= rect_y - 1'b1;
+    else if(rect_y_1 == i_y1 && rect_x_1 >= i_x1 && rect_x_1 < i_x2)
+        rect_x_1 <= rect_x_1 + 1'b1;
+    else if(rect_x_1 == i_x2 && rect_y_1 >= i_y1 && rect_y_1 < i_y2)
+        rect_y_1 <= rect_y_1 + 1'b1;
+    else if(rect_y_1 == i_y2 && rect_x_1 > i_x1 && rect_x_1 <= i_x2)
+        rect_x_1 <= rect_x_1 - 1'b1;
+    else if(rect_x_1 == i_x1 && rect_y_1 > i_y1 && rect_y_1 <= i_y2)
+        rect_y_1 <= rect_y_1 - 1'b1;
     else begin
-        rect_x <= i_x1;
-        rect_y <= i_y1;
+        rect_x_1 <= i_x1;
+        rect_y_1 <= i_y1;
     end
 
 /*clear_ram*/
-reg                    [L_W-1:0]        clear_x                      ;
-reg                    [L_W-1:0]        clear_y                      ;
+reg                    [L_W-1:0]        clear_x_1                  ;
+reg                    [L_W-1:0]        clear_y_1                  ;
 always@(posedge sys_clk or negedge sys_rst_n)
     if(sys_rst_n == 1'b0)begin
-        clear_x <= 'b0;
-        clear_y <= 'b0;
+        clear_x_1 <= 'b0;
+        clear_y_1 <= 'b0;
     end
-    else if(clear_y > i_ye || clear_y < i_ys)
-        clear_y <= i_ys;
+    else if(clear_y_1 > i_ye || clear_y_1 < i_ys)
+        clear_y_1 <= i_ys;
     else
-        if(clear_x == 0)
-            if(clear_y == i_ye) begin
-                clear_x <= 'b1;
-                clear_y <= i_ys;
+        if(clear_x_1 == 0)
+            if(clear_y_1 == i_ye) begin
+                clear_x_1 <= 'b1;
+                clear_y_1 <= i_ys;
             end
             else begin
-                clear_x <= 'b1;
-                clear_y <= clear_y + 1'b1;
+                clear_x_1 <= 'b1;
+                clear_y_1 <= clear_y_1 + 1'b1;
             end
         else
-            clear_x <= clear_x + 1'b1;
+            clear_x_1 <= clear_x_1 + 1'b1;
 
-/*4 to 1*/
+/*else*/
 reg                    [   2:0]         color_1                    ;
 always@(posedge sys_clk or negedge sys_rst_n)
     if(sys_rst_n == 1'b0)
@@ -159,98 +161,97 @@ always@(posedge sys_clk or negedge sys_rst_n)
     else
         color_1 <= i_color;
 
-reg                    [A_W-1:0]         ascii_1                    ;
+reg                    [A_W-1:0]        ascii_1                    ;
 always@(posedge sys_clk or negedge sys_rst_n)
     if(sys_rst_n == 1'b0)
         ascii_1 <= 'b0;
     else
         ascii_1 <= i_ascii;
 
-reg                                     ram_cea                    ;
-reg                    [  15:0]         ram_ada                    ;
+//----- 第 2 层
+reg                                     cea_2                      ;
+reg                    [  15:0]         ada_2                      ;
+reg                    [   2:0]         din_2                      ;
 
 always@(posedge sys_clk or negedge sys_rst_n)
     if(sys_rst_n == 1'b0) begin
-        ram_cea <= 'b0;
-        ram_ada <= 'b0;
+        cea_2 <= 'b0;
+        ada_2 <= 'b0;
+        din_2 <= 'b0;
     end
     else if(ascii_1 == 'b0) begin
-        ram_cea <= 'b1;
-        ram_ada <= {clear_y, clear_x};
+        cea_2 <= 'b1;
+        ada_2 <= {clear_y_1, clear_x_1};
+        din_2 <= 'b0;
     end
     else if(ascii_1 == 'b1) begin
-        ram_cea <= 'b1;
-        ram_ada <= {rect_y, rect_x};
+        cea_2 <= 'b1;
+        ada_2 <= {rect_y_1, rect_x_1};
+        din_2 <= color_1;
     end
     else if(ascii_1 == 'd32) begin
-        ram_cea <= 'b0;
-        ram_ada <= {ascii_y, ascii_x};
+        cea_2 <= 'b0;
+        ada_2 <= {ascii_y_1, ascii_x_1};
+        din_2 <= 'b0;
+    end
+    else if(rom_dout_1 == 1'b0) begin
+        cea_2 <= 'b1;
+        ada_2 <= {ascii_y_1, ascii_x_1};
+        din_2 <= 'b0;
     end
     else begin
-        ram_cea <= 'b1;
-        ram_ada <= {ascii_y, ascii_x};
+        cea_2 <= 'b1;
+        ada_2 <= {ascii_y_1, ascii_x_1};
+        din_2 <= color_1;
     end
-        
-reg                    [   2:0]         color_2                    ;
-always@(posedge sys_clk or negedge sys_rst_n)
-    if(sys_rst_n == 1'b0)
-        color_2 <= 'b0;
-    else if(ascii_1 == 'b0)
-        color_2 <= 'b0;
-    else if(ascii_1 == 'b1)
-        color_2 <= color_1;
-    else if(rom_data == 1'b0)
-        color_2 <= 'b0;
-    else
-        color_2 <= color_1;
 
-//-----
-wire                   [  15:0]         ram_addout                 ;
-wire                   [   2:0]         ram_dataout                ;
+
+//*************** RAM ***************
+
+wire                   [  15:0]         adb_0                      ;
+wire                   [   2:0]         dout_1                     ;
 RAM_letter_show u_RAM_letter_show
 (
-    .dout                              (ram_dataout               ),//output [2:0] dout
+    .dout                              (dout_1                    ),//output [2:0] dout
     .clka                              (sys_clk                   ),//input clka
-    .cea                               (ram_cea                   ),//input cea
+    .cea                               (cea_2                     ),//input cea
     .reseta                            (1'b0                      ),//input reseta
     .clkb                              (sys_clk                   ),//input clkb
     .ceb                               (1'b1                      ),//input ceb
     .resetb                            (1'b0                      ),//input resetb
     .oce                               (1'b1                      ),//input oce
-    .ada                               (ram_ada                   ),//input [15:0] ada
-    .din                               (color_2                   ),//input [2:0] din
-    .adb                               (ram_addout                ) //input [15:0] adb
+    .ada                               (ada_2                     ),//input [15:0] ada
+    .din                               (din_2                     ),//input [2:0] din
+    .adb                               (adb_0                     ) //input [15:0] adb
 );
 
 
-//-----
-reg                    [P_W-1:0]        cnt_x                      ;
-reg                    [P_W-1:0]        cnt_y                      ;
+//*************** RAM_POST ***************
+
+//----- 第 0 层
+reg                    [P_W-1:0]        cnt_x_0                    ;
+reg                    [P_W-1:0]        cnt_y_0                    ;
 always@(posedge sys_clk or negedge sys_rst_n)
     if(sys_rst_n == 1'b0)begin
-        cnt_x <= 'b0;
-        cnt_y <= 'b0;
-    end
-    else if(i_vs == 1'b0)begin
-        cnt_x <= 'b0;
-        cnt_y <= 'b0;
+        cnt_x_0 <= 'b0;
+        cnt_y_0 <= 'b0;
     end
     else if(i_valid == 1'b1)
-        if(cnt_x == `OV5640_X - 1)
-            if(cnt_y == `OV5640_Y - 1) begin
-                cnt_x <= 'b0;
-                cnt_y <= 'b0;
+        if(cnt_x_0 == `OV5640_X - 1)
+            if(cnt_y_0 == `OV5640_Y - 1) begin
+                cnt_x_0 <= 'b0;
+                cnt_y_0 <= 'b0;
             end
             else begin
-                cnt_x <= 'b0;
-                cnt_y <= cnt_y + 1'b1;
+                cnt_x_0 <= 'b0;
+                cnt_y_0 <= cnt_y_0 + 1'b1;
             end
         else
-            cnt_x <= cnt_x + 1'b1;
+            cnt_x_0 <= cnt_x_0 + 1'b1;
 
-assign ram_addout = {cnt_y[9:2], cnt_x[9:2]};
+assign adb_0 = {cnt_y_0[9:2], cnt_x_0[9:2]};
 
-//delay
+//----- 信号同步 第 1~3 层
 reg                                     valid_1                    ;
 reg                                     valid_2                    ;
 always@(posedge sys_clk or negedge sys_rst_n)
@@ -279,30 +280,32 @@ always@(posedge sys_clk or negedge sys_rst_n)
         o_data_raw <= data_2;
     end
 
-reg                    [   2:0]         ram_dataout_d              ;
+//----- 第 2 层
+reg                    [   2:0]         dout_2                     ;
 always@(posedge sys_clk or negedge sys_rst_n)
     if(sys_rst_n == 1'b0)
-        ram_dataout_d <= 'b0;
+        dout_2 <= 'b0;
     else
-        ram_dataout_d <= ram_dataout;
+        dout_2 <= dout_1;
 
+//----- 第 3 层
 always@(posedge sys_clk or negedge sys_rst_n)
     if(sys_rst_n == 1'b0)
         o_data <= 'b0;
-    else if(ram_dataout_d == 3'b001)
-        o_data <= 16'b00000_000000_01000;
-    else if(ram_dataout_d == 3'b010)
-        o_data <= 16'b00000_010000_00000;
-    else if(ram_dataout_d == 3'b100)
-        o_data <= 16'b01000_000000_00000;
-    else if(ram_dataout_d == 3'b011)
-        o_data <= 16'b00000_010000_01000;
-    else if(ram_dataout_d == 3'b101)
-        o_data <= 16'b01000_000000_01000;
-    else if(ram_dataout_d == 3'b110)
-        o_data <= 16'b01000_010000_00000;
-    else if(ram_dataout_d == 3'b111)
-        o_data <= 16'b01000_010000_01000;
+    else if(dout_2 == 3'b001)
+        o_data <= `ASCII_RECT_COLOR_B;
+    else if(dout_2 == 3'b010)
+        o_data <= `ASCII_RECT_COLOR_G;
+    else if(dout_2 == 3'b100)
+        o_data <= `ASCII_RECT_COLOR_R;
+    else if(dout_2 == 3'b011)
+        o_data <= `ASCII_RECT_COLOR_GB;
+    else if(dout_2 == 3'b101)
+        o_data <= `ASCII_RECT_COLOR_RB;
+    else if(dout_2 == 3'b110)
+        o_data <= `ASCII_RECT_COLOR_RG;
+    else if(dout_2 == 3'b111)
+        o_data <= `ASCII_RECT_COLOR_W;
     else
         o_data <= data_2;
 

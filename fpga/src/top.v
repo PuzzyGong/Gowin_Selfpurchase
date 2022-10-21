@@ -130,7 +130,10 @@ top_test u_top_test(
 
 //**************************** uart_sfr ****************************
 
-wire                   [ 511:0]         contains                   ;
+wire                   [ 255:0]         contains                   ;
+
+`define SFR
+`ifdef SFR
 uart_sfr u_uart_sfr(
     .sys_clk                           (sys_clk                   ),
     .sys_rst_n                         (sys_rst_n                 ),
@@ -138,6 +141,40 @@ uart_sfr u_uart_sfr(
     .tx                                (tx                        ),
     .o_contains                        (contains                  ) 
 );
+`else
+assign contains = {`RST_VALUE_001F,
+                   `RST_VALUE_001E,
+                   `RST_VALUE_001D,
+                   `RST_VALUE_001C,
+                   `RST_VALUE_001B,
+                   `RST_VALUE_001A,
+                   `RST_VALUE_0019,
+                   `RST_VALUE_0018,
+                   `RST_VALUE_0017,
+                   `RST_VALUE_0016,
+                   `RST_VALUE_0015,
+                   `RST_VALUE_0014,
+                   `RST_VALUE_0013,
+                   `RST_VALUE_0012,
+                   `RST_VALUE_0011,
+                   `RST_VALUE_0010,
+                   `RST_VALUE_000F,
+                   `RST_VALUE_000E,
+                   `RST_VALUE_000D,
+                   `RST_VALUE_000C,
+                   `RST_VALUE_000B,
+                   `RST_VALUE_000A,
+                   `RST_VALUE_0009,
+                   `RST_VALUE_0008,
+                   `RST_VALUE_0007,
+                   `RST_VALUE_0006,
+                   `RST_VALUE_0005,
+                   `RST_VALUE_0004,
+                   `RST_VALUE_0003,
+                   `RST_VALUE_0002,
+                   `RST_VALUE_0001,
+                   `RST_VALUE_0000 };
+`endif
 
 
 //**************************** pre ****************************
@@ -241,9 +278,10 @@ corrode u_corrode(
 );
 
 //-----
-wire        [`RECT_NUMMAX * 32 - 1 : 0] item                       ;
-wire        [`RECT_NUMMAX * 32 - 1 : 0] item_                      ;
-wire        [`RECT_NUMMAX * 4 - 1 : 0] label                      ;
+wire                   [`RECT_NUMMAX * 32 - 1 : 0]  item_1         ;
+wire                   [`RECT_NUMMAX * 32 - 1 : 0]  item_2         ;
+wire                   [`RECT_NUMMAX *  4 - 1 : 0]  label          ;
+
 div_rect u_div_rect(
     .sys_clk                           (pre_clk                   ),
     .sys_rst_n                         (sys_rst_n  &  ~i_pre_vs   ),
@@ -252,7 +290,7 @@ div_rect u_div_rect(
     .i_valid                           (de_3                      ),
     .i_wb                              (wb_3                      ),
     .o_finish                          (o_finish                  ),
-    .o_item                            (item                      ) 
+    .o_item                            (item_1                    ) 
 );
 
 
@@ -268,31 +306,22 @@ wire                   [  15:0]         data_2                     ;
 wire                   [  15:0]         data_2_process             ;
 wire                   [  15:0]         data_2_raw                 ;
 
+wire                                    en_3                       ;
+wire                   [  15:0]         data_3                     ;
 wire                   [  15:0]         data_3_process             ;
 wire                   [  15:0]         data_3_raw                 ;
 
-//-----Delay = 2
-show_corrode u_show_corrode(
-    .sys_clk_1                         (pre_clk                   ),
-    .sys_clk_2                         (post_clk                  ),
-    .sys_rst_n_1                       (sys_rst_n  &  ~i_pre_vs   ),
-    .sys_rst_n_2                       (sys_rst_n  &  i_post_vs   ),
-    .i_valid_1                         (de_3                      ),
-    .i_wb_1                            (wb_3                      ),
-    .i_valid                           (i_post_de                 ),
-    .i_data                            (i_post_data               ),
-    .o_valid                           (en_1                      ),
-    .o_data                            (data_1_process            ),
-    .o_data_raw                        (data_1_raw                ) 
-);
-assign data_1 = (contains[{'h0E,3'b0} +: 1] == 'b0) ? data_1_raw : data_1_process;
+wire                   [  15:0]         data_4_process             ;
+wire                   [  15:0]         data_4_raw                 ;
 
-//-----Delay = 4 + 1
+//-----Delay = 5
+wire                   [   7:0]         num                        ;
+wire                   [   7:0]         money                      ;
+wire                   [   7:0]         payment                    ;
+
 conv_show u_conv_show(
-    .sys_clk_1                         (pre_clk                   ),
-    .sys_clk_2                         (post_clk                  ),
-    .sys_rst_n_1                       (sys_rst_n  &  ~i_pre_vs   ),
-    .sys_rst_n_2                       (sys_rst_n  &  i_post_vs   ),
+    .sys_clk                           (post_clk                  ),
+    .sys_rst_n                         (sys_rst_n  &  i_post_vs   ),
     .item_rst_n                        (sys_rst_n                 ),
     .i_RGB_err                         (contains[{'h11,3'b0} +: 8]),
     .i_RGB_Vmin                        (contains[{'h12,3'b0} +: 8]),
@@ -301,44 +330,82 @@ conv_show u_conv_show(
     .i_YELLOW_Vmin                     (contains[{'h15,3'b0} +: 8]),
     .i_YELLOW_Vmax                     (contains[{'h16,3'b0} +: 8]),
     .i_WB_threshold                    (contains[{'h17,3'b0} +: 8]),
-    .item                              (item                      ),
-    .o_item                            (item_                     ),
+    .i_item                            (item_1                    ),
+    .o_item                            (item_2                    ),
     .o_label                           (label                     ),
+    .o_num                             (num                       ),
+    .o_money                           (money                     ),
+    .o_payment                         (payment                   ), 
     .i_post_camvs                      (i_post_camvs              ),
+    .i_valid                           (i_post_de                 ),
+    .i_data                            (i_post_data               ),
+    .o_valid                           (en_1                      ),
+    .o_data                            (data_1_process            ),
+    .o_data_raw                        (data_1_raw                ) 
+);
+assign data_1 = (contains[{'h18,3'b0} +: 1] == 'b0) ? data_1_raw : data_1_process;
+
+//-----Delay = 0
+//`define SAMPLE_SHOW
+`ifdef SAMPLE_SHOW
+sample_show u_sample_show(
+    .sys_clk                           (post_clk                  ),
+    .sys_rst_n                         (sys_rst_n  &  i_post_vs   ),
+    .i_item                            (item_2                    ),
     .i_valid                           (en_1                      ),
     .i_data                            (data_1                    ),
     .o_valid                           (en_2                      ),
     .o_data                            (data_2_process            ),
     .o_data_raw                        (data_2_raw                ) 
+); 
+`else
+assign en_2 = en_1;
+assign data_2_raw = data_1;
+assign data_2_process = data_1;
+`endif
+
+assign data_2 = (contains[{'h19,3'b0} +: 1] == 'b0) ? data_2_raw : data_2_process;
+
+//-----Delay = 2
+show_corrode u_show_corrode(
+    .sys_clk_1                         (pre_clk                   ),
+    .sys_clk_2                         (post_clk                  ),
+    .sys_rst_n_1                       (sys_rst_n  &  ~i_pre_vs   ),
+    .sys_rst_n_2                       (sys_rst_n  &  i_post_vs   ),
+    .i_pre_valid                       (de_3                      ),
+    .i_pre_wb                          (wb_3                      ),
+    .i_valid                           (en_2                      ),
+    .i_data                            (data_2                    ),
+    .o_valid                           (en_3                      ),
+    .o_data                            (data_3_process            ),
+    .o_data_raw                        (data_3_raw                ) 
 );
-assign data_2 = (contains[{'h18,3'b0} +: 1] == 'b0) ? data_2_raw : data_2_process;
+assign data_3 = (contains[{'h0E,3'b0} +: 1] == 'b0) ? data_3_raw : data_3_process;
+
 
 //-----Delay = 3 + 1
 show_rect_ascii u_show_rect_ascii(
     .sys_clk                           (post_clk                  ),
-    .sys_rst_n                         (sys_rst_n                 ),
-    .i_start                           (o_finish                  ),
-    .i_head_wire                       (item_                     ),
-    .i_hair_wire                       (512'd0                    ),
-    //.i_hair_wire                       ({448'd0,   fps1,8'd025,8'd150,8'd050,  8'd150,8'd050,8'd200,8'd100}),
-    //.i_posi_wire                       ({16{8'd49, 8'd50, 8'd51, 8'd52, 8'd43, 8'd53, 8'd46, 8'd54}}                    ),
-    .i_posi_wire                       (label                    ),
-    .i_varies                          ({80'd0,    8'd213,8'd123,8'd222,       8'd000,fps2,fps1}),
-    .i_vs                              (i_post_vs                 ),
-    .i_valid                           (en_2                      ),
-    .i_data                            (data_2                    ),
+    .sys_rst_n                         (sys_rst_n  &  i_post_vs   ),
+    .i_label                           (label                     ),
+    .i_item                            (item_2                    ),
+    .i_otheritem                       (512'b0                    ),
+    .i_varies                          ({80'd0,    payment,money,num,       8'd000,fps2,fps1}),
+    .i_valid                           (en_3                      ),
+    .i_data                            (data_3                    ),
     .o_valid                           (                          ),
-    .o_data                            (data_3_process            ),
-    .o_data_raw                        (data_3_raw                )
+    .o_data                            (data_4_process            ),
+    .o_data_raw                        (data_4_raw                )
 );
 
 always@(posedge post_clk or negedge sys_rst_n)
     if(sys_rst_n == 1'b0)
         o_post_data <= 'b0;
     else if(contains[{'h10,3'b0} +: 1] == 'b0)
-        o_post_data <=  data_3_raw;
+        o_post_data <=  data_4_raw;
     else
-        o_post_data <=  data_3_process;
+        o_post_data <=  data_4_process;
+
 
 
 endmodule

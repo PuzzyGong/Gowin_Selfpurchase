@@ -1,9 +1,9 @@
--d E:\_compete\4-20220926fpga\Gowin_Selfpurchase\fpga\impl\gwsynthesis\top.vg
+-d C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\impl\gwsynthesis\top.vg
 -p GW2A-18C-PBGA256-8
 -pn GW2A-LV18PG256C8/I7
--cst E:\_compete\4-20220926fpga\Gowin_Selfpurchase\fpga\src\top.cst
--cfg E:\_compete\4-20220926fpga\Gowin_Selfpurchase\fpga\impl\pnr\device.cfg
--sdc E:\_compete\4-20220926fpga\Gowin_Selfpurchase\fpga\src\lcd.sdc
+-cst C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\top.cst
+-cfg C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\impl\pnr\device.cfg
+-sdc C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\lcd.sdc
 -bit
 -tr
 -ph

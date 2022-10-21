@@ -56,6 +56,7 @@ wire                   [C_W-1:0]        o_b_G_raw                  ;
 wire                   [C_W-1:0]        o_b_B_raw                  ;
 wire                                    o_b_wb                     ;
 
+//----- 第 1~4 层
 //SKIN
 div_color_HSV
 #(
@@ -112,6 +113,7 @@ u2_div_color_HSV(
     .o_wb                              (o_b_wb                    ) 
 );
 
+//----- 第 5 层
 always@(posedge sys_clk or negedge sys_rst_n)
     if(sys_rst_n == 1'b0) begin
         o_valid <= 'd0;

@@ -19,12 +19,13 @@ module div_rect
 
     input  wire                         i_valid                    ,
     input  wire                         i_wb                       ,
+
     output reg                          o_finish                   ,
     output reg         [`RECT_NUMMAX * 32 - 1 : 0] o_item
 );
 reg                    [`RECT_NUMMAX * 32 - 1 : 0] item_cor        ;//C_W <= 32
 
-//-----stack
+//----- stack
 reg                    [R_W-1:0]        stack_index  [0:RR_W-1]    ;
 reg                                     stack_pop                  ;
 reg                                     stack_push                 ;
@@ -45,7 +46,7 @@ always@(posedge sys_clk or negedge sys_rst_n)
         stack_index[0] <= stack_data;
     end
 
-//-----cnt
+//----- cnt
 reg                    [   3:0]         cnt_clk                    ;
 always@(posedge sys_clk or negedge sys_rst_n)
     if(sys_rst_n == 1'b0)
@@ -86,10 +87,12 @@ always@(posedge sys_clk or negedge sys_rst_n)
         cnt_finish <= 'b0;
         o_finish <= 'b1;
     end
-    else
-        cnt_finish <= cnt_finish + 'b1;        
+    else begin
+        cnt_finish <= cnt_finish + 'b1;
+        o_finish <= 'b0;
+    end
 
-//-----
+//----- process
 reg                    [   5:0]         state                      ;
 localparam                              BLACK = 6'b000_001         ;
 localparam                              WHITE = 6'b000_010         ;
@@ -139,22 +142,6 @@ always@(posedge sys_clk or negedge sys_rst_n)
             state      <= BOTH;
     end
 
-    else if(state == NONE) begin
-        if(cnt_clk == 'd2) begin
-            stack_pop <= 'b1;
-            item_cor[{stack_index[0], 5'b0} + 8 + 8 + 8 +: C0_W] <= cnt_x;
-            item_cor[{stack_index[0], 5'b0}     + 8 + 8 +: C0_W] <= cnt_y;
-            item_cor[{stack_index[0], 5'b0}         + 8 +: C0_W] <= cnt_x;
-            item_cor[{stack_index[0], 5'b0}             +: C0_W] <= cnt_y;
-            for(j = 1; j < V_L; j = j + 1)
-                last_horizen[j] <= last_horizen[j - 1];
-            last_horizen[0] <= stack_index[0];
-        end
-        else if(cnt_clk == 'd3) begin
-            stack_pop <= 'b0;
-        end
-    end
-
     else if(state == UP) begin
         if(cnt_clk == 'd2) begin
             if(cnt_x < item_cor[{up,   5'b0} + 8 + 8 + 8 +: C0_W])
@@ -187,6 +174,22 @@ always@(posedge sys_clk or negedge sys_rst_n)
         end
     end
 
+    else if(state == NONE) begin
+        if(cnt_clk == 'd2) begin
+            stack_pop <= 'b1;
+            item_cor[{stack_index[0], 5'b0} + 8 + 8 + 8 +: C0_W] <= cnt_x;
+            item_cor[{stack_index[0], 5'b0}     + 8 + 8 +: C0_W] <= cnt_y;
+            item_cor[{stack_index[0], 5'b0}         + 8 +: C0_W] <= cnt_x;
+            item_cor[{stack_index[0], 5'b0}             +: C0_W] <= cnt_y;
+            for(j = 1; j < V_L; j = j + 1)
+                last_horizen[j] <= last_horizen[j - 1];
+            last_horizen[0] <= stack_index[0];
+        end
+        else if(cnt_clk == 'd3) begin
+            stack_pop <= 'b0;
+        end
+    end
+
     else if(state == BOTH) begin
         if(cnt_clk == 'd2) begin
             stack_push <= 'b1;
@@ -205,10 +208,10 @@ always@(posedge sys_clk or negedge sys_rst_n)
         end
         else if(cnt_clk == 'd3) begin
             stack_push <= 'b0;
-            item_cor[{left, 5'b0} + 8 + 8 + 8 +: C0_W] <= 'b0;
-            item_cor[{left, 5'b0}     + 8 + 8 +: C0_W] <= 'b0;
-            item_cor[{left, 5'b0}         + 8 +: C0_W] <= 'b0;
-            item_cor[{left, 5'b0}             +: C0_W] <= 'b0;
+            item_cor[{left,           5'b0} + 8 + 8 + 8 +: C0_W] <= 'b0;
+            item_cor[{left,           5'b0}     + 8 + 8 +: C0_W] <= 'b0;
+            item_cor[{left,           5'b0}         + 8 +: C0_W] <= 'b0;
+            item_cor[{left,           5'b0}             +: C0_W] <= 'b0;
             for(j = 0; j < V_L; j = j + 1)
                 if(last_horizen[j] == left)
                     last_horizen[j] <= up;
@@ -244,14 +247,14 @@ always@(posedge sys_clk or negedge item_rst_n)
         o_item <= 'b0;
     end 
     else if(cnt_finish != 0 && cnt_finish != `RECT_NUMMAX) begin
-        if( item_cor[{cnt_finish, 5'b0}         + 8 +: 8] - item_cor[{cnt_finish, 5'b0} + 8 + 8 + 8 +: 8] < i_smax ||
-            item_cor[{cnt_finish, 5'b0}             +: 8] - item_cor[{cnt_finish, 5'b0}     + 8 + 8 +: 8] < i_smax)
-            o_item[{cnt_finish, 5'b0} +: 32] <= 'b0;
+        if( item_cor[{cnt_finish, 5'b0}         + 8 +: 8]  -  item_cor[{cnt_finish, 5'b0} + 8 + 8 + 8 +: 8] < i_smax ||
+            item_cor[{cnt_finish, 5'b0}             +: 8]  -  item_cor[{cnt_finish, 5'b0}     + 8 + 8 +: 8] < i_smax)
+            o_item  [{cnt_finish, 5'b0} +: 32] <= 'b0;
         else begin
-            o_item[{cnt_finish, 5'b0} + 8 + 8 + 8 +: 8] <= {item_cor[{cnt_finish, 5'b0} + 8 + 8 + 8     +: 6], 2'b0} + 'd28;
-            o_item[{cnt_finish, 5'b0}     + 8 + 8 +: 8] <= {item_cor[{cnt_finish, 5'b0}     + 8 + 8     +: 6], 2'b0} + 'd00;
-            o_item[{cnt_finish, 5'b0}         + 8 +: 8] <= {item_cor[{cnt_finish, 5'b0}         + 8     +: 6], 2'b0} + 'd32;
-            o_item[{cnt_finish, 5'b0}             +: 8] <= {item_cor[{cnt_finish, 5'b0}                 +: 6], 2'b0} + 'd04;
+            o_item  [{cnt_finish, 5'b0} + 8 + 8 + 8 +: 8] <= {item_cor[{cnt_finish, 5'b0} + 8 + 8 + 8 +: 6], 2'b0} + 'd28;
+            o_item  [{cnt_finish, 5'b0}     + 8 + 8 +: 8] <= {item_cor[{cnt_finish, 5'b0}     + 8 + 8 +: 6], 2'b0} + 'd00;
+            o_item  [{cnt_finish, 5'b0}         + 8 +: 8] <= {item_cor[{cnt_finish, 5'b0}         + 8 +: 6], 2'b0} + 'd32;
+            o_item  [{cnt_finish, 5'b0}             +: 8] <= {item_cor[{cnt_finish, 5'b0}             +: 6], 2'b0} + 'd04;
         end
     end
 

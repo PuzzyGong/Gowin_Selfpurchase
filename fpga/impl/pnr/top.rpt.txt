@@ -5,32 +5,32 @@
 1. PnR Messages
 
   <Report Title>: PnR Report
-  <Design File>: E:\_compete\4-20220926fpga\Gowin_Selfpurchase\fpga\impl\gwsynthesis\top.vg
-  <Physical Constraints File>: E:\_compete\4-20220926fpga\Gowin_Selfpurchase\fpga\src\top.cst
-  <Timing Constraints File>: E:\_compete\4-20220926fpga\Gowin_Selfpurchase\fpga\src\lcd.sdc
+  <Design File>: C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\impl\gwsynthesis\top.vg
+  <Physical Constraints File>: C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\top.cst
+  <Timing Constraints File>: C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\lcd.sdc
   <PnR Version>: V1.9.8.07
   <Part Number>: GW2A-LV18PG256C8/I7
   <Device>: GW2A-18C
-  <Created Time>:Wed Oct 19 11:01:52 2022
+  <Created Time>:Fri Oct 21 17:04:40 2022
 
 
 2. PnR Details
 
   Running placement:
     Placement Phase 0: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
-    Placement Phase 1: CPU time = 0h 0m 0.711s, Elapsed time = 0h 0m 0.711s
+    Placement Phase 1: CPU time = 0h 0m 0.711s, Elapsed time = 0h 0m 0.71s
     Placement Phase 2: CPU time = 0h 0m 11s, Elapsed time = 0h 0m 11s
     Placement Phase 3: CPU time = 0h 0m 16s, Elapsed time = 0h 0m 16s
     Total Placement: CPU time = 0h 0m 31s, Elapsed time = 0h 0m 31s
  Running routing:
-    Routing Phase 0: CPU time = 0h 0m 0.006s, Elapsed time = 0h 0m 0.007s
+    Routing Phase 0: CPU time = 0h 0m 0.007s, Elapsed time = 0h 0m 0.006s
     Routing Phase 1: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
-    Routing Phase 2: CPU time = 0h 0m 51s, Elapsed time = 0h 0m 51s
-    Total Routing: CPU time = 0h 0m 53s, Elapsed time = 0h 0m 53s
+    Routing Phase 2: CPU time = 0h 0m 59s, Elapsed time = 0h 0m 59s
+    Total Routing: CPU time = 0h 1m 1s, Elapsed time = 0h 1m 1s
  Generate output files:
     CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
 
- Total Time and Memory Usage: CPU time = 0h 1m 28s, Elapsed time = 0h 1m 28s, Peak memory usage = 528MB
+ Total Time and Memory Usage: CPU time = 0h 1m 36s, Elapsed time = 0h 1m 36s, Peak memory usage = 540MB
 
 
 3. Resource Usage Summary
@@ -38,15 +38,15 @@
   ----------------------------------------------------------
   Resources                   | Usage
   ----------------------------------------------------------
-  Logic                       | 13630/20736  65%
-    --LUT,ALU,ROM16           | 12760(10620 LUT, 2140 ALU, 0 ROM16)
+  Logic                       | 13202/20736  63%
+    --LUT,ALU,ROM16           | 12332(10195 LUT, 2137 ALU, 0 ROM16)
     --SSRAM(RAM16)            | 145
-  Register                    | 7307/16173  45%
+  Register                    | 7256/16173  44%
     --Logic Register as Latch | 0/15552  0%
-    --Logic Register as FF    | 7301/15552  46%
+    --Logic Register as FF    | 7250/15552  46%
     --I/O Register as Latch   | 0/621  0%
     --I/O Register as FF      | 6/621  1%
-  CLS                         | 8907/10368  85%
+  CLS                         | 8789/10368  84%
   I/O Port                    | 80
   I/O Buf                     | 73
     --Input Buf               | 14
@@ -113,7 +113,7 @@
   -------------------------------------------
   sys_clk_d      | PRIMARY        |  TR TL BR BL
   cmos_vsync_d   | PRIMARY        |  TL
-  cmos_pclk_d    | PRIMARY        |  TL BR BL
+  cmos_pclk_d    | PRIMARY        |  TL BL
   post_clk       | PRIMARY        |  TR TL BR BL
   cmos_xclk_d    | PRIMARY        |  TL
   pre_clk        | PRIMARY        |  TR TL BR BL
@@ -121,7 +121,7 @@
   dma_clk        | PRIMARY        |  TR TL BR BL
   sys_rst_n_d    | SECONDARY      |  -
   n82_5          | SECONDARY      |  -
-  n162_5         | SECONDARY      |  -
+  n13_5          | SECONDARY      |  -
   hdmi4_rst_n    | SECONDARY      |  -
   init_calib_complete| SECONDARY      |  -
   reset_r[1]     | SECONDARY      |  -

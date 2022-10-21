@@ -1,105 +1,113 @@
 [
  {
-  "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/interfaces/gowin_rpll/sys_pll.v",
+  "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/gowin_rpll/sys_pll.v",
   "InstLine" : 9,
   "InstName" : "sys_pll",
-  "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/interfaces/gowin_rpll/sys_pll.v",
+  "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/gowin_rpll/sys_pll.v",
   "ModuleLine" : 9,
   "ModuleName" : "sys_pll"
  },
  {
-  "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/top.v",
+  "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/post1__conv_show/conv.v",
+  "InstLine" : 3,
+  "InstName" : "conv",
+  "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/post1__conv_show/conv.v",
+  "ModuleLine" : 3,
+  "ModuleName" : "conv"
+ },
+ {
+  "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/top.v",
   "InstLine" : 3,
   "InstName" : "top",
-  "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/top.v",
+  "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/top.v",
   "ModuleLine" : 3,
   "ModuleName" : "top",
   "SubInsts" : [
    {
-    "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/top.v",
+    "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/top.v",
     "InstLine" : 64,
     "InstName" : "u_interfaces_top",
-    "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/interfaces/interfaces_top.v",
+    "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/interfaces_top.v",
     "ModuleLine" : 1,
     "ModuleName" : "interfaces_top",
     "SubInsts" : [
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/interfaces/interfaces_top.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/interfaces_top.v",
       "InstLine" : 243,
       "InstName" : "Video_Frame_Buffer_Top_inst",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/interfaces/video_frame_buffer/Video_Frame_Buffer_Top.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/video_frame_buffer/Video_Frame_Buffer_Top.v",
       "ModuleLine" : 1,
       "ModuleName" : "Video_Frame_Buffer_Top"
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/interfaces/interfaces_top.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/interfaces_top.v",
       "InstLine" : 281,
       "InstName" : "DDR3_Memory_Interface_Top_inst",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/interfaces/ddr3_memory_interface/DDR3MI.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/ddr3_memory_interface/DDR3MI.v",
       "ModuleLine" : 1,
       "ModuleName" : "DDR3MI"
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/interfaces/interfaces_top.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/interfaces_top.v",
       "InstLine" : 337,
       "InstName" : "DVI_TX_Top_inst",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/interfaces/dvi_tx/DVI_TX_Top.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/dvi_tx/DVI_TX_Top.v",
       "ModuleLine" : 1,
       "ModuleName" : "DVI_TX_Top"
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/interfaces/interfaces_top.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/interfaces_top.v",
       "InstLine" : 63,
       "InstName" : "cmos_pll_m0",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/interfaces/gowin_rpll/cmos_pll.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/gowin_rpll/cmos_pll.v",
       "ModuleLine" : 9,
       "ModuleName" : "cmos_pll"
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/interfaces/interfaces_top.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/interfaces_top.v",
       "InstLine" : 69,
       "InstName" : "mem_pll_m0",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/interfaces/gowin_rpll/mem_pll.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/gowin_rpll/mem_pll.v",
       "ModuleLine" : 9,
       "ModuleName" : "mem_pll"
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/interfaces/interfaces_top.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/interfaces_top.v",
       "InstLine" : 76,
       "InstName" : "u_tmds_rpll",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/interfaces/gowin_rpll/TMDS_rPLL.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/gowin_rpll/TMDS_rPLL.v",
       "ModuleLine" : 9,
       "ModuleName" : "TMDS_rPLL"
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/interfaces/interfaces_top.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/interfaces_top.v",
       "InstLine" : 103,
       "InstName" : "i2c_config_m0",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/interfaces/i2c_master/i2c_config.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/i2c_master/i2c_config.v",
       "ModuleLine" : 1,
       "ModuleName" : "i2c_config",
       "SubInsts" : [
        {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/interfaces/i2c_master/i2c_config.v",
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/i2c_master/i2c_config.v",
         "InstLine" : 101,
         "InstName" : "i2c_master_top_m0",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/interfaces/i2c_master/i2c_master_top.v",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/i2c_master/i2c_master_top.v",
         "ModuleLine" : 1,
         "ModuleName" : "i2c_master_top",
         "SubInsts" : [
          {
-          "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/interfaces/i2c_master/i2c_master_top.v",
+          "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/i2c_master/i2c_master_top.v",
           "InstLine" : 232,
           "InstName" : "byte_controller",
-          "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/interfaces/i2c_master/i2c_master_byte_ctrl.v",
+          "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/i2c_master/i2c_master_byte_ctrl.v",
           "ModuleLine" : 75,
           "ModuleName" : "i2c_master_byte_ctrl",
           "SubInsts" : [
            {
-            "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/interfaces/i2c_master/i2c_master_byte_ctrl.v",
+            "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/i2c_master/i2c_master_byte_ctrl.v",
             "InstLine" : 146,
             "InstName" : "bit_controller",
-            "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/interfaces/i2c_master/i2c_master_bit_ctrl.v",
+            "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/i2c_master/i2c_master_bit_ctrl.v",
             "ModuleLine" : 143,
             "ModuleName" : "i2c_master_bit_ctrl"
            }
@@ -110,570 +118,570 @@
       ]
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/interfaces/interfaces_top.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/interfaces_top.v",
       "InstLine" : 117,
       "InstName" : "lut_ov5640_rgb565_1024_768_m0",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/interfaces/lut_ov5640_rgb565_1024_768.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/lut_ov5640_rgb565_1024_768.v",
       "ModuleLine" : 1,
       "ModuleName" : "lut_ov5640_rgb565_1024_768"
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/interfaces/interfaces_top.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/interfaces_top.v",
       "InstLine" : 124,
       "InstName" : "cmos_8_16bit_m0",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/interfaces/cmos_8_16bit.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/cmos_8_16bit.v",
       "ModuleLine" : 1,
       "ModuleName" : "cmos_8_16bit"
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/interfaces/interfaces_top.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/interfaces_top.v",
       "InstLine" : 163,
       "InstName" : "vga_timing_m0",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/interfaces/vga_timing.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/vga_timing.v",
       "ModuleLine" : 1,
       "ModuleName" : "vga_timing"
      }
     ]
    },
    {
-    "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/top.v",
+    "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/top.v",
     "InstLine" : 119,
     "InstName" : "u_top_test",
-    "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/top_test.v",
+    "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/top_test.v",
     "ModuleLine" : 1,
     "ModuleName" : "top_test"
    },
    {
-    "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/top.v",
-    "InstLine" : 134,
+    "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/top.v",
+    "InstLine" : 137,
     "InstName" : "u_uart_sfr",
-    "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/uart_sfr.v",
+    "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/uart_sfr.v",
     "ModuleLine" : 3,
     "ModuleName" : "uart_sfr",
     "SubInsts" : [
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/uart_sfr.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/uart_sfr.v",
       "InstLine" : 18,
       "InstName" : "u_debug",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/debug.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/debug.v",
       "ModuleLine" : 1,
       "ModuleName" : "debug",
       "SubInsts" : [
        {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/debug.v",
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/debug.v",
         "InstLine" : 19,
         "InstName" : "debug_ctrl_inst",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/debug_ctrl.v",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/debug_ctrl.v",
         "ModuleLine" : 1,
         "ModuleName" : "debug_ctrl"
        },
        {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/debug.v",
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/debug.v",
         "InstLine" : 34,
         "InstName" : "uart_tx_inst",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/uart_tx.v",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/uart_tx.v",
         "ModuleLine" : 1,
         "ModuleName" : "uart_tx"
        },
        {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/debug.v",
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/debug.v",
         "InstLine" : 44,
         "InstName" : "uart_rx_inst",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/uart_rx.v",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/uart_rx.v",
         "ModuleLine" : 1,
         "ModuleName" : "uart_rx"
        }
       ]
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/uart_sfr.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/uart_sfr.v",
       "InstLine" : 31,
       "InstName" : "u_sfr00",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/sfr.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/sfr.v",
       "ModuleLine" : 1,
       "ModuleName" : "sfr"
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/uart_sfr.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/uart_sfr.v",
       "InstLine" : 32,
       "InstName" : "u_sfr01",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/sfr.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/sfr.v",
       "ModuleLine" : 1,
       "ModuleName" : "sfr"
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/uart_sfr.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/uart_sfr.v",
       "InstLine" : 33,
       "InstName" : "u_sfr02",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/sfr.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/sfr.v",
       "ModuleLine" : 1,
       "ModuleName" : "sfr"
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/uart_sfr.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/uart_sfr.v",
       "InstLine" : 34,
       "InstName" : "u_sfr03",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/sfr.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/sfr.v",
       "ModuleLine" : 1,
       "ModuleName" : "sfr"
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/uart_sfr.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/uart_sfr.v",
       "InstLine" : 35,
       "InstName" : "u_sfr04",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/sfr.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/sfr.v",
       "ModuleLine" : 1,
       "ModuleName" : "sfr"
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/uart_sfr.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/uart_sfr.v",
       "InstLine" : 36,
       "InstName" : "u_sfr05",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/sfr.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/sfr.v",
       "ModuleLine" : 1,
       "ModuleName" : "sfr"
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/uart_sfr.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/uart_sfr.v",
       "InstLine" : 37,
       "InstName" : "u_sfr06",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/sfr.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/sfr.v",
       "ModuleLine" : 1,
       "ModuleName" : "sfr"
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/uart_sfr.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/uart_sfr.v",
       "InstLine" : 38,
       "InstName" : "u_sfr07",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/sfr.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/sfr.v",
       "ModuleLine" : 1,
       "ModuleName" : "sfr"
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/uart_sfr.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/uart_sfr.v",
       "InstLine" : 39,
       "InstName" : "u_sfr08",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/sfr.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/sfr.v",
       "ModuleLine" : 1,
       "ModuleName" : "sfr"
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/uart_sfr.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/uart_sfr.v",
       "InstLine" : 40,
       "InstName" : "u_sfr09",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/sfr.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/sfr.v",
       "ModuleLine" : 1,
       "ModuleName" : "sfr"
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/uart_sfr.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/uart_sfr.v",
       "InstLine" : 41,
       "InstName" : "u_sfr0A",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/sfr.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/sfr.v",
       "ModuleLine" : 1,
       "ModuleName" : "sfr"
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/uart_sfr.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/uart_sfr.v",
       "InstLine" : 42,
       "InstName" : "u_sfr0B",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/sfr.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/sfr.v",
       "ModuleLine" : 1,
       "ModuleName" : "sfr"
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/uart_sfr.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/uart_sfr.v",
       "InstLine" : 43,
       "InstName" : "u_sfr0C",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/sfr.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/sfr.v",
       "ModuleLine" : 1,
       "ModuleName" : "sfr"
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/uart_sfr.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/uart_sfr.v",
       "InstLine" : 44,
       "InstName" : "u_sfr0D",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/sfr.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/sfr.v",
       "ModuleLine" : 1,
       "ModuleName" : "sfr"
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/uart_sfr.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/uart_sfr.v",
       "InstLine" : 45,
       "InstName" : "u_sfr0E",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/sfr.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/sfr.v",
       "ModuleLine" : 1,
       "ModuleName" : "sfr"
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/uart_sfr.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/uart_sfr.v",
       "InstLine" : 46,
       "InstName" : "u_sfr0F",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/sfr.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/sfr.v",
       "ModuleLine" : 1,
       "ModuleName" : "sfr"
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/uart_sfr.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/uart_sfr.v",
       "InstLine" : 47,
       "InstName" : "u_sfr10",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/sfr.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/sfr.v",
       "ModuleLine" : 1,
       "ModuleName" : "sfr"
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/uart_sfr.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/uart_sfr.v",
       "InstLine" : 48,
       "InstName" : "u_sfr11",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/sfr.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/sfr.v",
       "ModuleLine" : 1,
       "ModuleName" : "sfr"
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/uart_sfr.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/uart_sfr.v",
       "InstLine" : 49,
       "InstName" : "u_sfr12",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/sfr.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/sfr.v",
       "ModuleLine" : 1,
       "ModuleName" : "sfr"
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/uart_sfr.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/uart_sfr.v",
       "InstLine" : 50,
       "InstName" : "u_sfr13",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/sfr.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/sfr.v",
       "ModuleLine" : 1,
       "ModuleName" : "sfr"
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/uart_sfr.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/uart_sfr.v",
       "InstLine" : 51,
       "InstName" : "u_sfr14",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/sfr.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/sfr.v",
       "ModuleLine" : 1,
       "ModuleName" : "sfr"
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/uart_sfr.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/uart_sfr.v",
       "InstLine" : 52,
       "InstName" : "u_sfr15",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/sfr.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/sfr.v",
       "ModuleLine" : 1,
       "ModuleName" : "sfr"
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/uart_sfr.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/uart_sfr.v",
       "InstLine" : 53,
       "InstName" : "u_sfr16",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/sfr.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/sfr.v",
       "ModuleLine" : 1,
       "ModuleName" : "sfr"
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/uart_sfr.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/uart_sfr.v",
       "InstLine" : 54,
       "InstName" : "u_sfr17",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/sfr.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/sfr.v",
       "ModuleLine" : 1,
       "ModuleName" : "sfr"
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/uart_sfr.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/uart_sfr.v",
       "InstLine" : 55,
       "InstName" : "u_sfr18",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/sfr.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/sfr.v",
       "ModuleLine" : 1,
       "ModuleName" : "sfr"
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/uart_sfr.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/uart_sfr.v",
       "InstLine" : 56,
       "InstName" : "u_sfr19",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/sfr.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/sfr.v",
       "ModuleLine" : 1,
       "ModuleName" : "sfr"
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/uart_sfr.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/uart_sfr.v",
       "InstLine" : 57,
       "InstName" : "u_sfr1A",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/sfr.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/sfr.v",
       "ModuleLine" : 1,
       "ModuleName" : "sfr"
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/uart_sfr.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/uart_sfr.v",
       "InstLine" : 58,
       "InstName" : "u_sfr1B",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/sfr.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/sfr.v",
       "ModuleLine" : 1,
       "ModuleName" : "sfr"
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/uart_sfr.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/uart_sfr.v",
       "InstLine" : 59,
       "InstName" : "u_sfr1C",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/sfr.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/sfr.v",
       "ModuleLine" : 1,
       "ModuleName" : "sfr"
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/uart_sfr.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/uart_sfr.v",
       "InstLine" : 60,
       "InstName" : "u_sfr1D",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/sfr.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/sfr.v",
       "ModuleLine" : 1,
       "ModuleName" : "sfr"
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/uart_sfr.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/uart_sfr.v",
       "InstLine" : 61,
       "InstName" : "u_sfr1E",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/sfr.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/sfr.v",
       "ModuleLine" : 1,
       "ModuleName" : "sfr"
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/uart_sfr.v",
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/uart_sfr.v",
       "InstLine" : 62,
       "InstName" : "u_sfr1F",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/uart_sfr/sfr.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/sfr.v",
       "ModuleLine" : 1,
       "ModuleName" : "sfr"
      }
     ]
    },
    {
-    "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/top.v",
-    "InstLine" : 181,
+    "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/top.v",
+    "InstLine" : 218,
     "InstName" : "u_div_color",
-    "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/pre2__div_color/div_color.v",
+    "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/pre2__div_color/div_color.v",
     "ModuleLine" : 3,
     "ModuleName" : "div_color",
     "SubInsts" : [
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/pre2__div_color/div_color.v",
-      "InstLine" : 64,
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/pre2__div_color/div_color.v",
+      "InstLine" : 65,
       "InstName" : "u1_div_color_HSV",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
       "ModuleLine" : 3,
       "ModuleName" : "div_color_HSV",
       "SubInsts" : [
        {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 60,
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 58,
         "InstName" : "u1_mul",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
         "ModuleLine" : 4,
         "ModuleName" : "mul",
         "SubInsts" : [
          {
-          "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
+          "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
           "InstLine" : 22,
           "InstName" : "u_mul_8",
-          "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/gowin_mult/mul_8.v",
+          "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/gowin_mult/mul_8.v",
           "ModuleLine" : 9,
           "ModuleName" : "mul_8"
          }
         ]
        },
        {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 74,
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 72,
         "InstName" : "u2_mul",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
         "ModuleLine" : 4,
         "ModuleName" : "mul",
         "SubInsts" : [
          {
-          "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
+          "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
           "InstLine" : 22,
           "InstName" : "u_mul_8",
-          "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/gowin_mult/mul_8.v",
+          "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/gowin_mult/mul_8.v",
           "ModuleLine" : 9,
           "ModuleName" : "mul_8"
          }
         ]
        },
        {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 88,
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 86,
         "InstName" : "u3_mul",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
         "ModuleLine" : 4,
         "ModuleName" : "mul",
         "SubInsts" : [
          {
-          "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
+          "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
           "InstLine" : 22,
           "InstName" : "u_mul_8",
-          "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/gowin_mult/mul_8.v",
+          "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/gowin_mult/mul_8.v",
           "ModuleLine" : 9,
           "ModuleName" : "mul_8"
          }
         ]
        },
        {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 102,
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 100,
         "InstName" : "u4_mul",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
         "ModuleLine" : 4,
         "ModuleName" : "mul",
         "SubInsts" : [
          {
-          "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
+          "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
           "InstLine" : 22,
           "InstName" : "u_mul_8",
-          "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/gowin_mult/mul_8.v",
+          "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/gowin_mult/mul_8.v",
           "ModuleLine" : 9,
           "ModuleName" : "mul_8"
          }
         ]
        },
        {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 112,
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 110,
         "InstName" : "u1_sub_abs",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/sub_abs.v",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/sub_abs.v",
         "ModuleLine" : 4,
         "ModuleName" : "sub_abs"
        },
        {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 120,
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 118,
         "InstName" : "u2_sub_abs",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/sub_abs.v",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/sub_abs.v",
         "ModuleLine" : 4,
         "ModuleName" : "sub_abs"
        },
        {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 128,
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 126,
         "InstName" : "u3_sub_abs",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/sub_abs.v",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/sub_abs.v",
         "ModuleLine" : 4,
         "ModuleName" : "sub_abs"
        },
        {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 143,
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 141,
         "InstName" : "u1_cmp",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/cmp.v",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/cmp.v",
         "ModuleLine" : 4,
         "ModuleName" : "cmp"
        }
       ]
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/pre2__div_color/div_color.v",
-      "InstLine" : 92,
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/pre2__div_color/div_color.v",
+      "InstLine" : 93,
       "InstName" : "u2_div_color_HSV",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
       "ModuleLine" : 3,
       "ModuleName" : "div_color_HSV",
       "SubInsts" : [
        {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 60,
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 58,
         "InstName" : "u1_mul",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
         "ModuleLine" : 4,
         "ModuleName" : "mul",
         "SubInsts" : [
          {
-          "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
+          "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
           "InstLine" : 22,
           "InstName" : "u_mul_8",
-          "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/gowin_mult/mul_8.v",
+          "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/gowin_mult/mul_8.v",
           "ModuleLine" : 9,
           "ModuleName" : "mul_8"
          }
         ]
        },
        {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 74,
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 72,
         "InstName" : "u2_mul",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
         "ModuleLine" : 4,
         "ModuleName" : "mul",
         "SubInsts" : [
          {
-          "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
+          "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
           "InstLine" : 22,
           "InstName" : "u_mul_8",
-          "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/gowin_mult/mul_8.v",
+          "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/gowin_mult/mul_8.v",
           "ModuleLine" : 9,
           "ModuleName" : "mul_8"
          }
         ]
        },
        {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 88,
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 86,
         "InstName" : "u3_mul",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
         "ModuleLine" : 4,
         "ModuleName" : "mul",
         "SubInsts" : [
          {
-          "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
+          "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
           "InstLine" : 22,
           "InstName" : "u_mul_8",
-          "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/gowin_mult/mul_8.v",
+          "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/gowin_mult/mul_8.v",
           "ModuleLine" : 9,
           "ModuleName" : "mul_8"
          }
         ]
        },
        {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 102,
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 100,
         "InstName" : "u4_mul",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
         "ModuleLine" : 4,
         "ModuleName" : "mul",
         "SubInsts" : [
          {
-          "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
+          "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
           "InstLine" : 22,
           "InstName" : "u_mul_8",
-          "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/gowin_mult/mul_8.v",
+          "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/gowin_mult/mul_8.v",
           "ModuleLine" : 9,
           "ModuleName" : "mul_8"
          }
         ]
        },
        {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 112,
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 110,
         "InstName" : "u1_sub_abs",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/sub_abs.v",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/sub_abs.v",
         "ModuleLine" : 4,
         "ModuleName" : "sub_abs"
        },
        {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 120,
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 118,
         "InstName" : "u2_sub_abs",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/sub_abs.v",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/sub_abs.v",
         "ModuleLine" : 4,
         "ModuleName" : "sub_abs"
        },
        {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 128,
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 126,
         "InstName" : "u3_sub_abs",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/sub_abs.v",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/sub_abs.v",
         "ModuleLine" : 4,
         "ModuleName" : "sub_abs"
        },
        {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 143,
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 141,
         "InstName" : "u1_cmp",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/cmp.v",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/cmp.v",
         "ModuleLine" : 4,
         "ModuleName" : "cmp"
        }
@@ -682,574 +690,574 @@
     ]
    },
    {
-    "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/top.v",
-    "InstLine" : 218,
+    "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/top.v",
+    "InstLine" : 255,
     "InstName" : "u_intercept",
-    "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/pre3__return__intercept/intercept.v",
+    "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/pre3__return__intercept/intercept.v",
     "ModuleLine" : 3,
     "ModuleName" : "intercept"
    },
    {
-    "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/top.v",
-    "InstLine" : 233,
+    "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/top.v",
+    "InstLine" : 270,
     "InstName" : "u_corrode",
-    "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/pre3__corrode/corrode.v",
+    "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/pre3__corrode/corrode.v",
     "ModuleLine" : 3,
     "ModuleName" : "corrode"
    },
    {
-    "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/top.v",
-    "InstLine" : 247,
+    "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/top.v",
+    "InstLine" : 285,
     "InstName" : "u_div_rect",
-    "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/pre4__div_rect/div_rect.v",
+    "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/pre4__div_rect/div_rect.v",
     "ModuleLine" : 3,
     "ModuleName" : "div_rect"
    },
    {
-    "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/top.v",
-    "InstLine" : 275,
+    "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/top.v",
+    "InstLine" : 322,
+    "InstName" : "u_conv_show",
+    "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/post1__conv_show/conv_show.v",
+    "ModuleLine" : 3,
+    "ModuleName" : "conv_show",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/post1__conv_show/conv_show.v",
+      "InstLine" : 156,
+      "InstName" : "u1_div_color_HSV",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+      "ModuleLine" : 3,
+      "ModuleName" : "div_color_HSV",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 58,
+        "InstName" : "u1_mul",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
+        "ModuleLine" : 4,
+        "ModuleName" : "mul",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
+          "InstLine" : 22,
+          "InstName" : "u_mul_8",
+          "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/gowin_mult/mul_8.v",
+          "ModuleLine" : 9,
+          "ModuleName" : "mul_8"
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 72,
+        "InstName" : "u2_mul",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
+        "ModuleLine" : 4,
+        "ModuleName" : "mul",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
+          "InstLine" : 22,
+          "InstName" : "u_mul_8",
+          "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/gowin_mult/mul_8.v",
+          "ModuleLine" : 9,
+          "ModuleName" : "mul_8"
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 86,
+        "InstName" : "u3_mul",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
+        "ModuleLine" : 4,
+        "ModuleName" : "mul",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
+          "InstLine" : 22,
+          "InstName" : "u_mul_8",
+          "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/gowin_mult/mul_8.v",
+          "ModuleLine" : 9,
+          "ModuleName" : "mul_8"
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 100,
+        "InstName" : "u4_mul",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
+        "ModuleLine" : 4,
+        "ModuleName" : "mul",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
+          "InstLine" : 22,
+          "InstName" : "u_mul_8",
+          "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/gowin_mult/mul_8.v",
+          "ModuleLine" : 9,
+          "ModuleName" : "mul_8"
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 110,
+        "InstName" : "u1_sub_abs",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/sub_abs.v",
+        "ModuleLine" : 4,
+        "ModuleName" : "sub_abs"
+       },
+       {
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 118,
+        "InstName" : "u2_sub_abs",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/sub_abs.v",
+        "ModuleLine" : 4,
+        "ModuleName" : "sub_abs"
+       },
+       {
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 126,
+        "InstName" : "u3_sub_abs",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/sub_abs.v",
+        "ModuleLine" : 4,
+        "ModuleName" : "sub_abs"
+       },
+       {
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 141,
+        "InstName" : "u1_cmp",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/cmp.v",
+        "ModuleLine" : 4,
+        "ModuleName" : "cmp"
+       }
+      ]
+     },
+     {
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/post1__conv_show/conv_show.v",
+      "InstLine" : 185,
+      "InstName" : "u2_div_color_HSV",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+      "ModuleLine" : 3,
+      "ModuleName" : "div_color_HSV",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 58,
+        "InstName" : "u1_mul",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
+        "ModuleLine" : 4,
+        "ModuleName" : "mul",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
+          "InstLine" : 22,
+          "InstName" : "u_mul_8",
+          "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/gowin_mult/mul_8.v",
+          "ModuleLine" : 9,
+          "ModuleName" : "mul_8"
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 72,
+        "InstName" : "u2_mul",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
+        "ModuleLine" : 4,
+        "ModuleName" : "mul",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
+          "InstLine" : 22,
+          "InstName" : "u_mul_8",
+          "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/gowin_mult/mul_8.v",
+          "ModuleLine" : 9,
+          "ModuleName" : "mul_8"
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 86,
+        "InstName" : "u3_mul",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
+        "ModuleLine" : 4,
+        "ModuleName" : "mul",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
+          "InstLine" : 22,
+          "InstName" : "u_mul_8",
+          "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/gowin_mult/mul_8.v",
+          "ModuleLine" : 9,
+          "ModuleName" : "mul_8"
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 100,
+        "InstName" : "u4_mul",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
+        "ModuleLine" : 4,
+        "ModuleName" : "mul",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
+          "InstLine" : 22,
+          "InstName" : "u_mul_8",
+          "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/gowin_mult/mul_8.v",
+          "ModuleLine" : 9,
+          "ModuleName" : "mul_8"
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 110,
+        "InstName" : "u1_sub_abs",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/sub_abs.v",
+        "ModuleLine" : 4,
+        "ModuleName" : "sub_abs"
+       },
+       {
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 118,
+        "InstName" : "u2_sub_abs",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/sub_abs.v",
+        "ModuleLine" : 4,
+        "ModuleName" : "sub_abs"
+       },
+       {
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 126,
+        "InstName" : "u3_sub_abs",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/sub_abs.v",
+        "ModuleLine" : 4,
+        "ModuleName" : "sub_abs"
+       },
+       {
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 141,
+        "InstName" : "u1_cmp",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/cmp.v",
+        "ModuleLine" : 4,
+        "ModuleName" : "cmp"
+       }
+      ]
+     },
+     {
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/post1__conv_show/conv_show.v",
+      "InstLine" : 214,
+      "InstName" : "u3_div_color_HSV",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+      "ModuleLine" : 3,
+      "ModuleName" : "div_color_HSV",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 58,
+        "InstName" : "u1_mul",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
+        "ModuleLine" : 4,
+        "ModuleName" : "mul",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
+          "InstLine" : 22,
+          "InstName" : "u_mul_8",
+          "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/gowin_mult/mul_8.v",
+          "ModuleLine" : 9,
+          "ModuleName" : "mul_8"
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 72,
+        "InstName" : "u2_mul",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
+        "ModuleLine" : 4,
+        "ModuleName" : "mul",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
+          "InstLine" : 22,
+          "InstName" : "u_mul_8",
+          "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/gowin_mult/mul_8.v",
+          "ModuleLine" : 9,
+          "ModuleName" : "mul_8"
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 86,
+        "InstName" : "u3_mul",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
+        "ModuleLine" : 4,
+        "ModuleName" : "mul",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
+          "InstLine" : 22,
+          "InstName" : "u_mul_8",
+          "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/gowin_mult/mul_8.v",
+          "ModuleLine" : 9,
+          "ModuleName" : "mul_8"
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 100,
+        "InstName" : "u4_mul",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
+        "ModuleLine" : 4,
+        "ModuleName" : "mul",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
+          "InstLine" : 22,
+          "InstName" : "u_mul_8",
+          "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/gowin_mult/mul_8.v",
+          "ModuleLine" : 9,
+          "ModuleName" : "mul_8"
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 110,
+        "InstName" : "u1_sub_abs",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/sub_abs.v",
+        "ModuleLine" : 4,
+        "ModuleName" : "sub_abs"
+       },
+       {
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 118,
+        "InstName" : "u2_sub_abs",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/sub_abs.v",
+        "ModuleLine" : 4,
+        "ModuleName" : "sub_abs"
+       },
+       {
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 126,
+        "InstName" : "u3_sub_abs",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/sub_abs.v",
+        "ModuleLine" : 4,
+        "ModuleName" : "sub_abs"
+       },
+       {
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 141,
+        "InstName" : "u1_cmp",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/cmp.v",
+        "ModuleLine" : 4,
+        "ModuleName" : "cmp"
+       }
+      ]
+     },
+     {
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/post1__conv_show/conv_show.v",
+      "InstLine" : 243,
+      "InstName" : "u4_div_color_HSV",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+      "ModuleLine" : 3,
+      "ModuleName" : "div_color_HSV",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 58,
+        "InstName" : "u1_mul",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
+        "ModuleLine" : 4,
+        "ModuleName" : "mul",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
+          "InstLine" : 22,
+          "InstName" : "u_mul_8",
+          "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/gowin_mult/mul_8.v",
+          "ModuleLine" : 9,
+          "ModuleName" : "mul_8"
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 72,
+        "InstName" : "u2_mul",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
+        "ModuleLine" : 4,
+        "ModuleName" : "mul",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
+          "InstLine" : 22,
+          "InstName" : "u_mul_8",
+          "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/gowin_mult/mul_8.v",
+          "ModuleLine" : 9,
+          "ModuleName" : "mul_8"
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 86,
+        "InstName" : "u3_mul",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
+        "ModuleLine" : 4,
+        "ModuleName" : "mul",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
+          "InstLine" : 22,
+          "InstName" : "u_mul_8",
+          "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/gowin_mult/mul_8.v",
+          "ModuleLine" : 9,
+          "ModuleName" : "mul_8"
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 100,
+        "InstName" : "u4_mul",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
+        "ModuleLine" : 4,
+        "ModuleName" : "mul",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
+          "InstLine" : 22,
+          "InstName" : "u_mul_8",
+          "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/gowin_mult/mul_8.v",
+          "ModuleLine" : 9,
+          "ModuleName" : "mul_8"
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 110,
+        "InstName" : "u1_sub_abs",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/sub_abs.v",
+        "ModuleLine" : 4,
+        "ModuleName" : "sub_abs"
+       },
+       {
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 118,
+        "InstName" : "u2_sub_abs",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/sub_abs.v",
+        "ModuleLine" : 4,
+        "ModuleName" : "sub_abs"
+       },
+       {
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 126,
+        "InstName" : "u3_sub_abs",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/sub_abs.v",
+        "ModuleLine" : 4,
+        "ModuleName" : "sub_abs"
+       },
+       {
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+        "InstLine" : 141,
+        "InstName" : "u1_cmp",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/cmp.v",
+        "ModuleLine" : 4,
+        "ModuleName" : "cmp"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/top.v",
+    "InstLine" : 370,
     "InstName" : "u_show_corrode",
-    "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/post3__show_corrode/show_corrode.v",
+    "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/post3__show_corrode/show_corrode.v",
     "ModuleLine" : 3,
     "ModuleName" : "show_corrode",
     "SubInsts" : [
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/post3__show_corrode/show_corrode.v",
-      "InstLine" : 42,
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/post3__show_corrode/show_corrode.v",
+      "InstLine" : 40,
       "InstName" : "u_RAM_show_corrode",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/post3__show_corrode/gowin_sdpb/RAM_show_corrode.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/post3__show_corrode/gowin_sdpb/RAM_show_corrode.v",
       "ModuleLine" : 9,
       "ModuleName" : "RAM_show_corrode"
      }
     ]
    },
    {
-    "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/top.v",
-    "InstLine" : 291,
-    "InstName" : "u_conv_show",
-    "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/post1__conv_show/conv_show.v",
-    "ModuleLine" : 3,
-    "ModuleName" : "conv_show",
-    "SubInsts" : [
-     {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/post1__conv_show/conv_show.v",
-      "InstLine" : 152,
-      "InstName" : "u1_div_color_HSV",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-      "ModuleLine" : 3,
-      "ModuleName" : "div_color_HSV",
-      "SubInsts" : [
-       {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 60,
-        "InstName" : "u1_mul",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
-        "ModuleLine" : 4,
-        "ModuleName" : "mul",
-        "SubInsts" : [
-         {
-          "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
-          "InstLine" : 22,
-          "InstName" : "u_mul_8",
-          "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/gowin_mult/mul_8.v",
-          "ModuleLine" : 9,
-          "ModuleName" : "mul_8"
-         }
-        ]
-       },
-       {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 74,
-        "InstName" : "u2_mul",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
-        "ModuleLine" : 4,
-        "ModuleName" : "mul",
-        "SubInsts" : [
-         {
-          "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
-          "InstLine" : 22,
-          "InstName" : "u_mul_8",
-          "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/gowin_mult/mul_8.v",
-          "ModuleLine" : 9,
-          "ModuleName" : "mul_8"
-         }
-        ]
-       },
-       {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 88,
-        "InstName" : "u3_mul",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
-        "ModuleLine" : 4,
-        "ModuleName" : "mul",
-        "SubInsts" : [
-         {
-          "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
-          "InstLine" : 22,
-          "InstName" : "u_mul_8",
-          "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/gowin_mult/mul_8.v",
-          "ModuleLine" : 9,
-          "ModuleName" : "mul_8"
-         }
-        ]
-       },
-       {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 102,
-        "InstName" : "u4_mul",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
-        "ModuleLine" : 4,
-        "ModuleName" : "mul",
-        "SubInsts" : [
-         {
-          "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
-          "InstLine" : 22,
-          "InstName" : "u_mul_8",
-          "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/gowin_mult/mul_8.v",
-          "ModuleLine" : 9,
-          "ModuleName" : "mul_8"
-         }
-        ]
-       },
-       {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 112,
-        "InstName" : "u1_sub_abs",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/sub_abs.v",
-        "ModuleLine" : 4,
-        "ModuleName" : "sub_abs"
-       },
-       {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 120,
-        "InstName" : "u2_sub_abs",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/sub_abs.v",
-        "ModuleLine" : 4,
-        "ModuleName" : "sub_abs"
-       },
-       {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 128,
-        "InstName" : "u3_sub_abs",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/sub_abs.v",
-        "ModuleLine" : 4,
-        "ModuleName" : "sub_abs"
-       },
-       {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 143,
-        "InstName" : "u1_cmp",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/cmp.v",
-        "ModuleLine" : 4,
-        "ModuleName" : "cmp"
-       }
-      ]
-     },
-     {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/post1__conv_show/conv_show.v",
-      "InstLine" : 181,
-      "InstName" : "u2_div_color_HSV",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-      "ModuleLine" : 3,
-      "ModuleName" : "div_color_HSV",
-      "SubInsts" : [
-       {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 60,
-        "InstName" : "u1_mul",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
-        "ModuleLine" : 4,
-        "ModuleName" : "mul",
-        "SubInsts" : [
-         {
-          "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
-          "InstLine" : 22,
-          "InstName" : "u_mul_8",
-          "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/gowin_mult/mul_8.v",
-          "ModuleLine" : 9,
-          "ModuleName" : "mul_8"
-         }
-        ]
-       },
-       {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 74,
-        "InstName" : "u2_mul",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
-        "ModuleLine" : 4,
-        "ModuleName" : "mul",
-        "SubInsts" : [
-         {
-          "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
-          "InstLine" : 22,
-          "InstName" : "u_mul_8",
-          "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/gowin_mult/mul_8.v",
-          "ModuleLine" : 9,
-          "ModuleName" : "mul_8"
-         }
-        ]
-       },
-       {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 88,
-        "InstName" : "u3_mul",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
-        "ModuleLine" : 4,
-        "ModuleName" : "mul",
-        "SubInsts" : [
-         {
-          "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
-          "InstLine" : 22,
-          "InstName" : "u_mul_8",
-          "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/gowin_mult/mul_8.v",
-          "ModuleLine" : 9,
-          "ModuleName" : "mul_8"
-         }
-        ]
-       },
-       {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 102,
-        "InstName" : "u4_mul",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
-        "ModuleLine" : 4,
-        "ModuleName" : "mul",
-        "SubInsts" : [
-         {
-          "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
-          "InstLine" : 22,
-          "InstName" : "u_mul_8",
-          "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/gowin_mult/mul_8.v",
-          "ModuleLine" : 9,
-          "ModuleName" : "mul_8"
-         }
-        ]
-       },
-       {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 112,
-        "InstName" : "u1_sub_abs",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/sub_abs.v",
-        "ModuleLine" : 4,
-        "ModuleName" : "sub_abs"
-       },
-       {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 120,
-        "InstName" : "u2_sub_abs",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/sub_abs.v",
-        "ModuleLine" : 4,
-        "ModuleName" : "sub_abs"
-       },
-       {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 128,
-        "InstName" : "u3_sub_abs",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/sub_abs.v",
-        "ModuleLine" : 4,
-        "ModuleName" : "sub_abs"
-       },
-       {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 143,
-        "InstName" : "u1_cmp",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/cmp.v",
-        "ModuleLine" : 4,
-        "ModuleName" : "cmp"
-       }
-      ]
-     },
-     {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/post1__conv_show/conv_show.v",
-      "InstLine" : 210,
-      "InstName" : "u3_div_color_HSV",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-      "ModuleLine" : 3,
-      "ModuleName" : "div_color_HSV",
-      "SubInsts" : [
-       {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 60,
-        "InstName" : "u1_mul",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
-        "ModuleLine" : 4,
-        "ModuleName" : "mul",
-        "SubInsts" : [
-         {
-          "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
-          "InstLine" : 22,
-          "InstName" : "u_mul_8",
-          "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/gowin_mult/mul_8.v",
-          "ModuleLine" : 9,
-          "ModuleName" : "mul_8"
-         }
-        ]
-       },
-       {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 74,
-        "InstName" : "u2_mul",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
-        "ModuleLine" : 4,
-        "ModuleName" : "mul",
-        "SubInsts" : [
-         {
-          "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
-          "InstLine" : 22,
-          "InstName" : "u_mul_8",
-          "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/gowin_mult/mul_8.v",
-          "ModuleLine" : 9,
-          "ModuleName" : "mul_8"
-         }
-        ]
-       },
-       {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 88,
-        "InstName" : "u3_mul",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
-        "ModuleLine" : 4,
-        "ModuleName" : "mul",
-        "SubInsts" : [
-         {
-          "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
-          "InstLine" : 22,
-          "InstName" : "u_mul_8",
-          "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/gowin_mult/mul_8.v",
-          "ModuleLine" : 9,
-          "ModuleName" : "mul_8"
-         }
-        ]
-       },
-       {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 102,
-        "InstName" : "u4_mul",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
-        "ModuleLine" : 4,
-        "ModuleName" : "mul",
-        "SubInsts" : [
-         {
-          "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
-          "InstLine" : 22,
-          "InstName" : "u_mul_8",
-          "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/gowin_mult/mul_8.v",
-          "ModuleLine" : 9,
-          "ModuleName" : "mul_8"
-         }
-        ]
-       },
-       {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 112,
-        "InstName" : "u1_sub_abs",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/sub_abs.v",
-        "ModuleLine" : 4,
-        "ModuleName" : "sub_abs"
-       },
-       {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 120,
-        "InstName" : "u2_sub_abs",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/sub_abs.v",
-        "ModuleLine" : 4,
-        "ModuleName" : "sub_abs"
-       },
-       {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 128,
-        "InstName" : "u3_sub_abs",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/sub_abs.v",
-        "ModuleLine" : 4,
-        "ModuleName" : "sub_abs"
-       },
-       {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 143,
-        "InstName" : "u1_cmp",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/cmp.v",
-        "ModuleLine" : 4,
-        "ModuleName" : "cmp"
-       }
-      ]
-     },
-     {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/post1__conv_show/conv_show.v",
-      "InstLine" : 239,
-      "InstName" : "u4_div_color_HSV",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-      "ModuleLine" : 3,
-      "ModuleName" : "div_color_HSV",
-      "SubInsts" : [
-       {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 60,
-        "InstName" : "u1_mul",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
-        "ModuleLine" : 4,
-        "ModuleName" : "mul",
-        "SubInsts" : [
-         {
-          "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
-          "InstLine" : 22,
-          "InstName" : "u_mul_8",
-          "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/gowin_mult/mul_8.v",
-          "ModuleLine" : 9,
-          "ModuleName" : "mul_8"
-         }
-        ]
-       },
-       {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 74,
-        "InstName" : "u2_mul",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
-        "ModuleLine" : 4,
-        "ModuleName" : "mul",
-        "SubInsts" : [
-         {
-          "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
-          "InstLine" : 22,
-          "InstName" : "u_mul_8",
-          "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/gowin_mult/mul_8.v",
-          "ModuleLine" : 9,
-          "ModuleName" : "mul_8"
-         }
-        ]
-       },
-       {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 88,
-        "InstName" : "u3_mul",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
-        "ModuleLine" : 4,
-        "ModuleName" : "mul",
-        "SubInsts" : [
-         {
-          "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
-          "InstLine" : 22,
-          "InstName" : "u_mul_8",
-          "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/gowin_mult/mul_8.v",
-          "ModuleLine" : 9,
-          "ModuleName" : "mul_8"
-         }
-        ]
-       },
-       {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 102,
-        "InstName" : "u4_mul",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
-        "ModuleLine" : 4,
-        "ModuleName" : "mul",
-        "SubInsts" : [
-         {
-          "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/mul.v",
-          "InstLine" : 22,
-          "InstName" : "u_mul_8",
-          "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/gowin_mult/mul_8.v",
-          "ModuleLine" : 9,
-          "ModuleName" : "mul_8"
-         }
-        ]
-       },
-       {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 112,
-        "InstName" : "u1_sub_abs",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/sub_abs.v",
-        "ModuleLine" : 4,
-        "ModuleName" : "sub_abs"
-       },
-       {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 120,
-        "InstName" : "u2_sub_abs",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/sub_abs.v",
-        "ModuleLine" : 4,
-        "ModuleName" : "sub_abs"
-       },
-       {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 128,
-        "InstName" : "u3_sub_abs",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/sub_abs.v",
-        "ModuleLine" : 4,
-        "ModuleName" : "sub_abs"
-       },
-       {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/div_color_HSV.v",
-        "InstLine" : 143,
-        "InstName" : "u1_cmp",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/base__div_color/cmp.v",
-        "ModuleLine" : 4,
-        "ModuleName" : "cmp"
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/top.v",
-    "InstLine" : 317,
+    "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/top.v",
+    "InstLine" : 387,
     "InstName" : "u_show_rect_ascii",
-    "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/post4__show_rect_ascii/show_rect_ascii.v",
+    "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/post4__show_rect_ascii/show_rect_ascii.v",
     "ModuleLine" : 4,
     "ModuleName" : "show_rect_ascii",
     "SubInsts" : [
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/post4__show_rect_ascii/show_rect_ascii.v",
-      "InstLine" : 44,
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/post4__show_rect_ascii/show_rect_ascii.v",
+      "InstLine" : 41,
       "InstName" : "u_label_str",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/post4__show_rect_ascii/label_str.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/post4__show_rect_ascii/label_str.v",
       "ModuleLine" : 5,
       "ModuleName" : "label_str"
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/post4__show_rect_ascii/show_rect_ascii.v",
-      "InstLine" : 49,
-      "InstName" : "u_const_str",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/post4__show_rect_ascii/const_str.v",
-      "ModuleLine" : 5,
-      "ModuleName" : "const_str"
-     },
-     {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/post4__show_rect_ascii/show_rect_ascii.v",
-      "InstLine" : 54,
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/post4__show_rect_ascii/show_rect_ascii.v",
+      "InstLine" : 46,
       "InstName" : "u_varies",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/post4__show_rect_ascii/varies.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/post4__show_rect_ascii/varies.v",
       "ModuleLine" : 5,
       "ModuleName" : "varies"
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/post4__show_rect_ascii/show_rect_ascii.v",
-      "InstLine" : 61,
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/post4__show_rect_ascii/show_rect_ascii.v",
+      "InstLine" : 53,
+      "InstName" : "u_const_str",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/post4__show_rect_ascii/const_str.v",
+      "ModuleLine" : 5,
+      "ModuleName" : "const_str"
+     },
+     {
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/post4__show_rect_ascii/show_rect_ascii.v",
+      "InstLine" : 58,
       "InstName" : "u_show_rect_ascii_ctrl",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/post4__show_rect_ascii/show_rect_ascii_ctrl.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/post4__show_rect_ascii/show_rect_ascii_ctrl.v",
       "ModuleLine" : 17,
       "ModuleName" : "show_rect_ascii_ctrl"
      },
      {
-      "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/post4__show_rect_ascii/show_rect_ascii.v",
-      "InstLine" : 86,
+      "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/post4__show_rect_ascii/show_rect_ascii.v",
+      "InstLine" : 81,
       "InstName" : "u_show_rect_ascii_single",
-      "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/post4__show_rect_ascii/show_rect_ascii_single.v",
+      "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/post4__show_rect_ascii/show_rect_ascii_single.v",
       "ModuleLine" : 23,
       "ModuleName" : "show_rect_ascii_single",
       "SubInsts" : [
        {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/post4__show_rect_ascii/show_rect_ascii_single.v",
-        "InstLine" : 87,
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/post4__show_rect_ascii/show_rect_ascii_single.v",
+        "InstLine" : 89,
         "InstName" : "u_ROM_letter_show",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/post4__show_rect_ascii/gowin_prom/ROM_letter_show.v",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/post4__show_rect_ascii/gowin_prom/ROM_letter_show.v",
         "ModuleLine" : 9,
         "ModuleName" : "ROM_letter_show"
        },
        {
-        "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/post4__show_rect_ascii/show_rect_ascii_single.v",
-        "InstLine" : 210,
+        "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/post4__show_rect_ascii/show_rect_ascii_single.v",
+        "InstLine" : 213,
         "InstName" : "u_RAM_letter_show",
-        "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/post4__show_rect_ascii/gowin_sdpb/RAM_letter_show.v",
+        "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/post4__show_rect_ascii/gowin_sdpb/RAM_letter_show.v",
         "ModuleLine" : 9,
         "ModuleName" : "RAM_letter_show"
        }
@@ -1260,11 +1268,11 @@
   ]
  },
  {
-  "InstFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/post1__conv_show/conv.v",
+  "InstFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/post2__sample_show/sample_show.v",
   "InstLine" : 3,
-  "InstName" : "conv",
-  "ModuleFile" : "E:/_compete/4-20220926fpga/Gowin_Selfpurchase/fpga/src/post1__conv_show/conv.v",
+  "InstName" : "sample_show",
+  "ModuleFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/post2__sample_show/sample_show.v",
   "ModuleLine" : 3,
-  "ModuleName" : "conv"
+  "ModuleName" : "sample_show"
  }
 ]

@@ -9,6 +9,13 @@
 
 `define CORRODE_COLOR           (16'b00100_001000_00100)
 
+`define ASCII_RECT_COLOR_R      (16'b01000_000000_00000) 
+`define ASCII_RECT_COLOR_G      (16'b00000_010000_00000) 
+`define ASCII_RECT_COLOR_B      (16'b00000_000000_01000) 
+`define ASCII_RECT_COLOR_RG     (16'b01000_010000_00000) 
+`define ASCII_RECT_COLOR_RB     (16'b01000_000000_01000) 
+`define ASCII_RECT_COLOR_GB     (16'b00000_010000_01000) 
+`define ASCII_RECT_COLOR_W      (16'b01000_010000_01000) 
 //******************* RST *******************
 
 //-----div_color_skin____PARAM
@@ -87,17 +94,18 @@
 
 //******************* CORROSION *******************
 `define CORROSION_SIZE          (16)
+//降低 CORROSION_SIZE 可能造成 1."show_corroder.v" 中 RAM 容量不足；2.目前未知原因的屏幕黑闪
 `define CORROSION_DX            (50)    //即(`PIC_DX / `COR_SIZE)   //要满足: PIC_DX % COR_SIZE = 0
 `define CORROSION_DY            (29)    //即(`PIC_DY / `COR_SIZE)   //要满足: PIC_DY % COR_SIZE = 0
 
+/*unchangeable*/
 `define CORROSION_WIDTH         (7)                                 //要满足: 2 ^ CORROSION_WIDTH >= max(CORROSION_DX, CORROSION_DY)
-//降低 CORROSION_SIZE 可能造成 1."show_corroder.v" 中 RAM 容量不足；2.目前未知原因的屏幕黑闪
+//CORROSION_WIDTH 目前是不可变的，因为程序中有 2^n 的空间划分
 
 //******************* RECT_DIVITION *******************
+/*unchangeable*/
 `define RECT_NUMMAX             (16) 
 `define RECT_NUMMAX_WIDTH       (4)                                 //要满足: 2 ^ RECT_NUMMAX_WIDTH >= RECT_NUMMAX 
-
-`define RECT_POSSIBILITY_WIDTH  (8)
 
 //******************* LETTER_WRITE *******************
 /*unchangeable*/
@@ -106,3 +114,4 @@
 `define LETTER_PIXEL_DY         (`OV5640_Y / `LETTER_PIXEL_SIZEL)
 
 `define LETTER_PIXEL_WIDTH      8                                   //要满足: 2 ^ LETTER_PIXEL_WIDTH >= max(LETTER_PIXEL_DX, LETTER_PIXEL_DY)
+//LETTER_PIXEL_WIDTH 目前是不可变的，因为程序中有 2^n 的空间划分
