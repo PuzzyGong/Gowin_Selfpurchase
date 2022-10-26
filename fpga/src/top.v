@@ -58,7 +58,9 @@ wire                                    post_clk                   ;
 wire                                    i_post_vs                  ;
 wire                                    i_post_de                  ;
 wire                   [16-1:0]         i_post_data                ;
-reg                    [16-1:0]         o_post_data                ;
+wire                   [8-1:0]          o_post_r                   ;
+wire                   [8-1:0]          o_post_g                   ;
+wire                   [8-1:0]          o_post_b                   ;
 wire                                    i_post_camvs               ;
 
 interfaces_top u_interfaces_top(
@@ -104,7 +106,9 @@ interfaces_top u_interfaces_top(
     .o_post_vs                         (i_post_vs                 ),
     .o_post_de                         (i_post_de                 ),
     .o_post_data                       (i_post_data               ),
-    .i_post_data                       (o_post_data               ),
+    .i_post_r                          (o_post_r                  ),
+    .i_post_g                          (o_post_g                  ),
+    .i_post_b                          (o_post_b                  ),
     .o_post_camvs                      (i_post_camvs              ) 
 );
 
@@ -115,6 +119,7 @@ wire                   [  31:0]         cnt_1s                     ;
 
 wire                   [   7:0]         fps1                       ;
 wire                   [   7:0]         fps2                       ;
+wire                   [   7:0]         fps3                       ;
 
 top_test u_top_test(
     .pre_clk                           (pre_clk                   ),
@@ -124,6 +129,7 @@ top_test u_top_test(
     .i_post_vs                         (i_post_vs                 ),
     .fps1                              (fps1                      ),
     .fps2                              (fps2                      ),
+    .fps3                              (fps3                      ),
     .cnt_1s                            (cnt_1s                    )
 );
 
@@ -311,13 +317,23 @@ wire                   [  15:0]         data_3                     ;
 wire                   [  15:0]         data_3_process             ;
 wire                   [  15:0]         data_3_raw                 ;
 
-wire                   [  15:0]         data_4_process             ;
-wire                   [  15:0]         data_4_raw                 ;
+wire                                    en_4                       ;
+wire                   [  15:0]         data_4                     ;
+wire                                    en_5                       ;
+wire                   [  23:0]         data_5                     ;
+wire                                    en_6                       ;
+wire                   [  23:0]         data_6                     ;
+wire                                    en_7                       ;
+wire                   [  23:0]         data_7                     ;
+wire                                    en_8                       ;
+wire                   [  23:0]         data_8                     ;
 
 //-----Delay = 5
 wire                   [   7:0]         num                        ;
 wire                   [   7:0]         money                      ;
+wire                   [   7:0]         user                       ;
 wire                   [   7:0]         payment                    ;
+wire                   [   2:0]         pattern                    ;
 
 conv_show u_conv_show(
     .sys_clk                           (post_clk                  ),
@@ -335,7 +351,10 @@ conv_show u_conv_show(
     .o_label                           (label                     ),
     .o_num                             (num                       ),
     .o_money                           (money                     ),
-    .o_payment                         (payment                   ), 
+    .i_user                            (contains[{'h10,3'b0} +: 8]),
+    .o_user                            (user                      ),
+    .o_payment                         (payment                   ),
+    .o_pattern                         (pattern                   ),
     .i_post_camvs                      (i_post_camvs              ),
     .i_valid                           (i_post_de                 ),
     .i_data                            (i_post_data               ),
@@ -383,29 +402,69 @@ show_corrode u_show_corrode(
 assign data_3 = (contains[{'h0E,3'b0} +: 1] == 'b0) ? data_3_raw : data_3_process;
 
 
-//-----Delay = 3 + 1
+//-----Delay = 3
 show_rect_ascii u_show_rect_ascii(
+    .sys_clk                           (post_clk                  ),
+    .sys_rst_n                         (sys_rst_n  &  i_post_vs   ),
+    .i_label                           (64'b0                     ),
+    .i_item                            (item_2                    ),
+    .i_otheritem                       (512'b0                    ),
+    .i_varies                          (128'b0                    ),
+    .i_valid                           (en_3                      ),
+    .i_data                            (data_3                    ),
+    .o_valid                           (en_4                      ),
+    .o_data                            (data_4                    ),
+    .o_data_raw                        (                          )
+);
+
+//-----Delay = 5
+show_character u_show_character(
     .sys_clk                           (post_clk                  ),
     .sys_rst_n                         (sys_rst_n  &  i_post_vs   ),
     .i_label                           (label                     ),
     .i_item                            (item_2                    ),
-    .i_otheritem                       (512'b0                    ),
-    .i_varies                          ({80'd0,    payment,money,num,       8'd000,fps2,fps1}),
-    .i_valid                           (en_3                      ),
-    .i_data                            (data_3                    ),
-    .o_valid                           (                          ),
-    .o_data                            (data_4_process            ),
-    .o_data_raw                        (data_4_raw                )
+    .i_valid                           (en_4                      ),
+    .i_data                            ({data_4[15:11], 3'd0, data_4[10:5], 2'd0, data_4[4:0], 3'd0}),
+    .o_valid                           (en_5                      ),
+    .o_data                            (data_5                    ) 
 );
 
-always@(posedge post_clk or negedge sys_rst_n)
-    if(sys_rst_n == 1'b0)
-        o_post_data <= 'b0;
-    else if(contains[{'h10,3'b0} +: 1] == 'b0)
-        o_post_data <=  data_4_raw;
-    else
-        o_post_data <=  data_4_process;
+//-----Delay = 5
+show_varies u_show_varies(
+    .sys_clk                           (post_clk                  ),
+    .sys_rst_n                         (sys_rst_n  &  i_post_vs   ),
+    .i_valid                           (en_5                      ),
+    .i_data                            (data_5                    ),
+    .o_valid                           (en_6                      ),
+    .o_data                            (data_6                    ) 
+);
 
+//-----Delay = 5
+show_ascii u_show_ascii(
+    .sys_clk                           (post_clk                  ),
+    .sys_rst_n                         (sys_rst_n  &  i_post_vs   ),
+    .i_varies                          ({fps1, fps2, fps3, num, money, user, payment, 72'd0}),
+    .i_valid                           (en_6                      ),
+    .i_data                            (data_6                    ),
+    .o_valid                           (en_7                      ),
+    .o_data                            (data_7                    ) 
+);
+
+//-----Delay = 5
+show_picture u_show_picture(
+    .sys_clk                           (post_clk                  ),
+    .sys_rst_n                         (sys_rst_n  &  i_post_vs   ),
+    .i_pattern                         (pattern                   ),
+    .i_valid                           (en_7                      ),
+    .i_data                            (data_7                    ),
+    .o_valid                           (en_8                      ),
+    .o_data                            (data_8                    ) 
+);
+
+
+assign o_post_r = data_8[2 * 8 +: 8];
+assign o_post_g = data_8[1 * 8 +: 8];
+assign o_post_b = data_8[0 * 8 +: 8];
 
 
 endmodule

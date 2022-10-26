@@ -187,7 +187,7 @@ always@(posedge sys_clk or negedge sys_rst_n)
     else if(ascii_1 == 'b1) begin
         cea_2 <= 'b1;
         ada_2 <= {rect_y_1, rect_x_1};
-        din_2 <= color_1;
+        din_2 <= 'b1;
     end
     else if(ascii_1 == 'd32) begin
         cea_2 <= 'b0;
@@ -202,17 +202,17 @@ always@(posedge sys_clk or negedge sys_rst_n)
     else begin
         cea_2 <= 'b1;
         ada_2 <= {ascii_y_1, ascii_x_1};
-        din_2 <= color_1;
+        din_2 <= 'b1;
     end
 
 
 //*************** RAM ***************
 
 wire                   [  15:0]         adb_0                      ;
-wire                   [   2:0]         dout_1                     ;
+wire                                    dout_1                     ;
 RAM_letter_show u_RAM_letter_show
 (
-    .dout                              (dout_1                    ),//output [2:0] dout
+    .dout                              (dout_1                    ),//output [0:0] dout
     .clka                              (sys_clk                   ),//input clka
     .cea                               (cea_2                     ),//input cea
     .reseta                            (1'b0                      ),//input reseta
@@ -281,7 +281,7 @@ always@(posedge sys_clk or negedge sys_rst_n)
     end
 
 //----- 第 2 层
-reg                    [   2:0]         dout_2                     ;
+reg                                     dout_2                     ;
 always@(posedge sys_clk or negedge sys_rst_n)
     if(sys_rst_n == 1'b0)
         dout_2 <= 'b0;
@@ -292,20 +292,8 @@ always@(posedge sys_clk or negedge sys_rst_n)
 always@(posedge sys_clk or negedge sys_rst_n)
     if(sys_rst_n == 1'b0)
         o_data <= 'b0;
-    else if(dout_2 == 3'b001)
-        o_data <= `ASCII_RECT_COLOR_B;
-    else if(dout_2 == 3'b010)
-        o_data <= `ASCII_RECT_COLOR_G;
-    else if(dout_2 == 3'b100)
-        o_data <= `ASCII_RECT_COLOR_R;
-    else if(dout_2 == 3'b011)
+    else if(dout_2 == 1'b1)
         o_data <= `ASCII_RECT_COLOR_GB;
-    else if(dout_2 == 3'b101)
-        o_data <= `ASCII_RECT_COLOR_RB;
-    else if(dout_2 == 3'b110)
-        o_data <= `ASCII_RECT_COLOR_RG;
-    else if(dout_2 == 3'b111)
-        o_data <= `ASCII_RECT_COLOR_W;
     else
         o_data <= data_2;
 

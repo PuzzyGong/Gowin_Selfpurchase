@@ -28,7 +28,6 @@
         <File path="src/interfaces/lut_ov5640_rgb565_1024_768.v" type="file.verilog" enable="1"/>
         <File path="src/interfaces/vga_timing.v" type="file.verilog" enable="1"/>
         <File path="src/interfaces/video_frame_buffer/Video_Frame_Buffer_Top.v" type="file.verilog" enable="1"/>
-        <File path="src/post1__conv_show/conv.v" type="file.verilog" enable="1"/>
         <File path="src/post1__conv_show/conv_show.v" type="file.verilog" enable="1"/>
         <File path="src/post2__sample_show/sample_show.v" type="file.verilog" enable="1"/>
         <File path="src/post3__show_corrode/gowin_sdpb/RAM_show_corrode.v" type="file.verilog" enable="1"/>
@@ -41,6 +40,14 @@
         <File path="src/post4__show_rect_ascii/show_rect_ascii_ctrl.v" type="file.verilog" enable="1"/>
         <File path="src/post4__show_rect_ascii/show_rect_ascii_single.v" type="file.verilog" enable="1"/>
         <File path="src/post4__show_rect_ascii/varies.v" type="file.verilog" enable="1"/>
+        <File path="src/post5__show_pic/ROM_ascii/ROM_ascii.v" type="file.verilog" enable="1"/>
+        <File path="src/post5__show_pic/ROM_character/ROM_character.v" type="file.verilog" enable="1"/>
+        <File path="src/post5__show_pic/ROM_picture/ROM_picture.v" type="file.verilog" enable="1"/>
+        <File path="src/post5__show_pic/ROM_varies/ROM_varies.v" type="file.verilog" enable="1"/>
+        <File path="src/post5__show_pic/show_ascii.v" type="file.verilog" enable="1"/>
+        <File path="src/post5__show_pic/show_character.v" type="file.verilog" enable="1"/>
+        <File path="src/post5__show_pic/show_picture.v" type="file.verilog" enable="1"/>
+        <File path="src/post5__show_pic/show_varies.v" type="file.verilog" enable="1"/>
         <File path="src/pre2__div_color/div_color.v" type="file.verilog" enable="1"/>
         <File path="src/pre3__corrode/corrode.v" type="file.verilog" enable="1"/>
         <File path="src/pre3__return__intercept/intercept.v" type="file.verilog" enable="1"/>

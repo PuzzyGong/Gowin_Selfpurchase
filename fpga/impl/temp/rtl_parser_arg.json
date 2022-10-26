@@ -1,195 +1,223 @@
 {
  "Files" : [
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/cmp.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/base__div_color/cmp.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/div_color_HSV.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/base__div_color/div_color_HSV.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/gowin_mult/mul_8.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/base__div_color/gowin_mult/mul_8.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/mul.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/base__div_color/mul.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/base__div_color/sub_abs.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/base__div_color/sub_abs.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/define.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/define.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/cmos_8_16bit.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/interfaces/cmos_8_16bit.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/ddr3_memory_interface/DDR3MI.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/interfaces/ddr3_memory_interface/DDR3MI.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/dvi_tx/DVI_TX_Top.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/interfaces/dvi_tx/DVI_TX_Top.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/gowin_rpll/TMDS_rPLL.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/interfaces/gowin_rpll/TMDS_rPLL.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/gowin_rpll/cmos_pll.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/interfaces/gowin_rpll/cmos_pll.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/gowin_rpll/mem_pll.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/interfaces/gowin_rpll/mem_pll.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/gowin_rpll/sys_pll.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/interfaces/gowin_rpll/sys_pll.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/i2c_master/i2c_config.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/interfaces/i2c_master/i2c_config.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/i2c_master/i2c_master_bit_ctrl.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/interfaces/i2c_master/i2c_master_bit_ctrl.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/i2c_master/i2c_master_byte_ctrl.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/interfaces/i2c_master/i2c_master_byte_ctrl.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/i2c_master/i2c_master_defines.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/interfaces/i2c_master/i2c_master_defines.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/i2c_master/i2c_master_top.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/interfaces/i2c_master/i2c_master_top.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/i2c_master/timescale.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/interfaces/i2c_master/timescale.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/interfaces_top.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/interfaces/interfaces_top.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/lut_ov5640_rgb565_1024_768.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/interfaces/lut_ov5640_rgb565_1024_768.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/vga_timing.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/interfaces/vga_timing.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/interfaces/video_frame_buffer/Video_Frame_Buffer_Top.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/interfaces/video_frame_buffer/Video_Frame_Buffer_Top.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/post1__conv_show/conv.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/post1__conv_show/conv_show.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/post1__conv_show/conv_show.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/post2__sample_show/sample_show.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/post3__show_corrode/gowin_sdpb/RAM_show_corrode.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/post3__show_corrode/gowin_sdpb/RAM_show_corrode.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/post3__show_corrode/show_corrode.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/post3__show_corrode/show_corrode.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/post4__show_rect_ascii/const_str.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/post4__show_rect_ascii/const_str.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/post4__show_rect_ascii/gowin_prom/ROM_letter_show.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/post4__show_rect_ascii/gowin_prom/ROM_letter_show.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/post4__show_rect_ascii/gowin_sdpb/RAM_letter_show.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/post4__show_rect_ascii/gowin_sdpb/RAM_letter_show.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/post4__show_rect_ascii/label_str.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/post4__show_rect_ascii/label_str.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/post4__show_rect_ascii/show_rect_ascii.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/post4__show_rect_ascii/show_rect_ascii.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/post4__show_rect_ascii/show_rect_ascii_ctrl.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/post4__show_rect_ascii/show_rect_ascii_ctrl.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/post4__show_rect_ascii/show_rect_ascii_single.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/post4__show_rect_ascii/show_rect_ascii_single.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/post4__show_rect_ascii/varies.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/post4__show_rect_ascii/varies.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/pre2__div_color/div_color.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/pre2__div_color/div_color.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/pre3__corrode/corrode.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/pre3__corrode/corrode.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/pre3__return__intercept/intercept.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/pre3__return__intercept/intercept.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/pre4__div_rect/div_rect.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/pre4__div_rect/div_rect.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/top.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/top.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/top_test.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/top_test.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/debug.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/uart_sfr/debug.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/debug_ctrl.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/uart_sfr/debug_ctrl.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/sfr.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/uart_sfr/sfr.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/uart_rx.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/uart_sfr/uart_rx.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/uart_sfr.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/uart_sfr/uart_sfr.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/uart_sfr/uart_tx.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/uart_sfr/uart_tx.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/src/post2__sample_show/sample_show.v",
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/post5__show_pic/show_character.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/post5__show_pic/ROM_character/ROM_character.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/post5__show_pic/ROM_varies/ROM_varies.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/post5__show_pic/show_varies.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/post5__show_pic/ROM_ascii/ROM_ascii.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/post5__show_pic/show_ascii.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/post5__show_pic/ROM_picture/ROM_picture.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/_compete/4-20220926fpga/fpga/src/post5__show_pic/show_picture.v",
    "Type" : "verilog"
   }
  ],
@@ -197,7 +225,7 @@
 
  ],
  "LoopLimit" : 2000,
- "ResultFile" : "C:/Users/76308/Desktop/Gowin_Selfpurchase-main/Gowin_Selfpurchase-main/fpga/impl/temp/rtl_parser.result",
+ "ResultFile" : "E:/_compete/4-20220926fpga/fpga/impl/temp/rtl_parser.result",
  "Top" : "top",
  "VerilogStd" : "verilog_2001",
  "VhdlStd" : "vhdl_93"

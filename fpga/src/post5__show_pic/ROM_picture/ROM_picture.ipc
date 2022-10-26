@@ -1,0 +1,15 @@
+[General]
+ipc_version=4
+file=ROM_picture
+module=ROM_picture
+target_device=gw2a18c-011
+type=ram_prom
+version=1.0
+
+[Config]
+DEPTH=131072
+LANG=0
+MEM_FILE=../picture.mi
+READ=0
+RESET_MODE=true
+WIDTH=1

@@ -94,71 +94,71 @@ always@(posedge sys_clk or negedge sys_rst_n)
         o_y2    <= 'b0;
         label_real <= 'b0;
     end
-    else if(cnt[19:16] == 4'b0000) begin
-        o_ascii <= 'b0;
-        o_color <= 'b0;
-        o_ys    <= 'd128;
-        o_ye    <= 'd191;
-    end
-    else if(cnt[19:16] == 4'b0001 && cnt[7:0] == 'b0) begin
-        o_ascii <= i_varies    [{~cnt[15:12] , 6'b0} + {~cnt[ 9:8], 3'b0} +: 8  ];
-        o_color <= i_varies    [{~cnt[15:12] , 6'b0} + L_W + L_W +  4 * 8 +: 3  ];
-        o_x     <= i_varies    [{~cnt[15:12] , 6'b0} +       L_W +  4 * 8 +: L_W] + {cnt[ 9:8], 3'b0};
-        o_y     <= i_varies    [{~cnt[15:12] , 6'b0} +              4 * 8 +: L_W];
-    end
-    else if(cnt[19:16] == 4'b0010 && cnt[7:0] == 'b0) begin
-        o_ascii <= i_const_str [{~cnt[15:12] , 8'b0} + {~cnt[11:8] ,3'b0} +: 8  ];
-        o_color <= i_const_str [{~cnt[15:12] , 8'b0} + L_W + L_W + 16 * 8 +: 3  ];
-        o_x     <= i_const_str [{~cnt[15:12] , 8'b0} +       L_W + 16 * 8 +: L_W] + {cnt[11:8], 3'b0};
-        o_y     <= i_const_str [{~cnt[15:12] , 8'b0} +             16 * 8 +: L_W];
-    end
+    // else if(cnt[19:16] == 4'b0000) begin
+    //     o_ascii <= 'b0;
+    //     o_color <= 'b0;
+    //     o_ys    <= 'd128;
+    //     o_ye    <= 'd191;
+    // end
+    // else if(cnt[19:16] == 4'b0001 && cnt[7:0] == 'b0) begin
+    //     o_ascii <= i_varies    [{~cnt[15:12] , 6'b0} + {~cnt[ 9:8], 3'b0} +: 8  ];
+    //     o_color <= i_varies    [{~cnt[15:12] , 6'b0} + L_W + L_W +  4 * 8 +: 3  ];
+    //     o_x     <= i_varies    [{~cnt[15:12] , 6'b0} +       L_W +  4 * 8 +: L_W] + {cnt[ 9:8], 3'b0};
+    //     o_y     <= i_varies    [{~cnt[15:12] , 6'b0} +              4 * 8 +: L_W];
+    // end
+    // else if(cnt[19:16] == 4'b0010 && cnt[7:0] == 'b0) begin
+    //     o_ascii <= i_const_str [{~cnt[15:12] , 8'b0} + {~cnt[11:8] ,3'b0} +: 8  ];
+    //     o_color <= i_const_str [{~cnt[15:12] , 8'b0} + L_W + L_W + 16 * 8 +: 3  ];
+    //     o_x     <= i_const_str [{~cnt[15:12] , 8'b0} +       L_W + 16 * 8 +: L_W] + {cnt[11:8], 3'b0};
+    //     o_y     <= i_const_str [{~cnt[15:12] , 8'b0} +             16 * 8 +: L_W];
+    // end
 
     else if(cnt[19:16] == 4'b1000) begin
         o_ascii <= 'b0;
         o_ys    <= 'd0;
         o_ye    <= 'd127;
     end
-    else if(cnt[19:16] == 4'b1001 && cnt[7:0] == 'b0) begin
-        case(~i_label[{~cnt[15:12], 2'b0} +: 4])
-            4'h0:  label_real <= i_label_str[{4'h0,6'b0} +: 64];
-            4'h1:  label_real <= i_label_str[{4'h1,6'b0} +: 64];
-            4'h2:  label_real <= i_label_str[{4'h2,6'b0} +: 64];
-            4'h3:  label_real <= i_label_str[{4'h3,6'b0} +: 64];
-            4'h4:  label_real <= i_label_str[{4'h4,6'b0} +: 64];
-            4'h5:  label_real <= i_label_str[{4'h5,6'b0} +: 64];
-            4'h6:  label_real <= i_label_str[{4'h6,6'b0} +: 64];
-            4'h7:  label_real <= i_label_str[{4'h7,6'b0} +: 64];
-            4'h8:  label_real <= i_label_str[{4'h8,6'b0} +: 64];
-            4'h9:  label_real <= i_label_str[{4'h9,6'b0} +: 64];
-            4'hA:  label_real <= i_label_str[{4'hA,6'b0} +: 64];
-            4'hB:  label_real <= i_label_str[{4'hB,6'b0} +: 64];
-            4'hC:  label_real <= i_label_str[{4'hC,6'b0} +: 64];
-            4'hD:  label_real <= i_label_str[{4'hD,6'b0} +: 64];
-            4'hE:  label_real <= i_label_str[{4'hE,6'b0} +: 64];
-            4'hF:  label_real <= i_label_str[{4'hF,6'b0} +: 64];
-        endcase
-    end
-    else if(cnt[19:16] == 4'b1001 && cnt[7:0] == 'b1) begin
-        if(cnt[10] == 1'b0) begin
-            o_ascii <= label_real [{~cnt[10:8], 3'b0} +: 8  ];
-            o_color <= 3'b010;
-            o_x     <= i_item [{~cnt[15:12] , 5'b0} + L_W + L_W + L_W +: L_W] + {cnt[10:8], 3'b0};
-            o_y     <= i_item [{~cnt[15:12] , 5'b0}                   +: L_W] - 'd2;
-        end
-        if(cnt[10] == 1'b1) begin
-            o_ascii <= label_real [{~cnt[10:8], 3'b0} +: 8  ];
-            o_color <= 3'b010;
-            o_y     <= i_item [{~cnt[15:12] , 5'b0}                   +: L_W] - 'd15;
-            if(cnt[9:8] == 2'b00)
-                o_x <= i_item [{~cnt[15:12] , 5'b0} + L_W + L_W + L_W +: L_W] + 'd0;
-            else if(cnt[9:8] == 2'b01)
-                o_x <= i_item [{~cnt[15:12] , 5'b0} + L_W + L_W + L_W +: L_W] + 'd6;
-            else if(cnt[9:8] == 2'b10)
-                o_x <= i_item [{~cnt[15:12] , 5'b0} + L_W + L_W + L_W +: L_W] + 'd14;
-            else if(cnt[9:8] == 2'b11)
-                o_x <= i_item [{~cnt[15:12] , 5'b0} + L_W + L_W + L_W +: L_W] + 'd18;
-        end
-    end
+    // else if(cnt[19:16] == 4'b1001 && cnt[7:0] == 'b0) begin
+    //     case(~i_label[{~cnt[15:12], 2'b0} +: 4])
+    //         4'h0:  label_real <= i_label_str[{4'h0,6'b0} +: 64];
+    //         4'h1:  label_real <= i_label_str[{4'h1,6'b0} +: 64];
+    //         4'h2:  label_real <= i_label_str[{4'h2,6'b0} +: 64];
+    //         4'h3:  label_real <= i_label_str[{4'h3,6'b0} +: 64];
+    //         4'h4:  label_real <= i_label_str[{4'h4,6'b0} +: 64];
+    //         4'h5:  label_real <= i_label_str[{4'h5,6'b0} +: 64];
+    //         4'h6:  label_real <= i_label_str[{4'h6,6'b0} +: 64];
+    //         4'h7:  label_real <= i_label_str[{4'h7,6'b0} +: 64];
+    //         4'h8:  label_real <= i_label_str[{4'h8,6'b0} +: 64];
+    //         4'h9:  label_real <= i_label_str[{4'h9,6'b0} +: 64];
+    //         4'hA:  label_real <= i_label_str[{4'hA,6'b0} +: 64];
+    //         4'hB:  label_real <= i_label_str[{4'hB,6'b0} +: 64];
+    //         4'hC:  label_real <= i_label_str[{4'hC,6'b0} +: 64];
+    //         4'hD:  label_real <= i_label_str[{4'hD,6'b0} +: 64];
+    //         4'hE:  label_real <= i_label_str[{4'hE,6'b0} +: 64];
+    //         4'hF:  label_real <= i_label_str[{4'hF,6'b0} +: 64];
+    //     endcase
+    // end
+    // else if(cnt[19:16] == 4'b1001 && cnt[7:0] == 'b1) begin
+    //     if(cnt[10] == 1'b0) begin
+    //         o_ascii <= label_real [{~cnt[10:8], 3'b0} +: 8  ];
+    //         o_color <= 3'b010;
+    //         o_x     <= i_item [{~cnt[15:12] , 5'b0} + L_W + L_W + L_W +: L_W] + {cnt[10:8], 3'b0};
+    //         o_y     <= i_item [{~cnt[15:12] , 5'b0}                   +: L_W] - 'd2;
+    //     end
+    //     if(cnt[10] == 1'b1) begin
+    //         o_ascii <= label_real [{~cnt[10:8], 3'b0} +: 8  ];
+    //         o_color <= 3'b010;
+    //         o_y     <= i_item [{~cnt[15:12] , 5'b0}                   +: L_W] - 'd15;
+    //         if(cnt[9:8] == 2'b00)
+    //             o_x <= i_item [{~cnt[15:12] , 5'b0} + L_W + L_W + L_W +: L_W] + 'd0;
+    //         else if(cnt[9:8] == 2'b01)
+    //             o_x <= i_item [{~cnt[15:12] , 5'b0} + L_W + L_W + L_W +: L_W] + 'd6;
+    //         else if(cnt[9:8] == 2'b10)
+    //             o_x <= i_item [{~cnt[15:12] , 5'b0} + L_W + L_W + L_W +: L_W] + 'd14;
+    //         else if(cnt[9:8] == 2'b11)
+    //             o_x <= i_item [{~cnt[15:12] , 5'b0} + L_W + L_W + L_W +: L_W] + 'd18;
+    //     end
+    // end
     else if(cnt[19:16] == 4'b1010 && cnt[7:0] == 'b0) begin
         o_x1    <= i_item [{~cnt[15:12] , 5'b0} + L_W + L_W + L_W +: L_W];
         o_y1    <= i_item [{~cnt[15:12] , 5'b0} +       L_W + L_W +: L_W];

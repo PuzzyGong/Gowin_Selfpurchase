@@ -1,294 +1,273 @@
 GowinSynthesis start
 Running parser ...
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\base__div_color\cmp.v'
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\base__div_color\div_color_HSV.v'
-Analyzing included file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\base__div_color\..\define.v'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\base__div_color\div_color_HSV.v":1)
-Back to file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\base__div_color\div_color_HSV.v'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\base__div_color\div_color_HSV.v":1)
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\base__div_color\gowin_mult\mul_8.v'
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\base__div_color\mul.v'
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\base__div_color\sub_abs.v'
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\define.v'
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\cmos_8_16bit.v'
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v'
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\dvi_tx\DVI_TX_Top.v'
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\gowin_rpll\TMDS_rPLL.v'
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\gowin_rpll\cmos_pll.v'
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\gowin_rpll\mem_pll.v'
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\gowin_rpll\sys_pll.v'
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\i2c_master\i2c_config.v'
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\i2c_master\i2c_master_bit_ctrl.v'
-Analyzing included file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\i2c_master\i2c_master_defines.v'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\i2c_master\i2c_master_bit_ctrl.v":141)
-Back to file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\i2c_master\i2c_master_bit_ctrl.v'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\i2c_master\i2c_master_bit_ctrl.v":141)
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\i2c_master\i2c_master_byte_ctrl.v'
-Analyzing included file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\i2c_master\i2c_master_defines.v'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\i2c_master\i2c_master_byte_ctrl.v":73)
-Back to file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\i2c_master\i2c_master_byte_ctrl.v'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\i2c_master\i2c_master_byte_ctrl.v":73)
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\i2c_master\i2c_master_defines.v'
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\i2c_master\i2c_master_top.v'
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\i2c_master\timescale.v'
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\interfaces_top.v'
-Undeclared symbol 'cmos_clk', assumed default net type 'wire'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\interfaces_top.v":66)
-Undeclared symbol 'memory_clk', assumed default net type 'wire'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\interfaces_top.v":72)
-Undeclared symbol 'DDR_pll_lock', assumed default net type 'wire'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\interfaces_top.v":73)
-Undeclared symbol 'serial_clk', assumed default net type 'wire'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\interfaces_top.v":78)
-Undeclared symbol 'TMDS_DDR_pll_lock', assumed default net type 'wire'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\interfaces_top.v":79)
-Undeclared symbol 'hdmi4_rst_n', assumed default net type 'wire'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\interfaces_top.v":81)
-Undeclared symbol 'video_clk', assumed default net type 'wire'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\interfaces_top.v":87)
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\lut_ov5640_rgb565_1024_768.v'
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\vga_timing.v'
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\video_frame_buffer\Video_Frame_Buffer_Top.v'
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv.v'
-Analyzing included file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\..\define.v'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv.v":1)
-Back to file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv.v'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv.v":1)
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v'
-Analyzing included file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\..\define.v'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":1)
-Back to file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":1)
-WARN  (EX3788) : Block identifier is required on this block("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":440)
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post3__show_corrode\gowin_sdpb\RAM_show_corrode.v'
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post3__show_corrode\show_corrode.v'
-Analyzing included file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post3__show_corrode\..\define.v'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post3__show_corrode\show_corrode.v":1)
-Back to file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post3__show_corrode\show_corrode.v'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post3__show_corrode\show_corrode.v":1)
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\const_str.v'
-Analyzing included file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\..\define.v'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\const_str.v":1)
-Back to file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\const_str.v'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\const_str.v":1)
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\gowin_prom\ROM_letter_show.v'
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\gowin_sdpb\RAM_letter_show.v'
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\label_str.v'
-Analyzing included file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\..\define.v'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\label_str.v":1)
-Back to file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\label_str.v'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\label_str.v":1)
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\show_rect_ascii.v'
-Analyzing included file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\..\define.v'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\show_rect_ascii.v":1)
-Back to file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\show_rect_ascii.v'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\show_rect_ascii.v":1)
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\show_rect_ascii_ctrl.v'
-Analyzing included file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\..\define.v'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\show_rect_ascii_ctrl.v":1)
-Back to file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\show_rect_ascii_ctrl.v'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\show_rect_ascii_ctrl.v":1)
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\show_rect_ascii_single.v'
-Analyzing included file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\..\define.v'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\show_rect_ascii_single.v":1)
-Back to file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\show_rect_ascii_single.v'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\show_rect_ascii_single.v":1)
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\varies.v'
-Analyzing included file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\..\define.v'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\varies.v":1)
-Back to file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\varies.v'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\varies.v":1)
-WARN  (EX3788) : Block identifier is required on this block("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\varies.v":45)
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\pre2__div_color\div_color.v'
-Analyzing included file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\pre2__div_color\..\define.v'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\pre2__div_color\div_color.v":1)
-Back to file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\pre2__div_color\div_color.v'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\pre2__div_color\div_color.v":1)
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\pre3__corrode\corrode.v'
-Analyzing included file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\pre3__corrode\..\define.v'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\pre3__corrode\corrode.v":1)
-Back to file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\pre3__corrode\corrode.v'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\pre3__corrode\corrode.v":1)
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\pre3__return__intercept\intercept.v'
-Analyzing included file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\pre3__return__intercept\..\define.v'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\pre3__return__intercept\intercept.v":1)
-Back to file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\pre3__return__intercept\intercept.v'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\pre3__return__intercept\intercept.v":1)
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\pre4__div_rect\div_rect.v'
-Analyzing included file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\pre4__div_rect\..\define.v'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\pre4__div_rect\div_rect.v":1)
-Back to file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\pre4__div_rect\div_rect.v'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\pre4__div_rect\div_rect.v":1)
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\top.v'
-Analyzing included file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\define.v'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\top.v":1)
-Back to file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\top.v'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\top.v":1)
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\top_test.v'
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\debug.v'
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\debug_ctrl.v'
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\sfr.v'
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\uart_rx.v'
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\uart_sfr.v'
-Analyzing included file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\..\define.v'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\uart_sfr.v":1)
-Back to file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\uart_sfr.v'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\uart_sfr.v":1)
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\uart_tx.v'
-Analyzing Verilog file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post2__sample_show\sample_show.v'
-Analyzing included file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post2__sample_show\..\define.v'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post2__sample_show\sample_show.v":1)
-Back to file 'C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post2__sample_show\sample_show.v'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post2__sample_show\sample_show.v":1)
-WARN  (EX3788) : Block identifier is required on this block("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post2__sample_show\sample_show.v":139)
-WARN  (EX3073) : Port 'i_user' remains unconnected for this instance("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\top.v":345)
-Compiling module 'top'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\top.v":3)
-Compiling module 'interfaces_top'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\interfaces_top.v":1)
-Compiling module 'cmos_pll'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\gowin_rpll\cmos_pll.v":9)
-Compiling module 'mem_pll'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\gowin_rpll\mem_pll.v":9)
-Compiling module 'TMDS_rPLL'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\gowin_rpll\TMDS_rPLL.v":9)
-Compiling module 'i2c_config'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\i2c_master\i2c_config.v":1)
-WARN  (EX3780) : Using initial value of 'i2c_read_req' since it is never assigned("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\i2c_master\i2c_config.v":28)
-Compiling module 'i2c_master_top'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\i2c_master\i2c_master_top.v":1)
-Compiling module 'i2c_master_byte_ctrl'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\i2c_master\i2c_master_byte_ctrl.v":75)
-Compiling module 'i2c_master_bit_ctrl'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\i2c_master\i2c_master_bit_ctrl.v":143)
-WARN  (EX3791) : Expression size 32 truncated to fit in target size 14("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\i2c_master\i2c_master_bit_ctrl.v":258)
-WARN  (EX3827) : Synthesis - simulation differences may occur when using full_case directive("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\i2c_master\i2c_master_bit_ctrl.v":406)
-WARN  (EX3827) : Synthesis - simulation differences may occur when using full_case directive("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\i2c_master\i2c_master_byte_ctrl.v":230)
-Compiling module 'lut_ov5640_rgb565_1024_768'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\lut_ov5640_rgb565_1024_768.v":1)
-Compiling module 'cmos_8_16bit'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\cmos_8_16bit.v":1)
-Compiling module 'vga_timing'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\vga_timing.v":1)
-Compiling module '**'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
-Compiling module '**'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
-Compiling module '**'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
-Compiling module '**'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
-Compiling module '**'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
-Compiling module '**'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
-Compiling module '**'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
-Compiling module '**'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
-Compiling module '**'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
-Compiling module '**'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
-Compiling module '**'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
-Compiling module '**'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
-Compiling module '**'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
-Compiling module '**'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
-Compiling module '**'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
-Compiling module '**'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
-Compiling module '**'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
-Compiling module '**'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
-Compiling module '**'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
-Compiling module '**'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
-Compiling module '**'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
-Compiling module '**'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
-Compiling module '**'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
-Compiling module '**'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
-Compiling module '**'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
-Compiling module '**'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
-Compiling module '**'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
-Compiling module '**'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
-Compiling module '**'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
-Compiling module '**'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
-Compiling module '**'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
-Compiling module '**'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
-Compiling module '**'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
-Compiling module '**'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
-Compiling module '**'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
-Compiling module '**'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\dvi_tx\DVI_TX_Top.v":0)
-Compiling module '**'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\dvi_tx\DVI_TX_Top.v":0)
-Compiling module '**'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\dvi_tx\DVI_TX_Top.v":0)
-Compiling module '**'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\dvi_tx\DVI_TX_Top.v":0)
-Compiling module '**'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\dvi_tx\DVI_TX_Top.v":0)
-Compiling module 'top_test'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\top_test.v":1)
-WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\top_test.v":50)
-WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\top_test.v":70)
-Compiling module 'uart_sfr'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\uart_sfr.v":3)
-Compiling module 'debug'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\debug.v":1)
-Compiling module 'debug_ctrl'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\debug_ctrl.v":1)
-Compiling module 'uart_tx'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\uart_tx.v":1)
-Compiling module 'uart_rx'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\uart_rx.v":1)
-Compiling module 'sfr(RST_VALUE=8'h00,SFR_ADDRESS=16'h00)'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\sfr.v":1)
-Compiling module 'sfr(RST_VALUE=8'h00,SFR_ADDRESS=16'h01)'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\sfr.v":1)
-Compiling module 'sfr(RST_VALUE=8'h00,SFR_ADDRESS=16'h02)'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\sfr.v":1)
-Compiling module 'sfr(RST_VALUE=8'h00,SFR_ADDRESS=16'h03)'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\sfr.v":1)
-Compiling module 'sfr(RST_VALUE=8'h00,SFR_ADDRESS=16'h04)'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\sfr.v":1)
-Compiling module 'sfr(RST_VALUE=8'h00,SFR_ADDRESS=16'h05)'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\sfr.v":1)
-Compiling module 'sfr(RST_VALUE=8'h15,SFR_ADDRESS=16'h06)'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\sfr.v":1)
-Compiling module 'sfr(RST_VALUE=8'h15,SFR_ADDRESS=16'h07)'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\sfr.v":1)
-Compiling module 'sfr(RST_VALUE=8'h15,SFR_ADDRESS=16'h08)'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\sfr.v":1)
-Compiling module 'sfr(RST_VALUE=8'h10,SFR_ADDRESS=16'h09)'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\sfr.v":1)
-Compiling module 'sfr(RST_VALUE=8'h18,SFR_ADDRESS=16'h0A)'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\sfr.v":1)
-Compiling module 'sfr(RST_VALUE=8'hFF,SFR_ADDRESS=16'h0B)'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\sfr.v":1)
-Compiling module 'sfr(RST_VALUE=8'h00,SFR_ADDRESS=16'h0C)'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\sfr.v":1)
-Compiling module 'sfr(RST_VALUE=8'h80,SFR_ADDRESS=16'h0D)'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\sfr.v":1)
-Compiling module 'sfr(RST_VALUE=8'h00,SFR_ADDRESS=16'h0E)'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\sfr.v":1)
-Compiling module 'sfr(RST_VALUE=8'h04,SFR_ADDRESS=16'h0F)'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\sfr.v":1)
-Compiling module 'sfr(RST_VALUE=8'h01,SFR_ADDRESS=16'h10)'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\sfr.v":1)
-Compiling module 'sfr(RST_VALUE=8'h40,SFR_ADDRESS=16'h11)'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\sfr.v":1)
-Compiling module 'sfr(RST_VALUE=8'h08,SFR_ADDRESS=16'h12)'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\sfr.v":1)
-Compiling module 'sfr(RST_VALUE=8'h48,SFR_ADDRESS=16'h13)'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\sfr.v":1)
-Compiling module 'sfr(RST_VALUE=8'h20,SFR_ADDRESS=16'h14)'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\sfr.v":1)
-Compiling module 'sfr(RST_VALUE=8'h48,SFR_ADDRESS=16'h15)'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\sfr.v":1)
-Compiling module 'sfr(RST_VALUE=8'hA0,SFR_ADDRESS=16'h16)'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\sfr.v":1)
-Compiling module 'sfr(RST_VALUE=8'h28,SFR_ADDRESS=16'h17)'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\sfr.v":1)
-Compiling module 'sfr(RST_VALUE=8'h00,SFR_ADDRESS=16'h18)'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\sfr.v":1)
-Compiling module 'sfr(RST_VALUE=8'h00,SFR_ADDRESS=16'h19)'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\sfr.v":1)
-Compiling module 'sfr(RST_VALUE=8'h00,SFR_ADDRESS=16'h1A)'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\sfr.v":1)
-Compiling module 'sfr(RST_VALUE=8'h00,SFR_ADDRESS=16'h1B)'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\sfr.v":1)
-Compiling module 'sfr(RST_VALUE=8'h00,SFR_ADDRESS=16'h1C)'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\sfr.v":1)
-Compiling module 'sfr(RST_VALUE=8'h00,SFR_ADDRESS=16'h1D)'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\sfr.v":1)
-Compiling module 'sfr(RST_VALUE=8'h00,SFR_ADDRESS=16'h1E)'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\sfr.v":1)
-Compiling module 'sfr(RST_VALUE=8'h00,SFR_ADDRESS=16'h1F)'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\uart_sfr\sfr.v":1)
-Compiling module 'div_color'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\pre2__div_color\div_color.v":3)
-Compiling module 'div_color_HSV(BLACK_COLOR=16'b00000_000010_00000)'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\base__div_color\div_color_HSV.v":3)
-Compiling module 'mul'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\base__div_color\mul.v":4)
-Compiling module 'mul_8'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\base__div_color\gowin_mult\mul_8.v":9)
-Compiling module 'sub_abs'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\base__div_color\sub_abs.v":4)
-Compiling module 'cmp'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\base__div_color\cmp.v":4)
-Compiling module 'div_color_HSV(BLACK_COLOR=16'b00010_000000_00000)'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\base__div_color\div_color_HSV.v":3)
-Compiling module 'intercept'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\pre3__return__intercept\intercept.v":3)
-Compiling module 'corrode'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\pre3__corrode\corrode.v":3)
-Compiling module 'div_rect'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\pre4__div_rect\div_rect.v":3)
-WARN  (EX3791) : Expression size 6 truncated to fit in target size 4("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\pre4__div_rect\div_rect.v":37)
-WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\pre4__div_rect\div_rect.v":57)
-WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\pre4__div_rect\div_rect.v":91)
-WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\pre4__div_rect\div_rect.v":254)
-WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\pre4__div_rect\div_rect.v":256)
-WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\pre4__div_rect\div_rect.v":257)
-Compiling module 'conv_show'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":3)
-Compiling module 'div_color_HSV(BLACK_COLOR=16'b00000_100000_00000)'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\base__div_color\div_color_HSV.v":3)
-Compiling module 'div_color_HSV(BLACK_COLOR=16'b00000_000000_10000)'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\base__div_color\div_color_HSV.v":3)
-Compiling module 'div_color_HSV(BLACK_COLOR=16'b10000_000000_00000)'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\base__div_color\div_color_HSV.v":3)
-Compiling module 'div_color_HSV(BLACK_COLOR=16'b10000_100000_10000)'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\base__div_color\div_color_HSV.v":3)
-Compiling module 'show_corrode'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post3__show_corrode\show_corrode.v":3)
-Compiling module 'RAM_show_corrode'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post3__show_corrode\gowin_sdpb\RAM_show_corrode.v":9)
-WARN  (EX3791) : Expression size 14 truncated to fit in target size 13("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post3__show_corrode\show_corrode.v":92)
-WARN  (EX3791) : Expression size 32 truncated to fit in target size 13("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post3__show_corrode\show_corrode.v":96)
-WARN  (EX3791) : Expression size 14 truncated to fit in target size 13("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post3__show_corrode\show_corrode.v":101)
-Compiling module 'show_rect_ascii'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\show_rect_ascii.v":4)
-Compiling module 'label_str'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\label_str.v":5)
-Compiling module 'varies'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\varies.v":5)
-Compiling module 'const_str'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\const_str.v":5)
-Compiling module 'show_rect_ascii_ctrl'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\show_rect_ascii_ctrl.v":17)
-WARN  (EX3791) : Expression size 8 truncated to fit in target size 7("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\show_rect_ascii_ctrl.v":104)
-WARN  (EX3791) : Expression size 8 truncated to fit in target size 7("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\show_rect_ascii_ctrl.v":110)
-WARN  (EX3791) : Expression size 8 truncated to fit in target size 7("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\show_rect_ascii_ctrl.v":143)
-WARN  (EX3791) : Expression size 32 truncated to fit in target size 8("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\show_rect_ascii_ctrl.v":146)
-WARN  (EX3791) : Expression size 8 truncated to fit in target size 7("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\show_rect_ascii_ctrl.v":149)
-WARN  (EX3791) : Expression size 32 truncated to fit in target size 8("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\show_rect_ascii_ctrl.v":151)
-WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\show_rect_ascii_ctrl.v":155)
-WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\show_rect_ascii_ctrl.v":157)
-WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\show_rect_ascii_ctrl.v":159)
-Compiling module 'show_rect_ascii_single'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\show_rect_ascii_single.v":23)
-Compiling module 'ROM_letter_show'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\gowin_prom\ROM_letter_show.v":9)
-Compiling module 'RAM_letter_show'("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\gowin_sdpb\RAM_letter_show.v":9)
-WARN  (EX1947) : Input port 'i_user[7]' remains unconnected for this instance("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\top.v":345)
-WARN  (EX1947) : Input port 'i_user[6]' remains unconnected for this instance("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\top.v":345)
-WARN  (EX1947) : Input port 'i_user[5]' remains unconnected for this instance("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\top.v":345)
-WARN  (EX1947) : Input port 'i_user[4]' remains unconnected for this instance("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\top.v":345)
-WARN  (EX1947) : Input port 'i_user[3]' remains unconnected for this instance("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\top.v":345)
-WARN  (EX1947) : Input port 'i_user[2]' remains unconnected for this instance("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\top.v":345)
-WARN  (EX1947) : Input port 'i_user[1]' remains unconnected for this instance("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\top.v":345)
-WARN  (EX1947) : Input port 'i_user[0]' remains unconnected for this instance("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\top.v":345)
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\base__div_color\cmp.v'
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\base__div_color\div_color_HSV.v'
+Analyzing included file 'E:\_compete\4-20220926fpga\fpga\src\base__div_color\..\define.v'("E:\_compete\4-20220926fpga\fpga\src\base__div_color\div_color_HSV.v":1)
+Back to file 'E:\_compete\4-20220926fpga\fpga\src\base__div_color\div_color_HSV.v'("E:\_compete\4-20220926fpga\fpga\src\base__div_color\div_color_HSV.v":1)
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\base__div_color\gowin_mult\mul_8.v'
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\base__div_color\mul.v'
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\base__div_color\sub_abs.v'
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\define.v'
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\interfaces\cmos_8_16bit.v'
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v'
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\interfaces\dvi_tx\DVI_TX_Top.v'
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\interfaces\gowin_rpll\TMDS_rPLL.v'
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\interfaces\gowin_rpll\cmos_pll.v'
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\interfaces\gowin_rpll\mem_pll.v'
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\interfaces\gowin_rpll\sys_pll.v'
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\interfaces\i2c_master\i2c_config.v'
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\interfaces\i2c_master\i2c_master_bit_ctrl.v'
+Analyzing included file 'E:\_compete\4-20220926fpga\fpga\src\interfaces\i2c_master\i2c_master_defines.v'("E:\_compete\4-20220926fpga\fpga\src\interfaces\i2c_master\i2c_master_bit_ctrl.v":141)
+Back to file 'E:\_compete\4-20220926fpga\fpga\src\interfaces\i2c_master\i2c_master_bit_ctrl.v'("E:\_compete\4-20220926fpga\fpga\src\interfaces\i2c_master\i2c_master_bit_ctrl.v":141)
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\interfaces\i2c_master\i2c_master_byte_ctrl.v'
+Analyzing included file 'E:\_compete\4-20220926fpga\fpga\src\interfaces\i2c_master\i2c_master_defines.v'("E:\_compete\4-20220926fpga\fpga\src\interfaces\i2c_master\i2c_master_byte_ctrl.v":73)
+Back to file 'E:\_compete\4-20220926fpga\fpga\src\interfaces\i2c_master\i2c_master_byte_ctrl.v'("E:\_compete\4-20220926fpga\fpga\src\interfaces\i2c_master\i2c_master_byte_ctrl.v":73)
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\interfaces\i2c_master\i2c_master_defines.v'
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\interfaces\i2c_master\i2c_master_top.v'
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\interfaces\i2c_master\timescale.v'
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\interfaces\interfaces_top.v'
+Undeclared symbol 'cmos_clk', assumed default net type 'wire'("E:\_compete\4-20220926fpga\fpga\src\interfaces\interfaces_top.v":68)
+Undeclared symbol 'memory_clk', assumed default net type 'wire'("E:\_compete\4-20220926fpga\fpga\src\interfaces\interfaces_top.v":74)
+Undeclared symbol 'DDR_pll_lock', assumed default net type 'wire'("E:\_compete\4-20220926fpga\fpga\src\interfaces\interfaces_top.v":75)
+Undeclared symbol 'serial_clk', assumed default net type 'wire'("E:\_compete\4-20220926fpga\fpga\src\interfaces\interfaces_top.v":80)
+Undeclared symbol 'TMDS_DDR_pll_lock', assumed default net type 'wire'("E:\_compete\4-20220926fpga\fpga\src\interfaces\interfaces_top.v":81)
+Undeclared symbol 'hdmi4_rst_n', assumed default net type 'wire'("E:\_compete\4-20220926fpga\fpga\src\interfaces\interfaces_top.v":83)
+Undeclared symbol 'video_clk', assumed default net type 'wire'("E:\_compete\4-20220926fpga\fpga\src\interfaces\interfaces_top.v":89)
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\interfaces\lut_ov5640_rgb565_1024_768.v'
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\interfaces\vga_timing.v'
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\interfaces\video_frame_buffer\Video_Frame_Buffer_Top.v'
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\post1__conv_show\conv_show.v'
+Analyzing included file 'E:\_compete\4-20220926fpga\fpga\src\post1__conv_show\..\define.v'("E:\_compete\4-20220926fpga\fpga\src\post1__conv_show\conv_show.v":1)
+Back to file 'E:\_compete\4-20220926fpga\fpga\src\post1__conv_show\conv_show.v'("E:\_compete\4-20220926fpga\fpga\src\post1__conv_show\conv_show.v":1)
+WARN  (EX3788) : Block identifier is required on this block("E:\_compete\4-20220926fpga\fpga\src\post1__conv_show\conv_show.v":492)
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\post2__sample_show\sample_show.v'
+Analyzing included file 'E:\_compete\4-20220926fpga\fpga\src\post2__sample_show\..\define.v'("E:\_compete\4-20220926fpga\fpga\src\post2__sample_show\sample_show.v":1)
+Back to file 'E:\_compete\4-20220926fpga\fpga\src\post2__sample_show\sample_show.v'("E:\_compete\4-20220926fpga\fpga\src\post2__sample_show\sample_show.v":1)
+WARN  (EX3788) : Block identifier is required on this block("E:\_compete\4-20220926fpga\fpga\src\post2__sample_show\sample_show.v":139)
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\post3__show_corrode\gowin_sdpb\RAM_show_corrode.v'
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\post3__show_corrode\show_corrode.v'
+Analyzing included file 'E:\_compete\4-20220926fpga\fpga\src\post3__show_corrode\..\define.v'("E:\_compete\4-20220926fpga\fpga\src\post3__show_corrode\show_corrode.v":1)
+Back to file 'E:\_compete\4-20220926fpga\fpga\src\post3__show_corrode\show_corrode.v'("E:\_compete\4-20220926fpga\fpga\src\post3__show_corrode\show_corrode.v":1)
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\const_str.v'
+Analyzing included file 'E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\..\define.v'("E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\const_str.v":1)
+Back to file 'E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\const_str.v'("E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\const_str.v":1)
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\gowin_prom\ROM_letter_show.v'
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\gowin_sdpb\RAM_letter_show.v'
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\label_str.v'
+Analyzing included file 'E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\..\define.v'("E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\label_str.v":1)
+Back to file 'E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\label_str.v'("E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\label_str.v":1)
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\show_rect_ascii.v'
+Analyzing included file 'E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\..\define.v'("E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\show_rect_ascii.v":1)
+Back to file 'E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\show_rect_ascii.v'("E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\show_rect_ascii.v":1)
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\show_rect_ascii_ctrl.v'
+Analyzing included file 'E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\..\define.v'("E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\show_rect_ascii_ctrl.v":1)
+Back to file 'E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\show_rect_ascii_ctrl.v'("E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\show_rect_ascii_ctrl.v":1)
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\show_rect_ascii_single.v'
+Analyzing included file 'E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\..\define.v'("E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\show_rect_ascii_single.v":1)
+Back to file 'E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\show_rect_ascii_single.v'("E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\show_rect_ascii_single.v":1)
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\varies.v'
+Analyzing included file 'E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\..\define.v'("E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\varies.v":1)
+Back to file 'E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\varies.v'("E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\varies.v":1)
+WARN  (EX3788) : Block identifier is required on this block("E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\varies.v":45)
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\pre2__div_color\div_color.v'
+Analyzing included file 'E:\_compete\4-20220926fpga\fpga\src\pre2__div_color\..\define.v'("E:\_compete\4-20220926fpga\fpga\src\pre2__div_color\div_color.v":1)
+Back to file 'E:\_compete\4-20220926fpga\fpga\src\pre2__div_color\div_color.v'("E:\_compete\4-20220926fpga\fpga\src\pre2__div_color\div_color.v":1)
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\pre3__corrode\corrode.v'
+Analyzing included file 'E:\_compete\4-20220926fpga\fpga\src\pre3__corrode\..\define.v'("E:\_compete\4-20220926fpga\fpga\src\pre3__corrode\corrode.v":1)
+Back to file 'E:\_compete\4-20220926fpga\fpga\src\pre3__corrode\corrode.v'("E:\_compete\4-20220926fpga\fpga\src\pre3__corrode\corrode.v":1)
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\pre3__return__intercept\intercept.v'
+Analyzing included file 'E:\_compete\4-20220926fpga\fpga\src\pre3__return__intercept\..\define.v'("E:\_compete\4-20220926fpga\fpga\src\pre3__return__intercept\intercept.v":1)
+Back to file 'E:\_compete\4-20220926fpga\fpga\src\pre3__return__intercept\intercept.v'("E:\_compete\4-20220926fpga\fpga\src\pre3__return__intercept\intercept.v":1)
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\pre4__div_rect\div_rect.v'
+Analyzing included file 'E:\_compete\4-20220926fpga\fpga\src\pre4__div_rect\..\define.v'("E:\_compete\4-20220926fpga\fpga\src\pre4__div_rect\div_rect.v":1)
+Back to file 'E:\_compete\4-20220926fpga\fpga\src\pre4__div_rect\div_rect.v'("E:\_compete\4-20220926fpga\fpga\src\pre4__div_rect\div_rect.v":1)
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\top.v'
+Analyzing included file 'E:\_compete\4-20220926fpga\fpga\src\define.v'("E:\_compete\4-20220926fpga\fpga\src\top.v":1)
+Back to file 'E:\_compete\4-20220926fpga\fpga\src\top.v'("E:\_compete\4-20220926fpga\fpga\src\top.v":1)
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\top_test.v'
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\uart_sfr\debug.v'
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\uart_sfr\debug_ctrl.v'
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\uart_sfr\sfr.v'
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\uart_sfr\uart_rx.v'
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\uart_sfr\uart_sfr.v'
+Analyzing included file 'E:\_compete\4-20220926fpga\fpga\src\uart_sfr\..\define.v'("E:\_compete\4-20220926fpga\fpga\src\uart_sfr\uart_sfr.v":1)
+Back to file 'E:\_compete\4-20220926fpga\fpga\src\uart_sfr\uart_sfr.v'("E:\_compete\4-20220926fpga\fpga\src\uart_sfr\uart_sfr.v":1)
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\uart_sfr\uart_tx.v'
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\post5__show_pic\show_character.v'
+Analyzing included file 'E:\_compete\4-20220926fpga\fpga\src\post5__show_pic\..\define.v'("E:\_compete\4-20220926fpga\fpga\src\post5__show_pic\show_character.v":1)
+Back to file 'E:\_compete\4-20220926fpga\fpga\src\post5__show_pic\show_character.v'("E:\_compete\4-20220926fpga\fpga\src\post5__show_pic\show_character.v":1)
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\post5__show_pic\ROM_character\ROM_character.v'
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\post5__show_pic\ROM_varies\ROM_varies.v'
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\post5__show_pic\show_varies.v'
+Analyzing included file 'E:\_compete\4-20220926fpga\fpga\src\post5__show_pic\..\define.v'("E:\_compete\4-20220926fpga\fpga\src\post5__show_pic\show_varies.v":1)
+Back to file 'E:\_compete\4-20220926fpga\fpga\src\post5__show_pic\show_varies.v'("E:\_compete\4-20220926fpga\fpga\src\post5__show_pic\show_varies.v":1)
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\post5__show_pic\ROM_ascii\ROM_ascii.v'
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\post5__show_pic\show_ascii.v'
+Analyzing included file 'E:\_compete\4-20220926fpga\fpga\src\post5__show_pic\..\define.v'("E:\_compete\4-20220926fpga\fpga\src\post5__show_pic\show_ascii.v":1)
+Back to file 'E:\_compete\4-20220926fpga\fpga\src\post5__show_pic\show_ascii.v'("E:\_compete\4-20220926fpga\fpga\src\post5__show_pic\show_ascii.v":1)
+WARN  (EX3788) : Block identifier is required on this block("E:\_compete\4-20220926fpga\fpga\src\post5__show_pic\show_ascii.v":58)
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\post5__show_pic\ROM_picture\ROM_picture.v'
+Analyzing Verilog file 'E:\_compete\4-20220926fpga\fpga\src\post5__show_pic\show_picture.v'
+Analyzing included file 'E:\_compete\4-20220926fpga\fpga\src\post5__show_pic\..\define.v'("E:\_compete\4-20220926fpga\fpga\src\post5__show_pic\show_picture.v":1)
+Back to file 'E:\_compete\4-20220926fpga\fpga\src\post5__show_pic\show_picture.v'("E:\_compete\4-20220926fpga\fpga\src\post5__show_pic\show_picture.v":1)
+Compiling module 'top'("E:\_compete\4-20220926fpga\fpga\src\top.v":3)
+Compiling module 'interfaces_top'("E:\_compete\4-20220926fpga\fpga\src\interfaces\interfaces_top.v":1)
+Compiling module 'cmos_pll'("E:\_compete\4-20220926fpga\fpga\src\interfaces\gowin_rpll\cmos_pll.v":9)
+Compiling module 'mem_pll'("E:\_compete\4-20220926fpga\fpga\src\interfaces\gowin_rpll\mem_pll.v":9)
+Compiling module 'TMDS_rPLL'("E:\_compete\4-20220926fpga\fpga\src\interfaces\gowin_rpll\TMDS_rPLL.v":9)
+Compiling module 'i2c_config'("E:\_compete\4-20220926fpga\fpga\src\interfaces\i2c_master\i2c_config.v":1)
+WARN  (EX3780) : Using initial value of 'i2c_read_req' since it is never assigned("E:\_compete\4-20220926fpga\fpga\src\interfaces\i2c_master\i2c_config.v":28)
+Compiling module 'i2c_master_top'("E:\_compete\4-20220926fpga\fpga\src\interfaces\i2c_master\i2c_master_top.v":1)
+Compiling module 'i2c_master_byte_ctrl'("E:\_compete\4-20220926fpga\fpga\src\interfaces\i2c_master\i2c_master_byte_ctrl.v":75)
+Compiling module 'i2c_master_bit_ctrl'("E:\_compete\4-20220926fpga\fpga\src\interfaces\i2c_master\i2c_master_bit_ctrl.v":143)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 14("E:\_compete\4-20220926fpga\fpga\src\interfaces\i2c_master\i2c_master_bit_ctrl.v":258)
+WARN  (EX3827) : Synthesis - simulation differences may occur when using full_case directive("E:\_compete\4-20220926fpga\fpga\src\interfaces\i2c_master\i2c_master_bit_ctrl.v":406)
+WARN  (EX3827) : Synthesis - simulation differences may occur when using full_case directive("E:\_compete\4-20220926fpga\fpga\src\interfaces\i2c_master\i2c_master_byte_ctrl.v":230)
+Compiling module 'lut_ov5640_rgb565_1024_768'("E:\_compete\4-20220926fpga\fpga\src\interfaces\lut_ov5640_rgb565_1024_768.v":1)
+Compiling module 'cmos_8_16bit'("E:\_compete\4-20220926fpga\fpga\src\interfaces\cmos_8_16bit.v":1)
+Compiling module 'vga_timing'("E:\_compete\4-20220926fpga\fpga\src\interfaces\vga_timing.v":1)
+Compiling module '**'("E:\_compete\4-20220926fpga\fpga\src\interfaces\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("E:\_compete\4-20220926fpga\fpga\src\interfaces\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("E:\_compete\4-20220926fpga\fpga\src\interfaces\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("E:\_compete\4-20220926fpga\fpga\src\interfaces\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("E:\_compete\4-20220926fpga\fpga\src\interfaces\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("E:\_compete\4-20220926fpga\fpga\src\interfaces\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("E:\_compete\4-20220926fpga\fpga\src\interfaces\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("E:\_compete\4-20220926fpga\fpga\src\interfaces\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("E:\_compete\4-20220926fpga\fpga\src\interfaces\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("E:\_compete\4-20220926fpga\fpga\src\interfaces\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("E:\_compete\4-20220926fpga\fpga\src\interfaces\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("E:\_compete\4-20220926fpga\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\_compete\4-20220926fpga\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\_compete\4-20220926fpga\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\_compete\4-20220926fpga\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\_compete\4-20220926fpga\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\_compete\4-20220926fpga\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\_compete\4-20220926fpga\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\_compete\4-20220926fpga\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\_compete\4-20220926fpga\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\_compete\4-20220926fpga\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\_compete\4-20220926fpga\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\_compete\4-20220926fpga\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\_compete\4-20220926fpga\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\_compete\4-20220926fpga\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\_compete\4-20220926fpga\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\_compete\4-20220926fpga\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\_compete\4-20220926fpga\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\_compete\4-20220926fpga\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\_compete\4-20220926fpga\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\_compete\4-20220926fpga\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\_compete\4-20220926fpga\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\_compete\4-20220926fpga\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\_compete\4-20220926fpga\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\_compete\4-20220926fpga\fpga\src\interfaces\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\_compete\4-20220926fpga\fpga\src\interfaces\dvi_tx\DVI_TX_Top.v":0)
+Compiling module '**'("E:\_compete\4-20220926fpga\fpga\src\interfaces\dvi_tx\DVI_TX_Top.v":0)
+Compiling module '**'("E:\_compete\4-20220926fpga\fpga\src\interfaces\dvi_tx\DVI_TX_Top.v":0)
+Compiling module '**'("E:\_compete\4-20220926fpga\fpga\src\interfaces\dvi_tx\DVI_TX_Top.v":0)
+Compiling module '**'("E:\_compete\4-20220926fpga\fpga\src\interfaces\dvi_tx\DVI_TX_Top.v":0)
+Compiling module 'top_test'("E:\_compete\4-20220926fpga\fpga\src\top_test.v":1)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("E:\_compete\4-20220926fpga\fpga\src\top_test.v":51)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("E:\_compete\4-20220926fpga\fpga\src\top_test.v":71)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("E:\_compete\4-20220926fpga\fpga\src\top_test.v":92)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("E:\_compete\4-20220926fpga\fpga\src\top_test.v":95)
+Compiling module 'uart_sfr'("E:\_compete\4-20220926fpga\fpga\src\uart_sfr\uart_sfr.v":3)
+Compiling module 'debug'("E:\_compete\4-20220926fpga\fpga\src\uart_sfr\debug.v":1)
+Compiling module 'debug_ctrl'("E:\_compete\4-20220926fpga\fpga\src\uart_sfr\debug_ctrl.v":1)
+Compiling module 'uart_tx'("E:\_compete\4-20220926fpga\fpga\src\uart_sfr\uart_tx.v":1)
+Compiling module 'uart_rx'("E:\_compete\4-20220926fpga\fpga\src\uart_sfr\uart_rx.v":1)
+Compiling module 'sfr(RST_VALUE=8'h00,SFR_ADDRESS=16'h00)'("E:\_compete\4-20220926fpga\fpga\src\uart_sfr\sfr.v":1)
+Compiling module 'sfr(RST_VALUE=8'h00,SFR_ADDRESS=16'h01)'("E:\_compete\4-20220926fpga\fpga\src\uart_sfr\sfr.v":1)
+Compiling module 'sfr(RST_VALUE=8'h00,SFR_ADDRESS=16'h02)'("E:\_compete\4-20220926fpga\fpga\src\uart_sfr\sfr.v":1)
+Compiling module 'sfr(RST_VALUE=8'h00,SFR_ADDRESS=16'h03)'("E:\_compete\4-20220926fpga\fpga\src\uart_sfr\sfr.v":1)
+Compiling module 'sfr(RST_VALUE=8'h00,SFR_ADDRESS=16'h04)'("E:\_compete\4-20220926fpga\fpga\src\uart_sfr\sfr.v":1)
+Compiling module 'sfr(RST_VALUE=8'h00,SFR_ADDRESS=16'h05)'("E:\_compete\4-20220926fpga\fpga\src\uart_sfr\sfr.v":1)
+Compiling module 'sfr(RST_VALUE=8'h15,SFR_ADDRESS=16'h06)'("E:\_compete\4-20220926fpga\fpga\src\uart_sfr\sfr.v":1)
+Compiling module 'sfr(RST_VALUE=8'h15,SFR_ADDRESS=16'h07)'("E:\_compete\4-20220926fpga\fpga\src\uart_sfr\sfr.v":1)
+Compiling module 'sfr(RST_VALUE=8'h15,SFR_ADDRESS=16'h08)'("E:\_compete\4-20220926fpga\fpga\src\uart_sfr\sfr.v":1)
+Compiling module 'sfr(RST_VALUE=8'h10,SFR_ADDRESS=16'h09)'("E:\_compete\4-20220926fpga\fpga\src\uart_sfr\sfr.v":1)
+Compiling module 'sfr(RST_VALUE=8'h18,SFR_ADDRESS=16'h0A)'("E:\_compete\4-20220926fpga\fpga\src\uart_sfr\sfr.v":1)
+Compiling module 'sfr(RST_VALUE=8'hFF,SFR_ADDRESS=16'h0B)'("E:\_compete\4-20220926fpga\fpga\src\uart_sfr\sfr.v":1)
+Compiling module 'sfr(RST_VALUE=8'h00,SFR_ADDRESS=16'h0C)'("E:\_compete\4-20220926fpga\fpga\src\uart_sfr\sfr.v":1)
+Compiling module 'sfr(RST_VALUE=8'h80,SFR_ADDRESS=16'h0D)'("E:\_compete\4-20220926fpga\fpga\src\uart_sfr\sfr.v":1)
+Compiling module 'sfr(RST_VALUE=8'h00,SFR_ADDRESS=16'h0E)'("E:\_compete\4-20220926fpga\fpga\src\uart_sfr\sfr.v":1)
+Compiling module 'sfr(RST_VALUE=8'h04,SFR_ADDRESS=16'h0F)'("E:\_compete\4-20220926fpga\fpga\src\uart_sfr\sfr.v":1)
+Compiling module 'sfr(RST_VALUE=8'h00,SFR_ADDRESS=16'h10)'("E:\_compete\4-20220926fpga\fpga\src\uart_sfr\sfr.v":1)
+Compiling module 'sfr(RST_VALUE=8'h40,SFR_ADDRESS=16'h11)'("E:\_compete\4-20220926fpga\fpga\src\uart_sfr\sfr.v":1)
+Compiling module 'sfr(RST_VALUE=8'h08,SFR_ADDRESS=16'h12)'("E:\_compete\4-20220926fpga\fpga\src\uart_sfr\sfr.v":1)
+Compiling module 'sfr(RST_VALUE=8'h58,SFR_ADDRESS=16'h13)'("E:\_compete\4-20220926fpga\fpga\src\uart_sfr\sfr.v":1)
+Compiling module 'sfr(RST_VALUE=8'h20,SFR_ADDRESS=16'h14)'("E:\_compete\4-20220926fpga\fpga\src\uart_sfr\sfr.v":1)
+Compiling module 'sfr(RST_VALUE=8'h58,SFR_ADDRESS=16'h15)'("E:\_compete\4-20220926fpga\fpga\src\uart_sfr\sfr.v":1)
+Compiling module 'sfr(RST_VALUE=8'hA0,SFR_ADDRESS=16'h16)'("E:\_compete\4-20220926fpga\fpga\src\uart_sfr\sfr.v":1)
+Compiling module 'sfr(RST_VALUE=8'h28,SFR_ADDRESS=16'h17)'("E:\_compete\4-20220926fpga\fpga\src\uart_sfr\sfr.v":1)
+Compiling module 'sfr(RST_VALUE=8'h00,SFR_ADDRESS=16'h18)'("E:\_compete\4-20220926fpga\fpga\src\uart_sfr\sfr.v":1)
+Compiling module 'sfr(RST_VALUE=8'h00,SFR_ADDRESS=16'h19)'("E:\_compete\4-20220926fpga\fpga\src\uart_sfr\sfr.v":1)
+Compiling module 'sfr(RST_VALUE=8'h00,SFR_ADDRESS=16'h1A)'("E:\_compete\4-20220926fpga\fpga\src\uart_sfr\sfr.v":1)
+Compiling module 'sfr(RST_VALUE=8'h00,SFR_ADDRESS=16'h1B)'("E:\_compete\4-20220926fpga\fpga\src\uart_sfr\sfr.v":1)
+Compiling module 'sfr(RST_VALUE=8'h00,SFR_ADDRESS=16'h1C)'("E:\_compete\4-20220926fpga\fpga\src\uart_sfr\sfr.v":1)
+Compiling module 'sfr(RST_VALUE=8'h00,SFR_ADDRESS=16'h1D)'("E:\_compete\4-20220926fpga\fpga\src\uart_sfr\sfr.v":1)
+Compiling module 'sfr(RST_VALUE=8'h00,SFR_ADDRESS=16'h1E)'("E:\_compete\4-20220926fpga\fpga\src\uart_sfr\sfr.v":1)
+Compiling module 'sfr(RST_VALUE=8'h00,SFR_ADDRESS=16'h1F)'("E:\_compete\4-20220926fpga\fpga\src\uart_sfr\sfr.v":1)
+Compiling module 'div_color'("E:\_compete\4-20220926fpga\fpga\src\pre2__div_color\div_color.v":3)
+Compiling module 'div_color_HSV(BLACK_COLOR=16'b00000_000010_00000)'("E:\_compete\4-20220926fpga\fpga\src\base__div_color\div_color_HSV.v":3)
+Compiling module 'mul'("E:\_compete\4-20220926fpga\fpga\src\base__div_color\mul.v":4)
+Compiling module 'mul_8'("E:\_compete\4-20220926fpga\fpga\src\base__div_color\gowin_mult\mul_8.v":9)
+Compiling module 'sub_abs'("E:\_compete\4-20220926fpga\fpga\src\base__div_color\sub_abs.v":4)
+Compiling module 'cmp'("E:\_compete\4-20220926fpga\fpga\src\base__div_color\cmp.v":4)
+Compiling module 'div_color_HSV(BLACK_COLOR=16'b00010_000000_00000)'("E:\_compete\4-20220926fpga\fpga\src\base__div_color\div_color_HSV.v":3)
+Compiling module 'intercept'("E:\_compete\4-20220926fpga\fpga\src\pre3__return__intercept\intercept.v":3)
+Compiling module 'corrode'("E:\_compete\4-20220926fpga\fpga\src\pre3__corrode\corrode.v":3)
+Compiling module 'div_rect'("E:\_compete\4-20220926fpga\fpga\src\pre4__div_rect\div_rect.v":3)
+WARN  (EX3791) : Expression size 6 truncated to fit in target size 4("E:\_compete\4-20220926fpga\fpga\src\pre4__div_rect\div_rect.v":37)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("E:\_compete\4-20220926fpga\fpga\src\pre4__div_rect\div_rect.v":57)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("E:\_compete\4-20220926fpga\fpga\src\pre4__div_rect\div_rect.v":91)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("E:\_compete\4-20220926fpga\fpga\src\pre4__div_rect\div_rect.v":254)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("E:\_compete\4-20220926fpga\fpga\src\pre4__div_rect\div_rect.v":256)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("E:\_compete\4-20220926fpga\fpga\src\pre4__div_rect\div_rect.v":257)
+Compiling module 'conv_show'("E:\_compete\4-20220926fpga\fpga\src\post1__conv_show\conv_show.v":3)
+Compiling module 'div_color_HSV(BLACK_COLOR=16'b00000_100000_00000)'("E:\_compete\4-20220926fpga\fpga\src\base__div_color\div_color_HSV.v":3)
+Compiling module 'div_color_HSV(BLACK_COLOR=16'b00000_000000_10000)'("E:\_compete\4-20220926fpga\fpga\src\base__div_color\div_color_HSV.v":3)
+Compiling module 'div_color_HSV(BLACK_COLOR=16'b10000_000000_00000)'("E:\_compete\4-20220926fpga\fpga\src\base__div_color\div_color_HSV.v":3)
+Compiling module 'div_color_HSV(BLACK_COLOR=16'b10000_100000_10000)'("E:\_compete\4-20220926fpga\fpga\src\base__div_color\div_color_HSV.v":3)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("E:\_compete\4-20220926fpga\fpga\src\post1__conv_show\conv_show.v":543)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("E:\_compete\4-20220926fpga\fpga\src\post1__conv_show\conv_show.v":544)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("E:\_compete\4-20220926fpga\fpga\src\post1__conv_show\conv_show.v":545)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("E:\_compete\4-20220926fpga\fpga\src\post1__conv_show\conv_show.v":546)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("E:\_compete\4-20220926fpga\fpga\src\post1__conv_show\conv_show.v":547)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("E:\_compete\4-20220926fpga\fpga\src\post1__conv_show\conv_show.v":548)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("E:\_compete\4-20220926fpga\fpga\src\post1__conv_show\conv_show.v":549)
+Compiling module 'show_corrode'("E:\_compete\4-20220926fpga\fpga\src\post3__show_corrode\show_corrode.v":3)
+Compiling module 'RAM_show_corrode'("E:\_compete\4-20220926fpga\fpga\src\post3__show_corrode\gowin_sdpb\RAM_show_corrode.v":9)
+WARN  (EX3791) : Expression size 14 truncated to fit in target size 13("E:\_compete\4-20220926fpga\fpga\src\post3__show_corrode\show_corrode.v":92)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 13("E:\_compete\4-20220926fpga\fpga\src\post3__show_corrode\show_corrode.v":96)
+WARN  (EX3791) : Expression size 14 truncated to fit in target size 13("E:\_compete\4-20220926fpga\fpga\src\post3__show_corrode\show_corrode.v":101)
+Compiling module 'show_rect_ascii'("E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\show_rect_ascii.v":4)
+Compiling module 'label_str'("E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\label_str.v":5)
+Compiling module 'varies'("E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\varies.v":5)
+Compiling module 'const_str'("E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\const_str.v":5)
+Compiling module 'show_rect_ascii_ctrl'("E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\show_rect_ascii_ctrl.v":17)
+Compiling module 'show_rect_ascii_single'("E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\show_rect_ascii_single.v":23)
+Compiling module 'ROM_letter_show'("E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\gowin_prom\ROM_letter_show.v":9)
+Compiling module 'RAM_letter_show'("E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\gowin_sdpb\RAM_letter_show.v":9)
+WARN  (EX3670) : Actual bit length 3 differs from formal bit length 1 for port 'din'("E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\show_rect_ascii_single.v":224)
+Compiling module 'show_character'("E:\_compete\4-20220926fpga\fpga\src\post5__show_pic\show_character.v":3)
+WARN  (EX3791) : Expression size 24 truncated to fit in target size 1("E:\_compete\4-20220926fpga\fpga\src\post5__show_pic\show_character.v":57)
+WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("E:\_compete\4-20220926fpga\fpga\src\post5__show_pic\show_character.v":104)
+Compiling module 'ROM_character'("E:\_compete\4-20220926fpga\fpga\src\post5__show_pic\ROM_character\ROM_character.v":9)
+Compiling module 'show_varies'("E:\_compete\4-20220926fpga\fpga\src\post5__show_pic\show_varies.v":3)
+WARN  (EX3791) : Expression size 24 truncated to fit in target size 1("E:\_compete\4-20220926fpga\fpga\src\post5__show_pic\show_varies.v":73)
+WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("E:\_compete\4-20220926fpga\fpga\src\post5__show_pic\show_varies.v":120)
+Compiling module 'ROM_varies'("E:\_compete\4-20220926fpga\fpga\src\post5__show_pic\ROM_varies\ROM_varies.v":9)
+Compiling module 'show_ascii'("E:\_compete\4-20220926fpga\fpga\src\post5__show_pic\show_ascii.v":3)
+WARN  (EX3791) : Expression size 24 truncated to fit in target size 1("E:\_compete\4-20220926fpga\fpga\src\post5__show_pic\show_ascii.v":98)
+WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("E:\_compete\4-20220926fpga\fpga\src\post5__show_pic\show_ascii.v":151)
+Compiling module 'ROM_ascii'("E:\_compete\4-20220926fpga\fpga\src\post5__show_pic\ROM_ascii\ROM_ascii.v":9)
+Compiling module 'show_picture'("E:\_compete\4-20220926fpga\fpga\src\post5__show_pic\show_picture.v":3)
+WARN  (EX3791) : Expression size 24 truncated to fit in target size 1("E:\_compete\4-20220926fpga\fpga\src\post5__show_pic\show_picture.v":67)
+WARN  (EX3791) : Expression size 18 truncated to fit in target size 17("E:\_compete\4-20220926fpga\fpga\src\post5__show_pic\show_picture.v":105)
+WARN  (EX3791) : Expression size 18 truncated to fit in target size 17("E:\_compete\4-20220926fpga\fpga\src\post5__show_pic\show_picture.v":112)
+Compiling module 'ROM_picture'("E:\_compete\4-20220926fpga\fpga\src\post5__show_pic\ROM_picture\ROM_picture.v":9)
 NOTE  (EX0101) : Current top module is "top"
-WARN  (EX0211) : The output port "o_item[31]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":23)
-WARN  (EX0211) : The output port "o_item[30]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":23)
-WARN  (EX0211) : The output port "o_item[29]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":23)
-WARN  (EX0211) : The output port "o_item[28]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":23)
-WARN  (EX0211) : The output port "o_item[27]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":23)
-WARN  (EX0211) : The output port "o_item[26]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":23)
-WARN  (EX0211) : The output port "o_item[25]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":23)
-WARN  (EX0211) : The output port "o_item[24]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":23)
-WARN  (EX0211) : The output port "o_item[23]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":23)
-WARN  (EX0211) : The output port "o_item[22]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":23)
-WARN  (EX0211) : The output port "o_item[21]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":23)
-WARN  (EX0211) : The output port "o_item[20]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":23)
-WARN  (EX0211) : The output port "o_item[19]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":23)
-WARN  (EX0211) : The output port "o_item[18]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":23)
-WARN  (EX0211) : The output port "o_item[17]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":23)
-WARN  (EX0211) : The output port "o_item[16]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":23)
-WARN  (EX0211) : The output port "o_item[15]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":23)
-WARN  (EX0211) : The output port "o_item[14]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":23)
-WARN  (EX0211) : The output port "o_item[13]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":23)
-WARN  (EX0211) : The output port "o_item[12]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":23)
-WARN  (EX0211) : The output port "o_item[11]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":23)
-WARN  (EX0211) : The output port "o_item[10]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":23)
-WARN  (EX0211) : The output port "o_item[9]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":23)
-WARN  (EX0211) : The output port "o_item[8]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":23)
-WARN  (EX0211) : The output port "o_item[7]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":23)
-WARN  (EX0211) : The output port "o_item[6]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":23)
-WARN  (EX0211) : The output port "o_item[5]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":23)
-WARN  (EX0211) : The output port "o_item[4]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":23)
-WARN  (EX0211) : The output port "o_item[3]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":23)
-WARN  (EX0211) : The output port "o_item[2]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":23)
-WARN  (EX0211) : The output port "o_item[1]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":23)
-WARN  (EX0211) : The output port "o_item[0]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":23)
-WARN  (EX0211) : The output port "o_label[3]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":24)
-WARN  (EX0211) : The output port "o_label[2]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":24)
-WARN  (EX0211) : The output port "o_label[1]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":24)
-WARN  (EX0211) : The output port "o_label[0]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":24)
-WARN  (EX0211) : The output port "o_user[7]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":29)
-WARN  (EX0211) : The output port "o_user[6]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":29)
-WARN  (EX0211) : The output port "o_user[5]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":29)
-WARN  (EX0211) : The output port "o_user[4]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":29)
-WARN  (EX0211) : The output port "o_user[3]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":29)
-WARN  (EX0211) : The output port "o_user[2]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":29)
-WARN  (EX0211) : The output port "o_user[1]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":29)
-WARN  (EX0211) : The output port "o_user[0]" of module "conv_show" has no driver("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post1__conv_show\conv_show.v":29)
 [5%] Running netlist conversion ...
 Running device independent optimization ...
 [10%] Optimizing Phase 0 completed
@@ -305,15 +284,16 @@ Running technical mapping ...
 [75%] Tech-Mapping Phase 2 completed
 [80%] Tech-Mapping Phase 3 completed
 [90%] Tech-Mapping Phase 4 completed
-WARN  (NL0002) : The module "lut_ov5640_rgb565_1024_768" instantiated to "lut_ov5640_rgb565_1024_768_m0" is swept in optimizing("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\interfaces\interfaces_top.v":120)
-WARN  (NL0002) : The module "const_str" instantiated to "u_const_str" is swept in optimizing("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\show_rect_ascii.v":56)
-WARN  (NL0002) : The module "label_str" instantiated to "u_label_str" is swept in optimizing("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\show_rect_ascii.v":44)
-WARN  (NL0002) : The module "varies" instantiated to "u_varies" is swept in optimizing("C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\post4__show_rect_ascii\show_rect_ascii.v":51)
-[95%] Generate netlist file "C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\impl\gwsynthesis\top.vg" completed
+WARN  (NL0002) : The module "lut_ov5640_rgb565_1024_768" instantiated to "lut_ov5640_rgb565_1024_768_m0" is swept in optimizing("E:\_compete\4-20220926fpga\fpga\src\interfaces\interfaces_top.v":122)
+WARN  (NL0002) : The module "const_str" instantiated to "u_const_str" is swept in optimizing("E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\show_rect_ascii.v":56)
+WARN  (NL0002) : The module "label_str" instantiated to "u_label_str" is swept in optimizing("E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\show_rect_ascii.v":44)
+WARN  (NL0002) : The module "ROM_letter_show" instantiated to "u_ROM_letter_show" is swept in optimizing("E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\show_rect_ascii_single.v":97)
+WARN  (NL0002) : The module "varies" instantiated to "u_varies" is swept in optimizing("E:\_compete\4-20220926fpga\fpga\src\post4__show_rect_ascii\show_rect_ascii.v":51)
+[95%] Generate netlist file "E:\_compete\4-20220926fpga\fpga\impl\gwsynthesis\top.vg" completed
 WARN  (CK3000) : Can't calculate clocks' relationship between: "u_interfaces_top/DDR3_Memory_Interface_Top_inst/gw3_top/i4/fclkdiv/CLKOUT.default_gen_clk" and "pre_clk"
 WARN  (CK3000) : Can't calculate clocks' relationship between: "pre_clk" and "u_interfaces_top/DDR3_Memory_Interface_Top_inst/gw3_top/i4/fclkdiv/CLKOUT.default_gen_clk"
 WARN  (CK3000) : Can't calculate clocks' relationship between: "u_interfaces_top/u_clkdiv/CLKOUT.default_gen_clk" and "u_interfaces_top/DDR3_Memory_Interface_Top_inst/gw3_top/i4/fclkdiv/CLKOUT.default_gen_clk"
 WARN  (CK3000) : Can't calculate clocks' relationship between: "u_interfaces_top/DDR3_Memory_Interface_Top_inst/gw3_top/i4/fclkdiv/CLKOUT.default_gen_clk" and "u_interfaces_top/u_clkdiv/CLKOUT.default_gen_clk"
 WARN  (CK3000) : Can't calculate clocks' relationship between: "pre_clk" and "u_interfaces_top/u_clkdiv/CLKOUT.default_gen_clk"
-[100%] Generate report file "C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\impl\gwsynthesis\top_syn.rpt.html" completed
+[100%] Generate report file "E:\_compete\4-20220926fpga\fpga\impl\gwsynthesis\top_syn.rpt.html" completed
 GowinSynthesis finish

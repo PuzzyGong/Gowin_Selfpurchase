@@ -5,32 +5,32 @@
 1. PnR Messages
 
   <Report Title>: PnR Report
-  <Design File>: C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\impl\gwsynthesis\top.vg
-  <Physical Constraints File>: C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\top.cst
-  <Timing Constraints File>: C:\Users\76308\Desktop\Gowin_Selfpurchase-main\Gowin_Selfpurchase-main\fpga\src\lcd.sdc
+  <Design File>: E:\_compete\4-20220926fpga\fpga\impl\gwsynthesis\top.vg
+  <Physical Constraints File>: E:\_compete\4-20220926fpga\fpga\src\top.cst
+  <Timing Constraints File>: E:\_compete\4-20220926fpga\fpga\src\lcd.sdc
   <PnR Version>: V1.9.8.07
   <Part Number>: GW2A-LV18PG256C8/I7
   <Device>: GW2A-18C
-  <Created Time>:Fri Oct 21 17:04:40 2022
+  <Created Time>:Wed Oct 26 18:04:48 2022
 
 
 2. PnR Details
 
   Running placement:
     Placement Phase 0: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
-    Placement Phase 1: CPU time = 0h 0m 0.711s, Elapsed time = 0h 0m 0.71s
-    Placement Phase 2: CPU time = 0h 0m 11s, Elapsed time = 0h 0m 11s
-    Placement Phase 3: CPU time = 0h 0m 16s, Elapsed time = 0h 0m 16s
-    Total Placement: CPU time = 0h 0m 31s, Elapsed time = 0h 0m 31s
+    Placement Phase 1: CPU time = 0h 0m 0.74s, Elapsed time = 0h 0m 0.74s
+    Placement Phase 2: CPU time = 0h 0m 10s, Elapsed time = 0h 0m 10s
+    Placement Phase 3: CPU time = 0h 0m 15s, Elapsed time = 0h 0m 15s
+    Total Placement: CPU time = 0h 0m 30s, Elapsed time = 0h 0m 30s
  Running routing:
-    Routing Phase 0: CPU time = 0h 0m 0.007s, Elapsed time = 0h 0m 0.006s
+    Routing Phase 0: CPU time = 0h 0m 0.007s, Elapsed time = 0h 0m 0.007s
     Routing Phase 1: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
-    Routing Phase 2: CPU time = 0h 0m 59s, Elapsed time = 0h 0m 59s
-    Total Routing: CPU time = 0h 1m 1s, Elapsed time = 0h 1m 1s
+    Routing Phase 2: CPU time = 0h 10m 29s, Elapsed time = 0h 10m 29s
+    Total Routing: CPU time = 0h 10m 31s, Elapsed time = 0h 10m 31s
  Generate output files:
     CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
 
- Total Time and Memory Usage: CPU time = 0h 1m 36s, Elapsed time = 0h 1m 36s, Peak memory usage = 540MB
+ Total Time and Memory Usage: CPU time = 0h 11m 5s, Elapsed time = 0h 11m 5s, Peak memory usage = 536MB
 
 
 3. Resource Usage Summary
@@ -38,15 +38,15 @@
   ----------------------------------------------------------
   Resources                   | Usage
   ----------------------------------------------------------
-  Logic                       | 13202/20736  63%
-    --LUT,ALU,ROM16           | 12332(10195 LUT, 2137 ALU, 0 ROM16)
-    --SSRAM(RAM16)            | 145
-  Register                    | 7256/16173  44%
+  Logic                       | 14474/20736  69%
+    --LUT,ALU,ROM16           | 13568(11374 LUT, 2194 ALU, 0 ROM16)
+    --SSRAM(RAM16)            | 151
+  Register                    | 7546/16173  46%
     --Logic Register as Latch | 0/15552  0%
-    --Logic Register as FF    | 7250/15552  46%
+    --Logic Register as FF    | 7540/15552  48%
     --I/O Register as Latch   | 0/621  0%
     --I/O Register as FF      | 6/621  1%
-  CLS                         | 8789/10368  84%
+  CLS                         | 8911/10368  85%
   I/O Port                    | 80
   I/O Buf                     | 73
     --Input Buf               | 14
@@ -58,10 +58,11 @@
     --OSER8_MEM               | 20
     --OSER10                  | 4
     --IODELAY                 | 40
-  BSRAM                       | 65%
-    --SDPB                    | 14
+  BSRAM                       | 86%
+    --SPX9                    | 3
+    --SDPB                    | 6
     --SDPX9B                  | 15
-    --pROM                    | 1
+    --pROM                    | 16
   DSP                         | 25%
     --MULT9X9                 | 24
   PLL                         | 3/4  75%
@@ -112,13 +113,13 @@
   Signal         | Global Clock   | Location
   -------------------------------------------
   sys_clk_d      | PRIMARY        |  TR TL BR BL
-  cmos_vsync_d   | PRIMARY        |  TL
+  cmos_vsync_d   | PRIMARY        |  TL BL
   cmos_pclk_d    | PRIMARY        |  TL BL
   post_clk       | PRIMARY        |  TR TL BR BL
   cmos_xclk_d    | PRIMARY        |  TL
   pre_clk        | PRIMARY        |  TR TL BR BL
   serial_clk     | PRIMARY        |  TL
-  dma_clk        | PRIMARY        |  TR TL BR BL
+  dma_clk        | PRIMARY        |  TR BR BL
   sys_rst_n_d    | SECONDARY      |  -
   n82_5          | SECONDARY      |  -
   n13_5          | SECONDARY      |  -

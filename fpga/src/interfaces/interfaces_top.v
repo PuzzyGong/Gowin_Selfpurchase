@@ -53,9 +53,11 @@ module interfaces_top
     output                              o_post_vs                  ,
     output                              o_post_de                  ,
     output             [16-1:0]         o_post_data                ,
-    input              [16-1:0]         i_post_data                ,
+    input              [8-1:0]          i_post_r                   ,
+    input              [8-1:0]          i_post_g                   ,
+    input              [8-1:0]          i_post_b                   ,
 
-    output reg                          o_post_camvs  
+    output reg                          o_post_camvs                
 );
 
 //**************************** PLL ****************************
@@ -173,7 +175,7 @@ vga_timing vga_timing_m0
 
 //-----delay clocks -- from SYN_GEN to POST&HDMI
 localparam                              IN_DELAY = 5               ;
-localparam                              OUT_DELAY = 11             ;
+localparam                              OUT_DELAY = 30             ;
 localparam                              TOTAL_DELAY = IN_DELAY + OUT_DELAY;
                           
 reg                    [TOTAL_DELAY-1:0]post_hs_dn                 ;
@@ -328,12 +330,6 @@ assign  o_post_data = off0_syn_de ? off0_syn_data[15:0] : 16'h0000;
 
 //**************************** HDMI ****************************
 
-wire                   [   4:0]         lcd_r                      ;
-wire                   [   5:0]         lcd_g                      ;
-wire                   [   4:0]         lcd_b                      ;
-assign  {lcd_r,lcd_g,lcd_b} = i_post_data;
-
-
 DVI_TX_Top DVI_TX_Top_inst
 (
     .I_rst_n                           (hdmi4_rst_n               ),
@@ -342,9 +338,9 @@ DVI_TX_Top DVI_TX_Top_inst
     .I_rgb_vs                          (post_vs_dn[TOTAL_DELAY-1] ),
     .I_rgb_hs                          (post_hs_dn[TOTAL_DELAY-1] ),
     .I_rgb_de                          (post_de_dn[TOTAL_DELAY-1] ),
-    .I_rgb_r                           ({lcd_r,3'd0}              ),
-    .I_rgb_g                           ({lcd_g,2'd0}              ),
-    .I_rgb_b                           ({lcd_b,3'd0}              ),
+    .I_rgb_r                           (i_post_r                  ),
+    .I_rgb_g                           (i_post_g                  ),
+    .I_rgb_b                           (i_post_b                  ),
 
     .O_tmds_clk_p                      (O_tmds_clk_p              ),
     .O_tmds_clk_n                      (O_tmds_clk_n              ),

@@ -8,6 +8,7 @@ module top_test
     input  wire                         i_post_vs                  ,
     output reg         [   7:0]         fps1                       ,
     output reg         [   7:0]         fps2                       , 
+    output reg         [   7:0]         fps3                       , 
     output reg         [  31:0]         cnt_1s                       
 );
 
@@ -71,6 +72,27 @@ always@(posedge post_clk or negedge sys_rst_n)
     end
     else if(post_vs_inflag == 1'b0 && i_post_vs == 1'b1) begin
         post_vs_inflag <= 'b1;
+    end
+
+reg                    [   7:0]         fps3_cnt_cnt               ;
+reg                    [   7:0]         fps3_cnt                   ;
+always@(posedge post_clk or negedge sys_rst_n)
+    if(sys_rst_n == 1'b0) begin
+        fps3_cnt_cnt <= 'd0; 
+        fps3_cnt     <= 'd0;
+        fps3         <= 'd0;
+    end
+    else if(cnt_1s == 'b0) begin
+        fps3_cnt     <= 'd0;
+        fps3         <= fps3_cnt;
+    end
+    else if(post_vs_inflag == 1'b1 && i_post_vs == 1'b0) begin
+        if(fps3_cnt_cnt == 8'd7) begin
+            fps3_cnt_cnt <= 'd0;
+            fps3_cnt     <= fps3_cnt + 'b1;
+        end
+        else
+            fps3_cnt_cnt <= fps3_cnt_cnt + 'b1;
     end
 
 endmodule
