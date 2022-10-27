@@ -167,14 +167,14 @@ always@(posedge sys_clk or negedge sys_rst_n)
         o_ascii <= 'd1;
         o_color <= 3'b011;
     end
-    else if(cnt[19:16] == 4'b1011 && cnt[7:0] == 'b0) begin
-        o_x1    <= i_otheritem [{~cnt[15:12] , 5'b0} + L_W + L_W + L_W +: L_W];
-        o_y1    <= i_otheritem [{~cnt[15:12] , 5'b0} +       L_W + L_W +: L_W];
-        o_x2    <= i_otheritem [{~cnt[15:12] , 5'b0} +             L_W +: L_W];
-        o_y2    <= i_otheritem [{~cnt[15:12] , 5'b0}                   +: L_W];
-        o_ascii <= 'd1;
-        o_color <= 3'b010;
-    end
+    // else if(cnt[19:16] == 4'b1011 && cnt[7:0] == 'b0) begin
+    //     o_x1    <= i_otheritem [{~cnt[15:12] , 5'b0} + L_W + L_W + L_W +: L_W];
+    //     o_y1    <= i_otheritem [{~cnt[15:12] , 5'b0} +       L_W + L_W +: L_W];
+    //     o_x2    <= i_otheritem [{~cnt[15:12] , 5'b0} +             L_W +: L_W];
+    //     o_y2    <= i_otheritem [{~cnt[15:12] , 5'b0}                   +: L_W];
+    //     o_ascii <= 'd1;
+    //     o_color <= 3'b010;
+    // end
 
 
 endmodule

@@ -365,7 +365,7 @@ conv_show u_conv_show(
 assign data_1 = (contains[{'h18,3'b0} +: 1] == 'b0) ? data_1_raw : data_1_process;
 
 //-----Delay = 0
-//`define SAMPLE_SHOW
+`define SAMPLE_SHOW
 `ifdef SAMPLE_SHOW
 sample_show u_sample_show(
     .sys_clk                           (post_clk                  ),

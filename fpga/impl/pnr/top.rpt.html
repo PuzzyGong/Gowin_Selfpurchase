@@ -55,15 +55,15 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Design File</td>
-<td>E:\_compete\4-20220926fpga\fpga\impl\gwsynthesis\top.vg</td>
+<td>E:\_compete\4-20220926fpga\Gowin_Selfpurchase\fpga\impl\gwsynthesis\top.vg</td>
 </tr>
 <tr>
 <td class="label">Physical Constraints File</td>
-<td>E:\_compete\4-20220926fpga\fpga\src\top.cst</td>
+<td>E:\_compete\4-20220926fpga\Gowin_Selfpurchase\fpga\src\top.cst</td>
 </tr>
 <tr>
 <td class="label">Timing Constraints File</td>
-<td>E:\_compete\4-20220926fpga\fpga\src\lcd.sdc</td>
+<td>E:\_compete\4-20220926fpga\Gowin_Selfpurchase\fpga\src\lcd.sdc</td>
 </tr>
 <tr>
 <td class="label">Version</td>
@@ -79,7 +79,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Created Time</td>
-<td>Wed Oct 26 18:04:47 2022
+<td>Thu Oct 27 17:45:24 2022
 </td>
 </tr>
 <tr>
@@ -93,23 +93,23 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <tr>
 <td class="label">Place & Route Process</td>
 <td>Running placement:
-   Placement Phase 0: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
-   Placement Phase 1: CPU time = 0h 0m 0.74s, Elapsed time = 0h 0m 0.74s
-   Placement Phase 2: CPU time = 0h 0m 10s, Elapsed time = 0h 0m 10s
-   Placement Phase 3: CPU time = 0h 0m 15s, Elapsed time = 0h 0m 15s
-   Total Placement: CPU time = 0h 0m 30s, Elapsed time = 0h 0m 30s
+   Placement Phase 0: CPU time = 0h 0m 5s, Elapsed time = 0h 0m 5s
+   Placement Phase 1: CPU time = 0h 0m 0.805s, Elapsed time = 0h 0m 0.805s
+   Placement Phase 2: CPU time = 0h 0m 14s, Elapsed time = 0h 0m 14s
+   Placement Phase 3: CPU time = 0h 0m 14s, Elapsed time = 0h 0m 14s
+   Total Placement: CPU time = 0h 0m 34s, Elapsed time = 0h 0m 34s
 Running routing:
    Routing Phase 0: CPU time = 0h 0m 0.007s, Elapsed time = 0h 0m 0.007s
    Routing Phase 1: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
-   Routing Phase 2: CPU time = 0h 10m 29s, Elapsed time = 0h 10m 29s
-   Total Routing: CPU time = 0h 10m 31s, Elapsed time = 0h 10m 31s
+   Routing Phase 2: CPU time = 0h 10m 45s, Elapsed time = 0h 10m 45s
+   Total Routing: CPU time = 0h 10m 47s, Elapsed time = 0h 10m 47s
 Generate output files:
-   CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
+   CPU time = 0h 0m 5s, Elapsed time = 0h 0m 5s
 </td>
 </tr>
 <tr>
 <td class="label">Total Time and Memory Usage</td>
-<td>CPU time = 0h 11m 5s, Elapsed time = 0h 11m 5s, Peak memory usage = 536MB</td>
+<td>CPU time = 0h 11m 25s, Elapsed time = 0h 11m 25s, Peak memory usage = 516MB</td>
 </tr>
 </table>
 <br/>
@@ -124,23 +124,23 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">Logic</td>
-<td>14474/20736</td>
-<td>69%</td>
+<td>16013/20736</td>
+<td>77%</td>
 </tr>
 <tr>
 <td class="label">&nbsp &nbsp --LUT,ALU,ROM16</td>
-<td>13568(11374 LUT, 2194 ALU, 0 ROM16)</td>
+<td>15083(11884 LUT, 3199 ALU, 0 ROM16)</td>
 <td>-</td>
 </tr>
 <tr>
 <td class="label">&nbsp &nbsp --SSRAM(RAM16)</td>
-<td>151</td>
+<td>155</td>
 <td>-</td>
 </tr>
 <tr>
 <td class="label">Register</td>
-<td>7546/16173</td>
-<td>46%</td>
+<td>8365/16173</td>
+<td>51%</td>
 </tr>
 <tr>
 <td class="label">&nbsp &nbsp --Logic Register as Latch</td>
@@ -149,8 +149,8 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">&nbsp &nbsp --Logic Register as FF</td>
-<td>7540/15552</td>
-<td>48%</td>
+<td>8359/15552</td>
+<td>53%</td>
 </tr>
 <tr>
 <td class="label">&nbsp &nbsp --I/O Register as Latch</td>
@@ -164,8 +164,8 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">CLS</td>
-<td>8911/10368</td>
-<td>85%</td>
+<td>9496/10368</td>
+<td>91%</td>
 </tr>
 <tr>
 <td class="label">I/O Port</td>
@@ -329,12 +329,12 @@ Generate output files:
 <tr>
 <td class="label">sys_clk_d</td>
 <td>PRIMARY</td>
-<td> TR TL BR BL</td>
+<td> TR TL BL</td>
 </tr>
 <tr>
 <td class="label">cmos_vsync_d</td>
 <td>PRIMARY</td>
-<td> TL BL</td>
+<td> TL</td>
 </tr>
 <tr>
 <td class="label">cmos_pclk_d</td>
@@ -354,7 +354,7 @@ Generate output files:
 <tr>
 <td class="label">pre_clk</td>
 <td>PRIMARY</td>
-<td> TR TL BR BL</td>
+<td> TL BR BL</td>
 </tr>
 <tr>
 <td class="label">serial_clk</td>
@@ -364,7 +364,7 @@ Generate output files:
 <tr>
 <td class="label">dma_clk</td>
 <td>PRIMARY</td>
-<td> TR BR BL</td>
+<td> TL BR BL</td>
 </tr>
 <tr>
 <td class="label">sys_rst_n_d</td>

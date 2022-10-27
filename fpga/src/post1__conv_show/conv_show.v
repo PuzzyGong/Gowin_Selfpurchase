@@ -399,7 +399,7 @@ for(k = 0; k < `RECT_NUMMAX; k = k + 1) begin
                 cnt_y_5[P_W-1:2] >= item[{k, 5'b0}     + 8 + 8 +: 8] &&
                 cnt_x_5[P_W-1:2] <= item[{k, 5'b0}         + 8 +: 8] &&
                 cnt_y_5[P_W-1:2] <= item[{k, 5'b0}             +: 8] &&
-                cnt_x_5[2:0]     == 3'b0                             &&           
+                cnt_x_5[2:0]     == 3'b0                             &&
                 cnt_y_5[2:0]     == 3'b0                             &&
                 cnt_x_5[2:0]     == 3'b0                             &&
                 cnt_y_5[2:0]     == 3'b0                             ) begin
@@ -431,23 +431,23 @@ for(k = 0; k < `RECT_NUMMAX; k = k + 1) begin
         end
 
         else if(inpic_5 == 1'b1 && cnt_x_5 == `PIC_X2 - 1 && cnt_y_5 == `PIC_Y2) begin
-            if(item_tmp[{k, 6'b0} +  8 +  8 +  8 +  8 +  8 +:  8] > 8'b01000000)
+            if(item_tmp[{k, 6'b0} +  8 +  8 +  8 +  8 +  8 +:  8] > 8'b00100000) //2个字面积
                 RED____flag[k +: 1] <= 'd1;
-            if(item_tmp[{k, 6'b0}      +  8 +  8 +  8 +  8 +:  8] > 8'b01000000)
+            if(item_tmp[{k, 6'b0}      +  8 +  8 +  8 +  8 +:  8] > 8'b00100000) //2个字面积
                 GREEN__flag[k +: 1] <= 'd1;  
-            if(item_tmp[{k, 6'b0}           +  8 +  8 +  8 +:  8] > 8'b01000000)
+            if(item_tmp[{k, 6'b0}           +  8 +  8 +  8 +:  8] > 8'b00100000) //2个字面积
                 BLUE___flag[k +: 1] <= 'd1;
-            if(item_tmp[{k, 6'b0}                +  8 +  8 +:  8] > 8'b01000000)
+            if(item_tmp[{k, 6'b0}                +  8 +  8 +:  8] > 8'b00100000) //2个字面积
                 YELLOW_flag[k +: 1] <= 'd1;  
-            if(item_tmp[{k, 6'b0}                     +  8 +:  8] > 8'b01000000)
+            if(item_tmp[{k, 6'b0}                     +  8 +:  8] > 8'b00100000) //2个字面积
                 WHITE__flag[k +: 1] <= 'd1;  
-            if(item_tmp[{k, 6'b0}                          +:  8] > 8'b01000000)
+            if(item_tmp[{k, 6'b0}                          +:  8] > 8'b00001000) //0.5个字面积
                 BLACK__flag[k +: 1] <= 'd1;  
             if(     item[{k, 5'b0}         + 8 +: 8] - item[{k, 5'b0} + 8 + 8 + 8 +: 8] >=
-                    item[{k, 5'b0}             +: 8] - item[{k, 5'b0}     + 8 + 8 +: 8] - 2)
+                    item[{k, 5'b0}             +: 8] - item[{k, 5'b0}     + 8 + 8 +: 8] )  
                 FAT____flag[k +: 1] <= 'd1;  
             else if(item[{k, 5'b0}         + 8 +: 8] - item[{k, 5'b0} + 8 + 8 + 8 +: 8] <=
-                    item[{k, 5'b0}             +: 8] - item[{k, 5'b0}     + 8 + 8 +: 8] - 24)
+                    item[{k, 5'b0}             +: 8] - item[{k, 5'b0}     + 8 + 8 +: 8] - 24) //3个字长
                 SKIN___flag[k +: 1] <= 'd1; 
             else
                 NORMAL_flag[k +: 1] <= 'd1; 
@@ -457,7 +457,10 @@ for(k = 0; k < `RECT_NUMMAX; k = k + 1) begin
         else if(inpic_5 == 1'b1 && cnt_x_5 == `PIC_X2 && cnt_y_5 == `PIC_Y2) begin
             o_item   [{k, 5'b0} +: 32]  <=  item   [{k, 5'b0} +: 32] ;
 
-            if     (GREEN__flag[k +: 1] == 1'b1) 
+            if     (RED____flag[k +: 1] == 1'b1 && SKIN___flag[k +: 1] == 1'b1) 
+                o_label[{k, 2'b0} +:4] <= 'd6;
+
+            else if(GREEN__flag[k +: 1] == 1'b1) 
                 o_label[{k, 2'b0} +:4] <= 'd1;
                 
             else if(BLUE___flag[k +: 1] == 1'b1) 
@@ -478,9 +481,6 @@ for(k = 0; k < `RECT_NUMMAX; k = k + 1) begin
             else if(RED____flag[k +: 1] == 1'b1 && FAT____flag[k +: 1] == 1'b1) 
                 o_label[{k, 2'b0} +:4] <= 'd5;
 
-            else if(RED____flag[k +: 1] == 1'b1 && SKIN___flag[k +: 1] == 1'b1) 
-                o_label[{k, 2'b0} +:4] <= 'd6;
-
             else if(RED____flag[k +: 1] == 1'b1 && NORMAL_flag[k +: 1] == 1'b1) 
                 o_label[{k, 2'b0} +:4] <= 'd7;
 
@@ -499,6 +499,7 @@ localparam                              PUT  = 3'd2                ;
 localparam                              PAY  = 3'd3                ;
 localparam                              WARN = 3'd4                ;
 
+reg                    [   7:0]         num_decrease_cnt           ;
 reg                    [   7:0]         num_calculating            ;
 reg                    [   7:0]         money_calculating          ;
 reg                    [   7:0]         num_last                   ;
@@ -526,6 +527,7 @@ always@(posedge sys_clk or negedge item_rst_n)
 
 always@(posedge sys_clk or negedge item_rst_n)
     if(item_rst_n == 1'b0) begin
+        num_decrease_cnt  <= 'd0;
         num_calculating   <= 'd0;
         money_calculating <= 'd0;
         num_last          <= 'd0;
@@ -555,15 +557,23 @@ always@(posedge sys_clk or negedge item_rst_n)
             num_calculating   <= 'd0;
             money_calculating <= 'd0;
 
-        if     (o_pattern == FREE && num_calculating < o_num) begin
-            num_last          <= 'd0;
-            money_last        <= 'd0;
-            o_num             <= 'd0;
-            o_money           <= 'd0;
+        if     (num_decrease_cnt > 'd50) begin
+            num_decrease_cnt  <= 'd0;
+            o_num             <= num_calculating  ;
+            o_money           <= money_calculating;
             o_payment         <= 'd0;
             o_pattern         <= WARN;
         end
-        else if(o_pattern == FREE && i_user == 8'd99) begin
+
+        else if(o_pattern == FREE && num_calculating > o_num) begin
+            num_decrease_cnt  <= num_decrease_cnt + 'b1;
+            o_payment         <= 'd0;
+        end
+        else if(o_pattern == FREE && num_calculating < o_num) begin
+            num_decrease_cnt  <= num_decrease_cnt + 'b1;
+            o_payment         <= 'd0;
+        end
+        else if(o_pattern == FREE && i_user == 8'hFF) begin
             o_pattern         <= PUT;
         end
         else if(o_pattern == FREE && i_user != 8'h00) begin
@@ -573,6 +583,8 @@ always@(posedge sys_clk or negedge item_rst_n)
             o_user            <= i_user ;
         end
         else if(o_pattern == FREE) begin
+            if(num_decrease_cnt > 'd0) 
+                num_decrease_cnt  <= num_decrease_cnt - 'b1;
             o_num             <= num_calculating  ;
             o_money           <= money_calculating;
             o_payment         <= 'd0;
@@ -595,6 +607,7 @@ always@(posedge sys_clk or negedge item_rst_n)
             o_pattern         <= FREE;
             o_user            <= i_user ;
         end
+
         else if(o_pattern == WARN && cnt_ns > 32'd130_000_000) begin
             o_num             <= num_calculating  ;
             o_pattern         <= FREE;

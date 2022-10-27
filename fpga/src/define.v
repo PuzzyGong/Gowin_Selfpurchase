@@ -44,17 +44,17 @@
 //-----div_rect__________PARAM
 `define RST_VALUE_000F          (8'h04)
 
-//-----draw_____________SWITCH
-`define RST_VALUE_0010          (8'h00)
+//-----user
+`define RST_VALUE_0010          (8'hFF)
 
 //-----corv1_____________PARAM
 `define RST_VALUE_0011          (8'h40)
 `define RST_VALUE_0012          (8'h08)
 `define RST_VALUE_0013          (8'h58)
-`define RST_VALUE_0014          (8'h20)
+`define RST_VALUE_0014          (8'h16)
 `define RST_VALUE_0015          (8'h58)
 `define RST_VALUE_0016          (8'hA0)
-`define RST_VALUE_0017          (8'h28)
+`define RST_VALUE_0017          (8'h18)
 //-----corv_____________SWITCH
 `define RST_VALUE_0018          (8'h00)
 
