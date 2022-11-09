@@ -1,0 +1,265 @@
+{
+    "name": "Gowin_Selfpurchase",
+    "securityToken": "Gowin_Selfpurchase Token",
+    "sourceConnection": {
+        "name": "in",
+        "providerType": "localFileSystemProxy",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiMWY3YzQ0ZmQ1MGMzMThiMjI5NTAzM2RjNWQ5ODgxNWVhZDk4ZThjZmU4NTY5MjA0OTc3NmU3YWY2MWE3ZGExNzQ5ZjMxMjI4NGJmNGFmMTlmZmRiMmJlMTFlMmFiZjEzNTQ0YTIyNmU0NTllNjM3OWQzNGEwYjViYmE5MDA5OTZkMGViMDhkYTBiMTVkM2E2ZDliYTg4OTMwOTMxMzE4MjU2YjRmYjBlNDgxYzk5OWNlYjUyMzAzMDBiYmI5OWViIiwiaXYiOiJiY2I1NmFlY2I3MTU4M2FmY2JmMTVjYzA0ZGI2MmI5NGEzOWQ3ZjdiNTM3MGY4NzcifQ=="
+        },
+        "id": "9MoMDZHSf"
+    },
+    "targetConnection": {
+        "name": "out",
+        "providerType": "localFileSystemProxy",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiNGViYmI3ZTUzMzQyNGRlMTVmMDlkZjJjNjVmY2RmYzkxN2QyNmE0NzU5YjgyYzhlNjQzMmM2ZDU4MjhlYzE3NmY0Mjc1OGRlOTE0MzBkMzA0ZDhkMDM1NmUzYWYwYzZjNmVhMWZkM2M4MzMzNjdkYjc0MzkxMTdhZGZmZGQ4YmYwMDdkZTljZDIzODRmM2MxYTc3MjIyNzNkZGNiYjMzYzIxODI2MjI1MDZmZWMyY2E0YjhhZGVhZjlhMDE4ZTE0IiwiaXYiOiJhNzgxMWUzZWMyYmRlMzYwYzlmNjhmNWI2MzE4ODZkMjViYTNhZDhhYmU3OTUxMzIifQ=="
+        },
+        "id": "YlY6VhP1X"
+    },
+    "videoSettings": {
+        "frameExtractionRate": 15
+    },
+    "tags": [
+        {
+            "name": "1",
+            "color": "#5db300"
+        },
+        {
+            "name": "2",
+            "color": "#e81123"
+        },
+        {
+            "name": "3",
+            "color": "#6917aa"
+        },
+        {
+            "name": "4",
+            "color": "#015cda"
+        },
+        {
+            "name": "5",
+            "color": "#4894fe"
+        },
+        {
+            "name": "6",
+            "color": "#6b849c"
+        },
+        {
+            "name": "7",
+            "color": "#70c400"
+        },
+        {
+            "name": "8",
+            "color": "#f7929a"
+        }
+    ],
+    "id": "rC8KCloRK",
+    "activeLearningSettings": {
+        "modelPathType": "coco",
+        "autoDetect": false,
+        "predictTag": true
+    },
+    "exportFormat": {
+        "providerType": "csv",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiZmM0ZTgzMDM3M2EzMzBhNWZhNjg4M2QzNzY5YjA0ZjliOTRhOTk1ZTY0YWVmODVhNDY4OGZmNmMwNGE3YWQxM2UzNWRkOTI5NTA5ZjhhNTk0MTBkNGI5YWNlNTBiNGFjIiwiaXYiOiJhYjIwZjc3ZDliMTczMTk3NmEzNDY5ZmVjM2VjMWI2ZjM1M2VlYjlkNjZlM2UxMDUifQ=="
+        }
+    },
+    "version": "2.2.0",
+    "lastVisitedAssetId": "8fa2043940e9df10152454b45856b6a3",
+    "assets": {
+        "830c0c5bfc6c7cce981db67f4c9fdeed": {
+            "format": "jpg",
+            "id": "830c0c5bfc6c7cce981db67f4c9fdeed",
+            "name": "1.jpg",
+            "path": "file:E:/_compete/4-20220926fpga/Gowin_Selfpurchase/matlab/pic_origin/1.jpg",
+            "size": {
+                "width": 3648,
+                "height": 1680
+            },
+            "state": 2,
+            "type": 1
+        },
+        "5def7a36ae0044a149e9bddb43796334": {
+            "format": "jpg",
+            "id": "5def7a36ae0044a149e9bddb43796334",
+            "name": "10.jpg",
+            "path": "file:E:/_compete/4-20220926fpga/Gowin_Selfpurchase/matlab/pic_origin/10.jpg",
+            "size": {
+                "width": 3648,
+                "height": 1680
+            },
+            "state": 2,
+            "type": 1
+        },
+        "8fa2043940e9df10152454b45856b6a3": {
+            "format": "jpg",
+            "id": "8fa2043940e9df10152454b45856b6a3",
+            "name": "11.jpg",
+            "path": "file:E:/_compete/4-20220926fpga/Gowin_Selfpurchase/matlab/pic_origin/11.jpg",
+            "size": {
+                "width": 3648,
+                "height": 1680
+            },
+            "state": 2,
+            "type": 1
+        },
+        "95d9841c853a4e7c0406a655ccf67530": {
+            "format": "jpg",
+            "id": "95d9841c853a4e7c0406a655ccf67530",
+            "name": "12.jpg",
+            "path": "file:E:/_compete/4-20220926fpga/Gowin_Selfpurchase/matlab/pic_origin/12.jpg",
+            "size": {
+                "width": 3648,
+                "height": 1680
+            },
+            "state": 2,
+            "type": 1
+        },
+        "525f5d2504fad396b3613f5a4f19a094": {
+            "format": "jpg",
+            "id": "525f5d2504fad396b3613f5a4f19a094",
+            "name": "13.jpg",
+            "path": "file:E:/_compete/4-20220926fpga/Gowin_Selfpurchase/matlab/pic_origin/13.jpg",
+            "size": {
+                "width": 3648,
+                "height": 1680
+            },
+            "state": 2,
+            "type": 1
+        },
+        "1ece81354c8a0c995255a22938bb89dd": {
+            "format": "jpg",
+            "id": "1ece81354c8a0c995255a22938bb89dd",
+            "name": "14.jpg",
+            "path": "file:E:/_compete/4-20220926fpga/Gowin_Selfpurchase/matlab/pic_origin/14.jpg",
+            "size": {
+                "width": 3648,
+                "height": 1680
+            },
+            "state": 2,
+            "type": 1
+        },
+        "3e543c7d2779c52dbb2c30fb2404e6b6": {
+            "format": "jpg",
+            "id": "3e543c7d2779c52dbb2c30fb2404e6b6",
+            "name": "15.jpg",
+            "path": "file:E:/_compete/4-20220926fpga/Gowin_Selfpurchase/matlab/pic_origin/15.jpg",
+            "size": {
+                "width": 3648,
+                "height": 1680
+            },
+            "state": 2,
+            "type": 1
+        },
+        "0f0c75a4ea6a34d36c9fb259431caebb": {
+            "format": "jpg",
+            "id": "0f0c75a4ea6a34d36c9fb259431caebb",
+            "name": "16.jpg",
+            "path": "file:E:/_compete/4-20220926fpga/Gowin_Selfpurchase/matlab/pic_origin/16.jpg",
+            "size": {
+                "width": 3648,
+                "height": 1680
+            },
+            "state": 2,
+            "type": 1
+        },
+        "16df2dc3a3502716ddf337f1d5a7d9b8": {
+            "format": "jpg",
+            "id": "16df2dc3a3502716ddf337f1d5a7d9b8",
+            "name": "2.jpg",
+            "path": "file:E:/_compete/4-20220926fpga/Gowin_Selfpurchase/matlab/pic_origin/2.jpg",
+            "size": {
+                "width": 3648,
+                "height": 1680
+            },
+            "state": 2,
+            "type": 1
+        },
+        "fa95675c7332374f70ccf4c1442e1c58": {
+            "format": "jpg",
+            "id": "fa95675c7332374f70ccf4c1442e1c58",
+            "name": "3.jpg",
+            "path": "file:E:/_compete/4-20220926fpga/Gowin_Selfpurchase/matlab/pic_origin/3.jpg",
+            "size": {
+                "width": 3648,
+                "height": 1680
+            },
+            "state": 2,
+            "type": 1
+        },
+        "3533443f406adfe020994fe2a58c4275": {
+            "format": "jpg",
+            "id": "3533443f406adfe020994fe2a58c4275",
+            "name": "4.jpg",
+            "path": "file:E:/_compete/4-20220926fpga/Gowin_Selfpurchase/matlab/pic_origin/4.jpg",
+            "size": {
+                "width": 3648,
+                "height": 1680
+            },
+            "state": 2,
+            "type": 1
+        },
+        "9c912cd57178367a9968618040c0a807": {
+            "format": "jpg",
+            "id": "9c912cd57178367a9968618040c0a807",
+            "name": "5.jpg",
+            "path": "file:E:/_compete/4-20220926fpga/Gowin_Selfpurchase/matlab/pic_origin/5.jpg",
+            "size": {
+                "width": 3648,
+                "height": 1680
+            },
+            "state": 2,
+            "type": 1
+        },
+        "a35937c406a61477cbd4ae73da36dcb6": {
+            "format": "jpg",
+            "id": "a35937c406a61477cbd4ae73da36dcb6",
+            "name": "6.jpg",
+            "path": "file:E:/_compete/4-20220926fpga/Gowin_Selfpurchase/matlab/pic_origin/6.jpg",
+            "size": {
+                "width": 3648,
+                "height": 1680
+            },
+            "state": 2,
+            "type": 1
+        },
+        "bea5543e7806607d664b1bed9451eaee": {
+            "format": "jpg",
+            "id": "bea5543e7806607d664b1bed9451eaee",
+            "name": "7.jpg",
+            "path": "file:E:/_compete/4-20220926fpga/Gowin_Selfpurchase/matlab/pic_origin/7.jpg",
+            "size": {
+                "width": 3648,
+                "height": 1680
+            },
+            "state": 2,
+            "type": 1
+        },
+        "07cf32833f3792b721a505dd83127097": {
+            "format": "jpg",
+            "id": "07cf32833f3792b721a505dd83127097",
+            "name": "8.jpg",
+            "path": "file:E:/_compete/4-20220926fpga/Gowin_Selfpurchase/matlab/pic_origin/8.jpg",
+            "size": {
+                "width": 3648,
+                "height": 1680
+            },
+            "state": 2,
+            "type": 1
+        },
+        "f2a07891b0c95964123c09ad24fe86cc": {
+            "format": "jpg",
+            "id": "f2a07891b0c95964123c09ad24fe86cc",
+            "name": "9.jpg",
+            "path": "file:E:/_compete/4-20220926fpga/Gowin_Selfpurchase/matlab/pic_origin/9.jpg",
+            "size": {
+                "width": 3648,
+                "height": 1680
+            },
+            "state": 2,
+            "type": 1
+        }
+    }
+}
